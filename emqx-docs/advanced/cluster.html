@@ -1,0 +1,1760 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>分布集群 · EMQ X Broker 使用文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="EMQX Team">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-simpletabs/tabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../_styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bridge.html" />
+    
+    
+    <link rel="prev" href="rule-examples.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    EMQ X 消息服务器简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../introduction/checklist.html">
+            
+                <a href="../introduction/checklist.html">
+            
+                    
+                    EMQ X 消息服务器功能列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../getting-started/installation.html">
+            
+                <a href="../getting-started/installation.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../getting-started/start.html">
+            
+                <a href="../getting-started/start.html">
+            
+                    
+                    启动 EMQ X
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../using-emqx/command-line.html">
+            
+                <a href="../using-emqx/command-line.html">
+            
+                    
+                    基本命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../using-emqx/directory.html">
+            
+                <a href="../using-emqx/directory.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../using-emqx/config.html">
+            
+                <a href="../using-emqx/config.html">
+            
+                    
+                    配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../using-emqx/log.html">
+            
+                <a href="../using-emqx/log.html">
+            
+                    
+                    日志与追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../using-emqx/dashboard.html">
+            
+                <a href="../using-emqx/dashboard.html">
+            
+                    
+                    Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    高级功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="auth.html">
+            
+                <a href="auth.html">
+            
+                    
+                    认证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="auth-username.html">
+            
+                <a href="auth-username.html">
+            
+                    
+                    用户名认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="auth-clientid.html">
+            
+                <a href="auth-clientid.html">
+            
+                    
+                    Cliend ID 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="auth-http.html">
+            
+                <a href="auth-http.html">
+            
+                    
+                    HTTP 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="auth-jwt.html">
+            
+                <a href="auth-jwt.html">
+            
+                    
+                    JWT 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="auth-ldap.html">
+            
+                <a href="auth-ldap.html">
+            
+                    
+                    LDAP 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="auth-mysql.html">
+            
+                <a href="auth-mysql.html">
+            
+                    
+                    MySQL 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="auth-postgresql.html">
+            
+                <a href="auth-postgresql.html">
+            
+                    
+                    PostgreSQL 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="auth-redis.html">
+            
+                <a href="auth-redis.html">
+            
+                    
+                    Redis 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="auth-mongodb.html">
+            
+                <a href="auth-mongodb.html">
+            
+                    
+                    MongoDB 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="acl.html">
+            
+                <a href="acl.html">
+            
+                    
+                    发布订阅 ACL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="acl-file.html">
+            
+                <a href="acl-file.html">
+            
+                    
+                    内置 ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="acl-http.html">
+            
+                <a href="acl-http.html">
+            
+                    
+                    HTTP ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="acl-mysql.html">
+            
+                <a href="acl-mysql.html">
+            
+                    
+                    MySQL ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="acl-postgres.html">
+            
+                <a href="acl-postgres.html">
+            
+                    
+                    PostgreSQL ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="acl-redis.html">
+            
+                <a href="acl-redis.html">
+            
+                    
+                    Redis ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="acl-mongodb.html">
+            
+                <a href="acl-mongodb.html">
+            
+                    
+                    MongoDB ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="cli.html">
+            
+                <a href="cli.html">
+            
+                    
+                    命令行接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="http-api.html">
+            
+                <a href="http-api.html">
+            
+                    
+                    管理监控 API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-brokers">
+            
+                    
+                    基本信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-nodes">
+            
+                    
+                    节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-clients">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-subscriptions">
+            
+                    
+                    订阅信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-routes">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.6" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-publish">
+            
+                    
+                    消息发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.7" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-subscribe">
+            
+                    
+                    主题订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.8" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-plugins">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.9" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-listeners">
+            
+                    
+                    监听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.10" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-metrics">
+            
+                    
+                    统计指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.11" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-stats">
+            
+                    
+                    状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.12" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-alarms">
+            
+                    
+                    告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.13" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-banned">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.14" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-rules">
+            
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.15" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-actions">
+            
+                    
+                    动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.16" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-resource-types">
+            
+                    
+                    资源类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.17" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-resources">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    规则引擎
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="rule-engine.html">
+            
+                <a href="rule-engine.html">
+            
+                    
+                    规则引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="rule-examples.html">
+            
+                <a href="rule-examples.html">
+            
+                    
+                    创建规则举例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="cluster.html">
+            
+                <a href="cluster.html">
+            
+                    
+                    分布集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="bridge.html">
+            
+                <a href="bridge.html">
+            
+                    
+                    消息桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="hooks.html">
+            
+                <a href="hooks.html">
+            
+                    
+                    钩子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="plugins.html">
+            
+                <a href="plugins.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="webhook.html">
+            
+                <a href="webhook.html">
+            
+                    
+                    WebHook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="retained.html">
+            
+                <a href="retained.html">
+            
+                    
+                    保留消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="shared-subscriptions.html">
+            
+                <a href="shared-subscriptions.html">
+            
+                    
+                    共享订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="delay-publish.html">
+            
+                <a href="delay-publish.html">
+            
+                    
+                    延迟发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="proxy-subscriptions.html">
+            
+                <a href="proxy-subscriptions.html">
+            
+                    
+                    代理订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="topic-rewrite.html">
+            
+                <a href="topic-rewrite.html">
+            
+                    
+                    主题重写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.16" data-path="blacklist.html">
+            
+                <a href="blacklist.html">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.17" data-path="system-topic.html">
+            
+                <a href="system-topic.html">
+            
+                    
+                    $SYS 系统主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.18" data-path="multiple-language-support.html">
+            
+                <a href="multiple-language-support.html">
+            
+                    
+                    多语言支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.19" data-path="metrics-and-stats.html">
+            
+                <a href="metrics-and-stats.html">
+            
+                    
+                    指标监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.20" data-path="rate-limit.html">
+            
+                <a href="rate-limit.html">
+            
+                    
+                    速率限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.21" data-path="inflight-window-and-message-queue.html">
+            
+                <a href="inflight-window-and-message-queue.html">
+            
+                    
+                    飞行窗口与消息队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.22" data-path="retransmission.html">
+            
+                <a href="retransmission.html">
+            
+                    
+                    消息重传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.23" data-path="enterprise.html">
+            
+                <a href="enterprise.html">
+            
+                    
+                    企业功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    教程指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../tutorial/device-management.html">
+            
+                <a href="../tutorial/device-management.html">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../tutorial/turn.html">
+            
+                <a href="../tutorial/turn.html">
+            
+                    
+                    系统调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../tutorial/deploy.html">
+            
+                <a href="../tutorial/deploy.html">
+            
+                    
+                    生产部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="prometheus.html">
+            
+                <a href="prometheus.html">
+            
+                    
+                    Prometheus 监控告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../tutorial/benchmark.html">
+            
+                <a href="../tutorial/benchmark.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../design/">
+            
+                <a href="../design/">
+            
+                    
+                    架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    SDK & Tools
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../development/client.html">
+            
+                <a href="../development/client.html">
+            
+                    
+                    客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../development/resource.html">
+            
+                <a href="../development/resource.html">
+            
+                    
+                    其他资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    FAQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    入门概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../faq/use-guide.html">
+            
+                <a href="../faq/use-guide.html">
+            
+                    
+                    使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../faq/deployment.html">
+            
+                <a href="../faq/deployment.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../faq/error.html">
+            
+                <a href="../faq/error.html">
+            
+                    
+                    常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../faq/enterprise.html">
+            
+                <a href="../faq/enterprise.html">
+            
+                    
+                    商业服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../faq/tags.html">
+            
+                <a href="../faq/tags.html">
+            
+                    
+                    FAQ 标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../configuration/">
+            
+                <a href="../configuration/">
+            
+                    
+                    配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../awesome/">
+            
+                <a href="../awesome/">
+            
+                    
+                    相关资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >分布集群</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5206;&#x5E03;&#x5F0F;&#x96C6;&#x7FA4;">&#x5206;&#x5E03;&#x5F0F;&#x96C6;&#x7FA4;</h1>
+<h2 id="distributed-erlang">&#x5206;&#x5E03;&#x5F0F; Erlang </h2>
+<p>Erlang/OTP &#x6700;&#x521D;&#x662F;&#x7231;&#x7ACB;&#x4FE1;&#x4E3A;&#x5F00;&#x53D1;&#x7535;&#x4FE1;&#x8BBE;&#x5907;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x5E73;&#x53F0;&#xFF0C;&#x7535;&#x4FE1;&#x8BBE;&#x5907; (&#x8DEF;&#x7531;&#x5668;&#x3001;&#x63A5;&#x5165;&#x7F51;&#x5173;...) &#x5178;&#x578B;&#x8BBE;&#x8BA1;&#x662F;&#x901A;&#x8FC7;&#x80CC;&#x677F;&#x8FDE;&#x63A5;&#x4E3B;&#x63A7;&#x677F;&#x5361;&#x4E0E;&#x591A;&#x5757;&#x4E1A;&#x52A1;&#x677F;&#x5361;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h3 id="node-and-distributed-erlang">&#x8282;&#x70B9;&#x4E0E;&#x5206;&#x5E03;&#x5F0F; Erlang </h3>
+<p>Erlang/OTP &#x8BED;&#x8A00;&#x5E73;&#x53F0;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x7A0B;&#x5E8F;&#xFF0C;&#x7531;&#x5206;&#x5E03;&#x4E92;&#x8054;&#x7684; Erlang &#x8FD0;&#x884C;&#x65F6;&#x7CFB;&#x7EDF;&#x7EC4;&#x6210;&#xFF0C;&#x6BCF;&#x4E2A; Erlang
+&#x8FD0;&#x884C;&#x65F6;&#x7CFB;&#x7EDF;&#x88AB;&#x79F0;&#x4E3A;&#x8282;&#x70B9;(Node)&#xFF0C;&#x8282;&#x70B9;&#x95F4;&#x901A;&#x8FC7; TCP &#x4E24;&#x4E24;&#x4E92;&#x8054;&#xFF0C;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x7F51;&#x72B6;&#x7ED3;&#x6784;&#x3002;</p>
+<p>Erlang &#x8282;&#x70B9;&#x7531;&#x552F;&#x4E00;&#x7684;&#x8282;&#x70B9;&#x540D;&#x79F0;&#x6807;&#x8BC6;&#xFF0C;&#x8282;&#x70B9;&#x540D;&#x79F0;&#x7531; <code>@</code> &#x5206;&#x9694;&#x7684;&#x4E24;&#x90E8;&#x5206;&#x7EC4;&#x6210;:</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>@<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ip-address</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>&#x8282;&#x70B9;&#x95F4;&#x901A;&#x8FC7;&#x8282;&#x70B9;&#x540D;&#x79F0;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x5BFB;&#x5740;&#x3002;&#x4F8B;&#x5982;&#x5728;&#x672C;&#x673A;&#x542F;&#x52A8;&#x56DB;&#x4E2A; shell &#x7EC8;&#x7AEF;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528; <code>-name</code> &#x53C2;&#x6570;&#x5206;&#x522B;&#x542F;&#x52A8;&#x56DB;&#x4E2A; Erlang &#x8282;&#x70B9;:</p>
+<pre class="language-"><code>erl -name node1@127.0.0.1 -setcookie my_nodes
+erl -name node2@127.0.0.1 -setcookie my_nodes
+erl -name node3@127.0.0.1 -setcookie my_nodes
+erl -name node4@127.0.0.1 -setcookie my_nodes
+</code></pre><p>&#x4F7F;&#x7528; <code>node().</code> &#x53EF;&#x67E5;&#x770B;&#x672C;&#x8282;&#x70B9;&#x540D;&#xFF0C;&#x4F7F;&#x7528; <code>nodes().</code> &#x53EF;&#x67E5;&#x770B;&#x5DF2;&#x4E0E;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x7684;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x3002;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5230; &apos;node1@127.0.0.1&apos; &#x7684;&#x63A7;&#x5236;&#x53F0;&#x4E0B;&#xFF0C;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x540D;&#x548C;&#x5DF2;&#x8FDE;&#x63A5;&#x7684;&#x8282;&#x70B9;:</p>
+<pre class="language-"><code>(node1@127.0.0.1) 4&gt; node().
+&apos;node1@127.0.0.1&apos;
+
+(node1@127.0.0.1) 4&gt; nodes().
+[]
+</code></pre><p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x8BA9; node1 &#x53D1;&#x8D77;&#x4E0E;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x7684;&#x8FDE;&#x63A5;:</p>
+<pre class="language-"><code>(node1@127.0.0.1) 1&gt; net_kernel:connect_node(&apos;node2@127.0.0.1&apos;).
+true
+(node1@127.0.0.1) 2&gt; net_kernel:connect_node(&apos;node3@127.0.0.1&apos;).
+true
+(node1@127.0.0.1) 3&gt; net_kernel:connect_node(&apos;node4@127.0.0.1&apos;).
+true
+</code></pre><p>&#x73B0;&#x5728;&#x518D;&#x6B21;&#x53EF;&#x67E5;&#x770B;&#x5DF2;&#x4E0E; node1 &#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x7684;&#x5176;&#x4ED6;&#x8282;&#x70B9;:</p>
+<pre class="language-"><code>(node1@127.0.0.1) 4&gt; nodes().
+[&apos;node2@127.0.0.1&apos;,&apos;node3@127.0.0.1&apos;,&apos;node4@127.0.0.1&apos;]
+</code></pre><p>&#x53EF;&#x4EE5;&#x770B;&#x5230; node2&#x3001;node3&#x3001;node4 &#x90FD;&#x5DF2;&#x4E0E; node1 &#x5EFA;&#x7ACB;&#x4E86;&#x5206;&#x5E03;&#x5F0F;&#x8FDE;&#x63A5;&#xFF0C;&#x56DB;&#x4E2A;&#x8282;&#x70B9;&#x7EC4;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x96C6;&#x7FA4;&#x3002;&#x6CE8;&#x610F;&#x6BCF;&#x5F53;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8282;&#x70B9;&#x52A0;&#x5165;&#x96C6;&#x7FA4;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x4E0E;&#x96C6;&#x7FA4;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x8282;&#x70B9;&#x90FD;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A; TCP &#x8FDE;&#x63A5;&#x3002;&#x81F3;&#x6B64;&#xFF0C;&#x56DB;&#x4E2A;&#x8282;&#x70B9;&#x5B8C;&#x6210;&#x4E86;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x7684;&#x7F51;&#x72B6;&#x7ED3;&#x6784;:</p>
+<p><img src="../assets/cluster_1.png" alt="image"></p>
+<h3 id="distributed-erlang-security">&#x5B89;&#x5168; </h3>
+<p>Erlang &#x8282;&#x70B9;&#x95F4;&#x901A;&#x8FC7; cookie &#x8FDB;&#x884C;&#x4E92;&#x8FDE;&#x8BA4;&#x8BC1;&#x3002;cookie &#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53EA;&#x6709; cookie &#x76F8;&#x540C;&#x7684;&#x4E24;&#x4E2A;&#x8282;&#x70B9;&#x624D;&#x80FD;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x3002;<a href="#node-and-distributed-erlang">&#x4E0A;&#x8282;</a> &#x4E2D;&#x6211;&#x4EEC;&#x66FE;&#x7ECF;&#x4F7F;&#x7528; <code>-setcookie my_nodes</code> &#x53C2;&#x6570;&#x7ED9;&#x56DB;&#x4E2A;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E86;&#x76F8;&#x540C;&#x7684; cookie: <code>my_nodes</code>&#x3002;</p>
+<p>&#x8BE6;&#x89C1;: <a href="http://erlang.org/doc/reference_manual/distributed.html" target="_blank">http://erlang.org/doc/reference_manual/distributed.html</a></p>
+<h3 id="distributed-erlang-protocol">EMQ X Broker &#x96C6;&#x7FA4;&#x534F;&#x8BAE;&#x8BBE;&#x7F6E; </h3>
+<p>Erlang &#x96C6;&#x7FA4;&#x4E2D;&#x5404;&#x8282;&#x70B9;&#x53EF;&#x901A;&#x8FC7; TCPv4&#x3001;TCPv6 &#x6216; TLS &#x65B9;&#x5F0F;&#x8FDE;&#x63A5;&#xFF0C;&#x53EF;&#x5728; <code>etc/emqx.conf</code>
+&#x4E2D;&#x914D;&#x7F6E;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x914D;&#x7F6E;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cluster.proto_dist</td>
+<td>enum</td>
+<td><code>inet_tcp</code></td>
+<td>&#x5206;&#x5E03;&#x5F0F;&#x534F;&#x8BAE;&#xFF0C;&#x53EF;&#x9009;&#x503C;&#xFF1A;<br>  - inet_tcp: &#x4F7F;&#x7528; TCP IPv4<br>  - inet6_tcp: &#x4F7F;&#x7528; TCP IPv6<br>  - inet_tls: &#x4F7F;&#x7528; TLS</td>
+</tr>
+<tr>
+<td>node.ssl_dist_optfile</td>
+<td>&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</td>
+<td><code>etc/ssl_dist.conf</code></td>
+<td>&#x5F53; <code>cluster.proto_dist</code> &#x9009;&#x5B9A;&#x4E3A; inet_tls &#x65F6;&#xFF0C;&#x9700;&#x8981;&#x914D;&#x7F6E; <code>etc/ssl_dist.conf</code> &#x6587;&#x4EF6;&#xFF0C;&#x6307;&#x5B9A; TLS &#x8BC1;&#x4E66;&#x7B49;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="emqx-distribution-design">EMQ X Broker &#x5206;&#x5E03;&#x5F0F;&#x96C6;&#x7FA4;&#x8BBE;&#x8BA1; </h2>
+<p>EMQ X Broker &#x5206;&#x5E03;&#x5F0F;&#x7684;&#x57FA;&#x672C;&#x529F;&#x80FD;&#x662F;&#x5C06;&#x6D88;&#x606F;&#x8F6C;&#x53D1;&#x548C;&#x6295;&#x9012;&#x7ED9;&#x5404;&#x8282;&#x70B9;&#x4E0A;&#x7684;&#x8BA2;&#x9605;&#x8005;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="../assets/design_9.png" alt="image"></p>
+<p>&#x4E3A;&#x5B9E;&#x73B0;&#x6B64;&#x8FC7;&#x7A0B;&#xFF0C;EMQ X Broker &#x7EF4;&#x62A4;&#x4E86;&#x51E0;&#x4E2A;&#x4E0E;&#x4E4B;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1A;&#x8BA2;&#x9605;&#x8868;&#xFF0C;&#x8DEF;&#x7531;&#x8868;&#xFF0C;&#x4E3B;&#x9898;&#x6811;&#x3002;</p>
+<h3 id="emqx-distribution-subscribers">&#x8BA2;&#x9605;&#x8868;: &#x4E3B;&#x9898; - &#x8BA2;&#x9605;&#x8005; </h3>
+<p>MQTT &#x5BA2;&#x6237;&#x7AEF;&#x8BA2;&#x9605;&#x4E3B;&#x9898;&#x65F6;&#xFF0C;EMQ X Broker &#x4F1A;&#x7EF4;&#x62A4;&#x4E3B;&#x9898;(Topic) -&gt; &#x8BA2;&#x9605;&#x8005;(Subscriber) &#x6620;&#x5C04;&#x7684;<strong>&#x8BA2;&#x9605;&#x8868;</strong>&#x3002;&#x8BA2;&#x9605;&#x8868;&#x53EA;&#x5B58;&#x5728;&#x4E8E;&#x8BA2;&#x9605;&#x8005;&#x6240;&#x5728;&#x7684; EMQ X Broker &#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x4F8B;&#x5982;:</p>
+<p>   node1:</p>
+<pre class="language-"><code> topic1 -&gt; client1, client2
+ topic2 -&gt; client3
+</code></pre><p>   node2:</p>
+<pre class="language-"><code> topic1 -&gt; client4
+</code></pre><h3 id="emqx-distribution-routes">&#x8DEF;&#x7531;&#x8868;: &#x4E3B;&#x9898; - &#x8282;&#x70B9; </h3>
+<p>&#x800C;&#x540C;&#x4E00;&#x96C6;&#x7FA4;&#x7684;&#x6240;&#x6709;&#x8282;&#x70B9;&#xFF0C;&#x90FD;&#x4F1A;<strong>&#x590D;&#x5236;</strong>&#x4E00;&#x4EFD;&#x4E3B;&#x9898;(Topic) -&gt; &#x8282;&#x70B9;(Node) &#x6620;&#x5C04;&#x7684;<strong>&#x8DEF;&#x7531;&#x8868;</strong>&#xFF0C;&#x4F8B;&#x5982;:</p>
+<pre class="language-"><code>topic1 -&gt; node1, node2
+topic2 -&gt; node3
+topic3 -&gt; node2, node4
+</code></pre><h3 id="emqx-distribution-trie">&#x4E3B;&#x9898;&#x6811;: &#x5E26;&#x7EDF;&#x914D;&#x7B26;&#x7684;&#x4E3B;&#x9898;&#x5339;&#x914D; </h3>
+<p>&#x9664;&#x8DEF;&#x7531;&#x8868;&#x4E4B;&#x5916;&#xFF0C;EMQ X Broker &#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x4E5F;&#x4F1A;&#x7EF4;&#x62A4;&#x4E00;&#x4EFD;<strong>&#x4E3B;&#x9898;&#x6811;</strong>(Topic Trie) &#x7684;&#x5907;&#x4EFD;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#x4E0B;&#x8FF0;&#x4E3B;&#x9898;&#x8BA2;&#x9605;&#x5173;&#x7CFB;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x5BA2;&#x6237;&#x7AEF;</th>
+<th>&#x8282;&#x70B9;</th>
+<th>&#x8BA2;&#x9605;&#x4E3B;&#x9898;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client1</td>
+<td>node1</td>
+<td>t/+/x, t/+/y</td>
+</tr>
+<tr>
+<td>client2</td>
+<td>node2</td>
+<td>t/#</td>
+</tr>
+<tr>
+<td>client3</td>
+<td>node3</td>
+<td>t/+/x, t/a</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;&#x6240;&#x6709;&#x8BA2;&#x9605;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;EMQ X Broker &#x4E2D;&#x4F1A;&#x7EF4;&#x62A4;&#x5982;&#x4E0B;&#x4E3B;&#x9898;&#x6811; (Topic Trie) &#x548C;&#x8DEF;&#x7531;&#x8868; (Route Table):</p>
+<p><img src="../assets/cluster_2.png" alt="image"></p>
+<h3 id="emqx-distribution-msg-delivery">&#x6D88;&#x606F;&#x6D3E;&#x53D1;&#x8FC7;&#x7A0B; </h3>
+<p>&#x5F53; MQTT &#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x5E03;&#x6D88;&#x606F;&#x65F6;&#xFF0C;&#x6240;&#x5728;&#x8282;&#x70B9;&#x4F1A;&#x6839;&#x636E;&#x6D88;&#x606F;&#x4E3B;&#x9898;&#xFF0C;&#x68C0;&#x7D22;&#x8DEF;&#x7531;&#x8868;&#x5E76;&#x8F6C;&#x53D1;&#x6D88;&#x606F;&#x5230;&#x76F8;&#x5173;&#x8282;&#x70B9;&#xFF0C;&#x518D;&#x7531;&#x76F8;&#x5173;&#x8282;&#x70B9;&#x68C0;&#x7D22;&#x672C;&#x5730;&#x7684;&#x8BA2;&#x9605;&#x8868;&#x5E76;&#x5C06;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x7ED9;&#x76F8;&#x5173;&#x8BA2;&#x9605;&#x8005;&#x3002;</p>
+<p>&#x4F8B;&#x5982; client1 &#x5411;&#x4E3B;&#x9898; <code>t/a</code> &#x53D1;&#x5E03;&#x6D88;&#x606F;&#xFF0C;&#x6D88;&#x606F;&#x5728;&#x8282;&#x70B9;&#x95F4;&#x7684;&#x8DEF;&#x7531;&#x4E0E;&#x6D3E;&#x53D1;&#x6D41;&#x7A0B;:</p>
+<ol>
+<li>client1 &#x53D1;&#x5E03;&#x4E3B;&#x9898;&#x4E3A; <code>t/a</code> &#x7684;&#x6D88;&#x606F;&#x5230;&#x8282;&#x70B9; node1</li>
+<li>node1 &#x901A;&#x8FC7;&#x67E5;&#x8BE2;&#x4E3B;&#x9898;&#x6811;&#xFF0C;&#x5F97;&#x77E5; <code>t/a</code> &#x53EF;&#x5339;&#x914D;&#x5230;&#x73B0;&#x6709;&#x7684; <code>t/a</code>&#x3001;<code>t/#</code> &#x8FD9;&#x4E24;&#x4E2A;&#x4E3B;&#x9898;&#x3002;</li>
+<li>node1 &#x901A;&#x8FC7;&#x67E5;&#x8BE2;&#x8DEF;&#x7531;&#x8868;&#xFF0C;&#x5F97;&#x77E5;&#x4E3B;&#x9898; <code>t/a</code> &#x53EA;&#x5728; node3 &#x4E0A;&#x6709;&#x8BA2;&#x9605;&#x8005;&#xFF0C;&#x800C;&#x4E3B;&#x9898; <code>t/#</code> &#x53EA;&#x5728; node2 &#x4E0A;&#x6709;&#x8BA2;&#x9605;&#x8005;&#x3002;&#x6545; node1 &#x5C06;&#x6D88;&#x606F;&#x8F6C;&#x53D1;&#x7ED9; node2 &#x548C; node3&#x3002;</li>
+<li>node2 &#x6536;&#x5230;&#x8F6C;&#x53D1;&#x6765;&#x7684; <code>t/a</code> &#x6D88;&#x606F;&#x540E;&#xFF0C;&#x67E5;&#x8BE2;&#x672C;&#x5730;&#x8BA2;&#x9605;&#x8868;&#xFF0C;&#x83B7;&#x53D6;&#x672C;&#x8282;&#x70B9;&#x4E0A;&#x8BA2;&#x9605;&#x4E86; <code>t/#</code> &#x7684;&#x8BA2;&#x9605;&#x8005;&#xFF0C;&#x5E76;&#x628A;&#x6D88;&#x606F;&#x6295;&#x9012;&#x7ED9;&#x4ED6;&#x4EEC;&#x3002;</li>
+<li>node3 &#x6536;&#x5230;&#x8F6C;&#x53D1;&#x6765;&#x7684; <code>t/a</code> &#x6D88;&#x606F;&#x540E;&#xFF0C;&#x67E5;&#x8BE2;&#x672C;&#x5730;&#x8BA2;&#x9605;&#x8868;&#xFF0C;&#x83B7;&#x53D6;&#x672C;&#x8282;&#x70B9;&#x4E0A;&#x8BA2;&#x9605;&#x4E86; <code>t/a</code> &#x7684;&#x8BA2;&#x9605;&#x8005;&#xFF0C;&#x5E76;&#x628A;&#x6D88;&#x606F;&#x6295;&#x9012;&#x7ED9;&#x4ED6;&#x4EEC;&#x3002;</li>
+<li>&#x6D88;&#x606F;&#x8F6C;&#x53D1;&#x548C;&#x6295;&#x9012;&#x7ED3;&#x675F;&#x3002;</li>
+</ol>
+<h3 id="emqx-distribution-data-share-shard">&#x6570;&#x636E;&#x5206;&#x7247;&#x4E0E;&#x5171;&#x4EAB;&#x65B9;&#x5F0F; </h3>
+<p>EMQ X Broker &#x7684;&#x8BA2;&#x9605;&#x8868;&#x5728;&#x96C6;&#x7FA4;&#x4E2D;&#x662F;&#x5206;&#x7247;(partitioned)&#x7684;&#xFF0C;&#x800C;&#x4E3B;&#x9898;&#x6811;&#x548C;&#x8DEF;&#x7531;&#x8868;&#x662F;&#x5171;&#x4EAB;(replicated)&#x7684;&#x3002;</p>
+<h2 id="emqx-service-discovery">&#x8282;&#x70B9;&#x53D1;&#x73B0;&#x4E0E;&#x81EA;&#x52A8;&#x96C6;&#x7FA4; </h2>
+<p>EMQ X Broker &#x652F;&#x6301;&#x57FA;&#x4E8E; Ekka &#x5E93;&#x7684;&#x96C6;&#x7FA4;&#x81EA;&#x52A8;&#x53D1;&#x73B0; (Autocluster)&#x3002;Ekka &#x662F;&#x4E3A; Erlang/OTP &#x5E94;&#x7528;&#x5F00;&#x53D1;&#x7684;&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x5E93;&#xFF0C;&#x652F;&#x6301;
+Erlang &#x8282;&#x70B9;&#x81EA;&#x52A8;&#x53D1;&#x73B0; (Service Discovery)&#x3001;&#x81EA;&#x52A8;&#x96C6;&#x7FA4; (Autocluster)&#x3001;&#x8111;&#x88C2;&#x81EA;&#x52A8;&#x6108;&#x5408; (Network Partition
+Autoheal)&#x3001;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x5B95;&#x673A;&#x8282;&#x70B9; (Autoclean)&#x3002;</p>
+<p>EMQ X &#x652F;&#x6301;&#x591A;&#x79CD;&#x8282;&#x70B9;&#x53D1;&#x73B0;&#x7B56;&#x7565;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x7B56;&#x7565;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>manual</td>
+<td>&#x624B;&#x52A8;&#x547D;&#x4EE4;&#x521B;&#x5EFA;&#x96C6;&#x7FA4;</td>
+</tr>
+<tr>
+<td>static</td>
+<td>&#x9759;&#x6001;&#x8282;&#x70B9;&#x5217;&#x8868;&#x81EA;&#x52A8;&#x96C6;&#x7FA4;</td>
+</tr>
+<tr>
+<td>mcast</td>
+<td>UDP &#x7EC4;&#x64AD;&#x65B9;&#x5F0F;&#x81EA;&#x52A8;&#x96C6;&#x7FA4;</td>
+</tr>
+<tr>
+<td>dns</td>
+<td>DNS A &#x8BB0;&#x5F55;&#x81EA;&#x52A8;&#x96C6;&#x7FA4;</td>
+</tr>
+<tr>
+<td>etcd</td>
+<td>&#x901A;&#x8FC7; etcd &#x81EA;&#x52A8;&#x96C6;&#x7FA4;</td>
+</tr>
+<tr>
+<td>k8s</td>
+<td>Kubernetes &#x670D;&#x52A1;&#x81EA;&#x52A8;&#x96C6;&#x7FA4;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="emqx-service-discovery-manual">manual &#x624B;&#x52A8;&#x521B;&#x5EFA;&#x96C6;&#x7FA4; </h3>
+<p>&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x4E3A;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x96C6;&#x7FA4;&#xFF0C;&#x8282;&#x70B9;&#x987B;&#x901A;&#x8FC7; ./bin/emqx_ctl join \<node\> &#x547D;&#x4EE4;&#x52A0;&#x5165;:</node\></p>
+<pre class="language-"><code>cluster.discovery = manual
+</code></pre><h3 id="emqx-service-discovery-static">&#x57FA;&#x4E8E; static &#x8282;&#x70B9;&#x5217;&#x8868;&#x81EA;&#x52A8;&#x96C6;&#x7FA4; </h3>
+<p>&#x914D;&#x7F6E;&#x56FA;&#x5B9A;&#x7684;&#x8282;&#x70B9;&#x5217;&#x8868;&#xFF0C;&#x81EA;&#x52A8;&#x53D1;&#x73B0;&#x5E76;&#x521B;&#x5EFA;&#x96C6;&#x7FA4;:</p>
+<pre class="language-"><code>cluster.discovery = static
+cluster.static.seeds = emqx1@127.0.0.1,emqx2@127.0.0.1
+</code></pre><h3 id="emqx-service-discovery-mcast">&#x57FA;&#x4E8E; mcast &#x7EC4;&#x64AD;&#x81EA;&#x52A8;&#x96C6;&#x7FA4; </h3>
+<p>&#x57FA;&#x4E8E; UDP &#x7EC4;&#x64AD;&#x81EA;&#x52A8;&#x53D1;&#x73B0;&#x5E76;&#x521B;&#x5EFA;&#x96C6;&#x7FA4;:</p>
+<pre class="language-"><code>cluster.discovery = mcast
+cluster.mcast.addr = 239.192.0.1
+cluster.mcast.ports = 4369,4370
+cluster.mcast.iface = 0.0.0.0
+cluster.mcast.ttl = 255
+cluster.mcast.loop = on
+</code></pre><h3 id="emqx-service-discovery-dns">&#x57FA;&#x4E8E; DNS A &#x8BB0;&#x5F55;&#x81EA;&#x52A8;&#x96C6;&#x7FA4; </h3>
+<p>&#x57FA;&#x4E8E; DNS A &#x8BB0;&#x5F55;&#x81EA;&#x52A8;&#x53D1;&#x73B0;&#x5E76;&#x521B;&#x5EFA;&#x96C6;&#x7FA4;:</p>
+<pre class="language-"><code>cluster.discovery = dns
+cluster.dns.name = localhost
+cluster.dns.app  = ekka
+</code></pre><h3 id="emqx-service-discovery-etcd">&#x57FA;&#x4E8E; etcd &#x81EA;&#x52A8;&#x96C6;&#x7FA4; </h3>
+<p>&#x57FA;&#x4E8E; <a href="https://coreos.com/etcd/" target="_blank">etcd</a> &#x81EA;&#x52A8;&#x53D1;&#x73B0;&#x5E76;&#x521B;&#x5EFA;&#x96C6;&#x7FA4;:</p>
+<pre class="language-"><code>cluster.discovery = etcd
+cluster.etcd.server = http://127.0.0.1:2379
+cluster.etcd.prefix = emqcl
+cluster.etcd.node_ttl = 1m
+</code></pre><h3 id="emqx-service-discovery-k8s">&#x57FA;&#x4E8E; kubernetes &#x81EA;&#x52A8;&#x96C6;&#x7FA4; </h3>
+<p><a href="https://kubernetes.io/" target="_blank">Kubernetes</a> &#x4E0B;&#x81EA;&#x52A8;&#x53D1;&#x73B0;&#x5E76;&#x521B;&#x5EFA;&#x96C6;&#x7FA4;:</p>
+<pre class="language-"><code>cluster.discovery = k8s
+cluster.k8s.apiserver = http://10.110.111.204:8080
+cluster.k8s.service_name = ekka
+cluster.k8s.address_type = ip
+cluster.k8s.app_name = ekka
+</code></pre><h3 id="emqx-service-discovery-manual-tutorial">&#x624B;&#x52A8;(manual) &#x65B9;&#x5F0F;&#x7BA1;&#x7406;&#x96C6;&#x7FA4;&#x4ECB;&#x7ECD; </h3>
+<p>&#x5047;&#x8BBE;&#x8981;&#x5728;&#x4E24;&#x53F0;&#x670D;&#x52A1;&#x5668; s1.emqx.io, s2.emqx.io &#x4E0A;&#x90E8;&#x7F72; EMQ X Broker &#x96C6;&#x7FA4;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x8282;&#x70B9;&#x540D;</th>
+<th>&#x4E3B;&#x673A;&#x540D; (FQDN)</th>
+<th>IP &#x5730;&#x5740;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>emqx@s1.emqx.io &#x6216; emqx@192.168.0.10</td>
+<td>s1.emqx.io</td>
+<td>192.168.0.10</td>
+</tr>
+<tr>
+<td>emqx@s2.emqx.io &#x6216; emqx@192.168.0.20</td>
+<td>s2.emqx.io</td>
+<td>192.168.0.20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x8282;&#x70B9;&#x540D;&#x683C;&#x5F0F;&#x4E3A; <a href="mailto:Name@Host" target="_blank">Name@Host</a>, Host &#x5FC5;&#x987B;&#x662F; IP &#x5730;&#x5740;&#x6216; FQDN (&#x4E3B;&#x673A;&#x540D;&#x3002;&#x57DF;&#x540D;)</p>
+<h4 id="&#x914D;&#x7F6E;-emqxs1emqxio-&#x8282;&#x70B9;">&#x914D;&#x7F6E; emqx@s1.emqx.io &#x8282;&#x70B9;</h4>
+<p>emqx/etc/emqx.conf:</p>
+<pre class="language-"><code>node.name = emqx@s1.emqx.io
+&#x6216;
+node.name = emqx@192.168.0.10
+</code></pre><p>&#x4E5F;&#x53EF;&#x901A;&#x8FC7;&#x73AF;&#x5883;&#x53D8;&#x91CF;:</p>
+<pre class="language-"><code>export EMQX_NODE_NAME=emqx@s1.emqx.io &amp;&amp; ./bin/emqx start
+</code></pre><p><strong>&#x6CE8;&#x610F;:</strong> &#x8282;&#x70B9;&#x542F;&#x52A8;&#x52A0;&#x5165;&#x96C6;&#x7FA4;&#x540E;&#xFF0C;&#x8282;&#x70B9;&#x540D;&#x79F0;&#x4E0D;&#x80FD;&#x53D8;&#x66F4;&#x3002;</p>
+<h4 id="&#x914D;&#x7F6E;-emqxs2emqxio-&#x8282;&#x70B9;">&#x914D;&#x7F6E; emqx@s2.emqx.io &#x8282;&#x70B9;</h4>
+<p>emqx/etc/emqx.conf:</p>
+<pre class="language-"><code>node.name = emqx@s2.emqx.io
+&#x6216;
+node.name = emqx@192.168.0.20
+</code></pre><h4 id="&#x8282;&#x70B9;&#x52A0;&#x5165;&#x96C6;&#x7FA4;">&#x8282;&#x70B9;&#x52A0;&#x5165;&#x96C6;&#x7FA4;</h4>
+<p>&#x542F;&#x52A8;&#x4E24;&#x53F0;&#x8282;&#x70B9;&#x540E;&#xFF0C;&#x5728; s2.emqx.io &#x4E0A;&#x6267;&#x884C;:</p>
+<pre class="language-"><code>$ ./bin/emqx_ctl cluster join emqx@s1.emqx.io
+
+Join the cluster successfully.
+Cluster status: [{running_nodes,[&apos;emqx@s1.emqx.io&apos;,&apos;emqx@s2.emqx.io&apos;]}]
+</code></pre><p>&#x6216;&#x8005;&#x5728; s1.emqx.io &#x4E0A;&#x6267;&#x884C;:</p>
+<pre class="language-"><code>$ ./bin/emqx_ctl cluster join emqx@s2.emqx.io
+
+Join the cluster successfully.
+Cluster status: [{running_nodes,[&apos;emqx@s1.emqx.io&apos;,&apos;emqx@s2.emqx.io&apos;]}]
+</code></pre><p>&#x5728;&#x4EFB;&#x610F;&#x8282;&#x70B9;&#x4E0A;&#x67E5;&#x8BE2;&#x96C6;&#x7FA4;&#x72B6;&#x6001;:</p>
+<pre class="language-"><code>$ ./bin/emqx_ctl cluster status
+
+Cluster status: [{running_nodes,[&apos;emqx@s1.emqx.io&apos;,&apos;emqx@s2.emqx.io&apos;]}]
+</code></pre><h4 id="&#x9000;&#x51FA;&#x96C6;&#x7FA4;">&#x9000;&#x51FA;&#x96C6;&#x7FA4;</h4>
+<p>&#x8282;&#x70B9;&#x9000;&#x51FA;&#x96C6;&#x7FA4;&#xFF0C;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;:</p>
+<ol>
+<li>leave: &#x8BA9;&#x672C;&#x8282;&#x70B9;&#x9000;&#x51FA;&#x96C6;&#x7FA4;</li>
+<li>force-leave: &#x4ECE;&#x96C6;&#x7FA4;&#x5220;&#x9664;&#x5176;&#x4ED6;&#x8282;&#x70B9;</li>
+</ol>
+<p>&#x8BA9; emqx@s2.emqx.io &#x4E3B;&#x52A8;&#x9000;&#x51FA;&#x96C6;&#x7FA4;:</p>
+<pre class="language-"><code>$ ./bin/emqx_ctl cluster leave
+</code></pre><p>&#x6216;&#x5728; s1.emqx.io &#x4E0A;&#xFF0C;&#x4ECE;&#x96C6;&#x7FA4;&#x5220;&#x9664; emqx@s2.emqx.io &#x8282;&#x70B9;:</p>
+<pre class="language-"><code>$ ./bin/emqx_ctl cluster force-leave emqx@s2.emqx.io
+</code></pre><h2 id="emqx-cluster-autoheal">&#x96C6;&#x7FA4;&#x8111;&#x88C2;&#x4E0E;&#x81EA;&#x52A8;&#x6108;&#x5408; </h2>
+<p><em>EMQ X</em> &#x652F;&#x6301;&#x96C6;&#x7FA4;&#x8111;&#x88C2;&#x81EA;&#x52A8;&#x6062;&#x590D;(Network Partition Autoheal)&#xFF0C;&#x53EF;&#x5728; <code>etc/emqx.conf</code> &#x4E2D;&#x914D;&#x7F6E;:</p>
+<pre class="language-"><code>cluster.autoheal = on
+</code></pre><p>&#x96C6;&#x7FA4;&#x8111;&#x88C2;&#x81EA;&#x52A8;&#x6062;&#x590D;&#x6D41;&#x7A0B;:</p>
+<ol>
+<li>&#x8282;&#x70B9;&#x6536;&#x5230; Mnesia &#x7684; <code>inconsistent_database</code> &#x4E8B;&#x4EF6; 3 &#x79D2;&#x540E;&#x8FDB;&#x884C;&#x96C6;&#x7FA4;&#x8111;&#x88C2;&#x786E;&#x8BA4;&#xFF1B;</li>
+<li>&#x8282;&#x70B9;&#x786E;&#x8BA4;&#x96C6;&#x7FA4;&#x8111;&#x88C2;&#x53D1;&#x751F;&#x540E;&#xFF0C;&#x5411; Leader &#x8282;&#x70B9; (&#x96C6;&#x7FA4;&#x4E2D;&#x6700;&#x65E9;&#x542F;&#x52A8;&#x8282;&#x70B9;) &#x4E0A;&#x62A5;&#x8111;&#x88C2;&#x6D88;&#x606F;&#xFF1B;</li>
+<li>Leader &#x8282;&#x70B9;&#x5EF6;&#x8FDF;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x540E;&#xFF0C;&#x5728;&#x5168;&#x90E8;&#x8282;&#x70B9;&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x4E0B;&#x521B;&#x5EFA;&#x8111;&#x88C2;&#x89C6;&#x56FE; (SplitView)&#xFF1B;</li>
+<li>Leader &#x8282;&#x70B9;&#x5728;&#x591A;&#x6570;&#x6D3E; (majority) &#x5206;&#x533A;&#x9009;&#x62E9;&#x96C6;&#x7FA4;&#x81EA;&#x6108;&#x7684; Coordinator &#x8282;&#x70B9;&#xFF1B;</li>
+<li>Coordinator &#x8282;&#x70B9;&#x91CD;&#x542F;&#x5C11;&#x6570;&#x6D3E; (minority) &#x5206;&#x533A;&#x8282;&#x70B9;&#x6062;&#x590D;&#x96C6;&#x7FA4;&#x3002;</li>
+</ol>
+<h2 id="emqx-cluster-autoclean">&#x96C6;&#x7FA4;&#x8282;&#x70B9;&#x81EA;&#x52A8;&#x6E05;&#x9664; </h2>
+<p><em>EMQ X</em> &#x652F;&#x6301;&#x4ECE;&#x96C6;&#x7FA4;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x5B95;&#x673A;&#x8282;&#x70B9; (Autoclean)&#xFF0C;&#x53EF;&#x5728; <code>etc/emqx.conf</code> &#x4E2D;&#x914D;&#x7F6E;:</p>
+<pre class="language-"><code>cluster.autoclean = 5m
+</code></pre><h2 id="emqx-cluster-behind-firewall">&#x9632;&#x706B;&#x5899;&#x8BBE;&#x7F6E; </h2>
+<p>&#x5982;&#x679C;&#x96C6;&#x7FA4;&#x8282;&#x70B9;&#x95F4;&#x5B58;&#x5728;&#x9632;&#x706B;&#x5899;&#xFF0C;&#x9632;&#x706B;&#x5899;&#x9700;&#x8981;&#x5F00;&#x542F; 4369 &#x7AEF;&#x53E3;&#x548C;&#x4E00;&#x4E2A; TCP &#x7AEF;&#x53E3;&#x6BB5;&#x3002;4369 &#x7531; epmd &#x7AEF;&#x53E3;&#x6620;&#x5C04;&#x670D;&#x52A1;&#x4F7F;&#x7528;&#xFF0C;TCP
+&#x7AEF;&#x53E3;&#x6BB5;&#x7528;&#x4E8E;&#x8282;&#x70B9;&#x95F4;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x4E0E;&#x901A;&#x4FE1;&#x3002;</p>
+<p>&#x9632;&#x706B;&#x5899;&#x8BBE;&#x7F6E;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x5728; <code>emqx/etc/emqx.conf</code> &#x4E2D;&#x914D;&#x7F6E;&#x76F8;&#x540C;&#x7684;&#x7AEF;&#x53E3;&#x6BB5;:</p>
+<pre class="language-"><code>    ## Distributed node port range
+    node.dist_listen_min = 6369
+    node.dist_listen_max = 7369
+</code></pre><p><div id="gitalk-container"></div><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="rule-examples.html" class="navigation navigation-prev " aria-label="Previous page: 创建规则举例">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bridge.html" class="navigation navigation-next " aria-label="Next page: 消息桥接">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"分布集群","date":"2020-02-25T18:39:23.000Z","author":"terry-xiaoyu","keywords":null,"description":null,"category":null,"ref":"undefined","level":"1.4.6","depth":2,"next":{"title":"消息桥接","level":"1.4.7","depth":2,"path":"advanced/bridge.md","ref":"advanced/bridge.md","articles":[]},"previous":{"title":"创建规则举例","level":"1.4.5.2","depth":3,"path":"advanced/rule-examples.md","ref":"advanced/rule-examples.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","-anchor-navigation-ex","hints","simpletabs","simple-page-toc","cuav-chapters","edit-link","gittalk","scripts","livereload"],"styles":{"website":"_styles/website.css","ebook":"_styles/ebook.css","pdf":"_styles/pdf.css","mobi":"_styles/mobi.css","epub":"_styles/epub.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"github":{"url":"https://github.com/emqx/emqx"},"livereload":{},"simple-page-toc":{},"scripts":{"files":["./_js/emqx-docs.js"]},"search":{},"local-pagefooter":{"copyright":"© Copyright 2016-2020, EMQ Technologies Co., Ltd.","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"simpletabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":3},"sharing":{"facebook":false,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑","base":"https://github.com/emqx/emqx-docs-cn/source"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"gittalk":{"clientID":"3b2217a86bdbdc09d0d8","clientSecret":"aee2b15ea39c494eb80b775513d38791895adb63","repo":"emqx-docs-cn","owner":"emqx","admin":["wivwiv"],"distractionFreeMode":false}},"theme":"default","author":"EMQX Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EMQ X Broker 使用文档","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":"emqtt"}},"gitbook":"*","description":"EMQ X 百万级 MQTT 消息服务器使用文档"},"file":{"path":"advanced/cluster.md","mtime":"2020-03-02T07:24:01.699Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-09T09:50:08.815Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-simpletabs/tabs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gittalk/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scripts/a4b9e4501b1d3cb607c93aad09cd774d-emqx-docs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
