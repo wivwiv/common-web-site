@@ -1,0 +1,12 @@
+{
+  "name": "common-web-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wivwiv/common-web-site.git",
+  "author": "wivwiv <bigpar@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@now/node": "^1.4.1",
+    "axios": "^0.19.2"
+  }
+}
