@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>用户名认证 · EMQ X Broker 使用文档</title>
+        <title>Username 认证 · EMQ X Broker 使用文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,7 +17,7 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
                 
             
                 
@@ -50,7 +50,9 @@
 
     
         
-        <link rel="stylesheet" href="../_styles/website.css">
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
         
     
         
@@ -325,7 +327,7 @@
                 <a href="auth-username.html">
             
                     
-                    用户名认证
+                    Username 认证
             
                 </a>
             
@@ -1186,9 +1188,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../design/">
+        <li class="chapter " data-level="1.6" data-path="../design/design.html">
             
-                <a href="../design/">
+                <a href="../design/design.html">
             
                     
                     架构设计
@@ -1336,9 +1338,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../faq/">
+        <li class="chapter " data-level="1.8.1" data-path="../faq/faq.html">
             
-                <a href="../faq/">
+                <a href="../faq/faq.html">
             
                     
                     入门概念
@@ -1419,9 +1421,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="../configuration/">
+        <li class="chapter " data-level="1.9" data-path="../configuration/configuration.html">
             
-                <a href="../configuration/">
+                <a href="../configuration/configuration.html">
             
                     
                     配置项
@@ -1432,9 +1434,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../awesome/">
+        <li class="chapter " data-level="1.10" data-path="../awesome/awesome.html">
             
-                <a href="../awesome/">
+                <a href="../awesome/awesome.html">
             
                     
                     相关资料
@@ -1475,7 +1477,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >用户名认证</a>
+        <a href=".." >Username 认证</a>
     </h1>
 </div>
 
@@ -1490,14 +1492,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7528;&#x6237;&#x540D;&#x8BA4;&#x8BC1;">&#x7528;&#x6237;&#x540D;&#x8BA4;&#x8BC1;</h1>
-<p>&#x7528;&#x6237;&#x540D;&#x8BA4;&#x8BC1;&#x4F7F;&#x7528;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9884;&#x8BBE;&#x5BA2;&#x6237;&#x7AEF;&#x7528;&#x6237;&#x540D;&#x4E0E;&#x5BC6;&#x7801;&#xFF0C;&#x652F;&#x6301;&#x901A;&#x8FC7; HTTP API &#x7BA1;&#x7406;&#x8BA4;&#x8BC1;&#x6570;&#x636E;&#x3002;</p>
-<p>&#x7528;&#x6237;&#x540D;&#x8BA4;&#x8BC1;&#x4E0D;&#x4F9D;&#x8D56;&#x5916;&#x90E8;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x4F7F;&#x7528;&#x4E0A;&#x8DB3;&#x591F;&#x7B80;&#x5355;&#x8F7B;&#x91CF;&#x3002;</p>
+                                <h1 id="username-&#x8BA4;&#x8BC1;">Username &#x8BA4;&#x8BC1;</h1>
+<p>Username &#x8BA4;&#x8BC1;&#x4F7F;&#x7528;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9884;&#x8BBE;&#x5BA2;&#x6237;&#x7AEF;&#x7528;&#x6237;&#x540D;&#x4E0E;&#x5BC6;&#x7801;&#xFF0C;&#x652F;&#x6301;&#x901A;&#x8FC7; HTTP API &#x7BA1;&#x7406;&#x8BA4;&#x8BC1;&#x6570;&#x636E;&#x3002;</p>
+<p>Username &#x8BA4;&#x8BC1;&#x4E0D;&#x4F9D;&#x8D56;&#x5916;&#x90E8;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x4F7F;&#x7528;&#x4E0A;&#x8DB3;&#x591F;&#x7B80;&#x5355;&#x8F7B;&#x91CF;&#x3002;</p>
 <p>&#x63D2;&#x4EF6;&#xFF1A;</p>
 <pre class="language-"><code class="lang-bash">emqx_auth_username
 </code></pre>
 <h2 id="&#x54C8;&#x5E0C;&#x65B9;&#x6CD5;">&#x54C8;&#x5E0C;&#x65B9;&#x6CD5;</h2>
-<p>&#x7528;&#x6237;&#x540D;&#x8BA4;&#x8BC1;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; sha256 &#x8FDB;&#x884C;&#x5BC6;&#x7801;&#x54C8;&#x5E0C;&#x52A0;&#x5BC6;&#xFF0C;&#x53EF;&#x5728; <code>etc/plugins/emqx_auth_username.conf</code> &#x4E2D;&#x66F4;&#x6539;&#xFF1A;</p>
+<p>Username &#x8BA4;&#x8BC1;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; sha256 &#x8FDB;&#x884C;&#x5BC6;&#x7801;&#x54C8;&#x5E0C;&#x52A0;&#x5BC6;&#xFF0C;&#x53EF;&#x5728; <code>etc/plugins/emqx_auth_username.conf</code> &#x4E2D;&#x66F4;&#x6539;&#xFF1A;</p>
 <pre class="language-"><code class="lang-bash"><span class="token comment"># etc/plugins/emqx_auth_username.conf</span>
 
 <span class="token comment">## Value: plain | md5 | sha | sha256 </span>
@@ -1632,7 +1634,7 @@ DELETE api/v4/auth_username/<span class="token variable">${username}</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"用户名认证","date":"2020-02-07T17:15:26.000Z","author":"wivwiv","keywords":null,"description":null,"category":null,"ref":"undefined","level":"1.4.1.2","depth":3,"next":{"title":"Cliend ID 认证","level":"1.4.1.3","depth":3,"path":"advanced/auth-clientid.md","ref":"advanced/auth-clientid.md","articles":[]},"previous":{"title":"认证","level":"1.4.1.1","depth":3,"path":"advanced/auth.md","ref":"advanced/auth.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","-anchor-navigation-ex","hints","simpletabs","simple-page-toc","cuav-chapters","edit-link","gittalk","scripts"],"styles":{"website":"_styles/website.css","ebook":"_styles/ebook.css","pdf":"_styles/pdf.css","mobi":"_styles/mobi.css","epub":"_styles/epub.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"github":{"url":"https://github.com/emqx/emqx"},"simple-page-toc":{},"scripts":{"files":["./_js/emqx-docs.js"]},"search":{},"local-pagefooter":{"copyright":"© Copyright 2016-2020, EMQ Technologies Co., Ltd.","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"simpletabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":3},"sharing":{"facebook":false,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑","base":"https://github.com/emqx/emqx-docs-cn/source"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"gittalk":{"clientID":"3b2217a86bdbdc09d0d8","clientSecret":"aee2b15ea39c494eb80b775513d38791895adb63","repo":"emqx-docs-cn","owner":"emqx","admin":["wivwiv"],"distractionFreeMode":false}},"theme":"default","author":"EMQX Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EMQ X Broker 使用文档","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":"emqtt"}},"gitbook":"*","description":"EMQ X 百万级 MQTT 消息服务器使用文档"},"file":{"path":"advanced/auth-username.md","mtime":"2020-03-12T06:50:11.471Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-13T03:27:18.827Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Username 认证","date":"2020-02-07T17:15:26.000Z","author":"wivwiv","keywords":null,"description":null,"category":null,"ref":"undefined","level":"1.4.1.2","depth":3,"next":{"title":"Cliend ID 认证","level":"1.4.1.3","depth":3,"path":"advanced/auth-clientid.md","ref":"advanced/auth-clientid.md","articles":[]},"previous":{"title":"认证","level":"1.4.1.1","depth":3,"path":"advanced/auth.md","ref":"advanced/auth.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","-anchor-navigation-ex","hints","simpletabs","simple-page-toc","cuav-chapters","edit-link","gittalk","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":[]},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"github":{"url":"https://github.com/emqx/emqx"},"simple-page-toc":{},"scripts":{"files":["./_js/emqx-docs.js"]},"search":{},"local-pagefooter":{"copyright":"© Copyright 2016-2020, EMQ Technologies Co., Ltd.","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"simpletabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":3},"sharing":{"facebook":false,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑","base":"https://github.com/emqx/emqx-docs-cn/source"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"gittalk":{"clientID":"3b2217a86bdbdc09d0d8","clientSecret":"aee2b15ea39c494eb80b775513d38791895adb63","repo":"emqx-docs-cn","owner":"emqx","admin":["wivwiv"],"distractionFreeMode":false}},"theme":"default","author":"EMQX Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EMQ X Broker 使用文档","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":"emqtt"}},"gitbook":"*","description":"EMQ X 百万级 MQTT 消息服务器使用文档"},"file":{"path":"advanced/auth-username.md","mtime":"2020-03-19T02:31:38.775Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-19T08:09:56.030Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

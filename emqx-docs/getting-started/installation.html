@@ -17,7 +17,7 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
                 
             
                 
@@ -50,7 +50,9 @@
 
     
         
-        <link rel="stylesheet" href="../_styles/website.css">
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
         
     
         
@@ -323,7 +325,7 @@
                 <a href="../advanced/auth-username.html">
             
                     
-                    用户名认证
+                    Username 认证
             
                 </a>
             
@@ -1184,9 +1186,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../design/">
+        <li class="chapter " data-level="1.6" data-path="../design/design.html">
             
-                <a href="../design/">
+                <a href="../design/design.html">
             
                     
                     架构设计
@@ -1334,9 +1336,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../faq/">
+        <li class="chapter " data-level="1.8.1" data-path="../faq/faq.html">
             
-                <a href="../faq/">
+                <a href="../faq/faq.html">
             
                     
                     入门概念
@@ -1417,9 +1419,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="../configuration/">
+        <li class="chapter " data-level="1.9" data-path="../configuration/configuration.html">
             
-                <a href="../configuration/">
+                <a href="../configuration/configuration.html">
             
                     
                     配置项
@@ -1430,9 +1432,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../awesome/">
+        <li class="chapter " data-level="1.10" data-path="../awesome/awesome.html">
             
-                <a href="../awesome/">
+                <a href="../awesome/awesome.html">
             
                     
                     相关资料
@@ -1489,7 +1491,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h1>
-<p>EMQ X Broker &#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x7CFB;&#x7EDF;:</p>
+<p>EMQ X Broker &#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;:</p>
 <ul>
 <li>Centos6</li>
 <li>Centos7</li>
@@ -1631,7 +1633,7 @@ ok</code></pre>
 </li>
 <li><p>&#x5378;&#x8F7D; EMQ X Broker</p><pre class="language-"><code>$ sudo zypper rm emqx</code></pre>
 </li></ol>
-</div><div role="tabpanel" class="tab-pane " id="binary"><h2 id="&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5;-linux">&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5; (Linux)</h2><ol><li><p>&#x901A;&#x8FC7; <a href="https://www.emqx.io/downloads/broker?osType=Linux" target="_blank">emqx.io</a> &#x6216; <a href="https://github.com/emqx/emqx/releases" target="_blank">github</a> &#x9009;&#x62E9;&#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#xFF0C;&#x7136;&#x540E;&#x4E0B;&#x8F7D;&#x8981;&#x5B89;&#x88C5;&#x7684; EMQ X Broker &#x7248;&#x672C;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x3002;</p></li>
+</div><div role="tabpanel" class="tab-pane " id="binary"><h2 id="&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5;-linux">&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5; (Linux)</h2><ol><li><p>&#x901A;&#x8FC7; <a href="https://www.emqx.io/downloads/broker?osType=Linux" target="_blank">emqx.io</a> &#x6216; <a href="https://github.com/emqx/emqx/releases" target="_blank">Github</a> &#x9009;&#x62E9;&#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#xFF0C;&#x7136;&#x540E;&#x4E0B;&#x8F7D;&#x8981;&#x5B89;&#x88C5;&#x7684; EMQ X Broker &#x7248;&#x672C;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x3002;</p></li>
 <li><p>&#x5B89;&#x88C5; EMQ X Broker&#xFF0C;&#x5C06;&#x4E0B;&#x9762;&#x7684;&#x8DEF;&#x5F84;&#x66F4;&#x6539;&#x4E3A;&#x60A8;&#x4E0B;&#x8F7D; EMQ X Broker &#x8F6F;&#x4EF6;&#x5305;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p><ul><li><p>RPM &#x5305;:</p><pre class="language-"><code class="lang-shell">  $ <span class="token function">sudo</span> <span class="token function">rpm</span> -ivh emqx-cenots7-v4.0.0.x86_64.rpm</code></pre>
 </li>
 <li><p>DEB &#x5305;:</p><pre class="language-"><code>$ sudo dpkg -i emqx-ubuntu18.04-v4.0.0_amd64.deb</code></pre>
@@ -1657,7 +1659,7 @@ ok</code></pre>
 <li><p>RPM &#x5305;:</p><pre class="language-"><code>$ rpm -e emqx</code></pre>
 </li></ul>
 </li></ol>
-</div><div role="tabpanel" class="tab-pane " id="zip"><h2 id="zip-&#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5;-linux&#x3001;maxos&#x3001;windows">ZIP &#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5; (Linux&#x3001;MaxOS&#x3001;Windows)</h2><ol><li><p>&#x901A;&#x8FC7; <a href="https://www.emqx.io/downloads/broker?osType=Linux" target="_blank">emqx.io</a> &#x6216; <a href="https://github.com/emqx/emqx/releases" target="_blank">github</a> &#x4E0B;&#x8F7D;&#x8981;&#x5B89;&#x88C5;&#x7684; EMQ X Broker &#x7248;&#x672C;&#x7684; zip &#x5305;&#x3002;</p></li>
+</div><div role="tabpanel" class="tab-pane " id="zip"><h2 id="zip-&#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5;-linux&#x3001;maxos&#x3001;windows">ZIP &#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5; (Linux&#x3001;MaxOS&#x3001;Windows)</h2><ol><li><p>&#x901A;&#x8FC7; <a href="https://www.emqx.io/downloads/broker?osType=Linux" target="_blank">emqx.io</a> &#x6216; <a href="https://github.com/emqx/emqx/releases" target="_blank">Github</a> &#x4E0B;&#x8F7D;&#x8981;&#x5B89;&#x88C5;&#x7684; EMQ X Broker &#x7248;&#x672C;&#x7684; zip &#x5305;&#x3002;</p></li>
 <li><p>&#x89E3;&#x538B;&#x7A0B;&#x5E8F;&#x5305;</p><pre class="language-"><code class="lang-shell">$ <span class="token function">unzip</span> emqx-ubuntu18.04-v4.0.0.zip</code></pre>
 </li>
 <li><p>&#x542F;&#x52A8; EMQ X Broker</p><pre class="language-"><code>$ ./bin/emqx start
@@ -1689,7 +1691,7 @@ ok</code></pre>
 </li></ol>
 </div><div role="tabpanel" class="tab-pane " id="docker"><h2 id="&#x901A;&#x8FC7;-docker-&#x8FD0;&#x884C;-&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684;-docker-compose-&#x96C6;&#x7FA4;">&#x901A;&#x8FC7; Docker &#x8FD0;&#x884C; (&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684; docker-compose &#x96C6;&#x7FA4;)</h2><h4 id="&#x8FD0;&#x884C;&#x5355;&#x4E2A;&#x5BB9;&#x5668;">&#x8FD0;&#x884C;&#x5355;&#x4E2A;&#x5BB9;&#x5668;</h4><ol><li><p>&#x83B7;&#x53D6; docker &#x955C;&#x50CF;</p><ul><li><p>&#x901A;&#x8FC7; <a href="https://hub.docker.com/r/emqx/emqx" target="_blank">Docker Hub</a> &#x83B7;&#x53D6;</p><pre class="language-"><code>$ docker pull emqx/emqx:v4.0.0</code></pre>
 </li>
-<li><p>&#x901A;&#x8FC7; <a href="https://www.emqx.io/downloads/broker?osType=Linux" target="_blank">emqx.io</a> &#x6216; <a href="https://github.com/emqx/emqx/releases" target="_blank">github</a> &#x4E0B;&#x8F7D; docker &#x955C;&#x50CF;&#xFF0C;&#x5E76;&#x624B;&#x52A8;&#x52A0;&#x8F7D;</p><pre class="language-"><code>$ wget -O emqx-docker.zip https://www.emqx.io/downloads/broker/v4.0.0/emqx-docker-v4.0.0-alpine3.10-amd64.zip
+<li><p>&#x901A;&#x8FC7; <a href="https://www.emqx.io/downloads/broker?osType=Linux" target="_blank">emqx.io</a> &#x6216; <a href="https://github.com/emqx/emqx/releases" target="_blank">Github</a> &#x4E0B;&#x8F7D; Docker &#x955C;&#x50CF;&#xFF0C;&#x5E76;&#x624B;&#x52A8;&#x52A0;&#x8F7D;</p><pre class="language-"><code>$ wget -O emqx-docker.zip https://www.emqx.io/downloads/broker/v4.0.0/emqx-docker-v4.0.0-alpine3.10-amd64.zip
 $ unzip emqx-docker.zip
 $ docker load &lt; emqx-docker-v4.0.0</code></pre>
 </li></ul>
@@ -1845,7 +1847,7 @@ emqx v4.0.0 is running</code></pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"安装","date":"2020-02-07T17:15:26.000Z","author":"wivwiv","keywords":null,"description":null,"category":null,"ref":"undefined","level":"1.2.1","depth":2,"next":{"title":"启动 EMQ X","level":"1.2.2","depth":2,"path":"getting-started/start.md","ref":"getting-started/start.md","articles":[]},"previous":{"title":"开始使用","level":"1.2","depth":1,"ref":"","articles":[{"title":"安装","level":"1.2.1","depth":2,"path":"getting-started/installation.md","ref":"getting-started/installation.md","articles":[]},{"title":"启动 EMQ X","level":"1.2.2","depth":2,"path":"getting-started/start.md","ref":"getting-started/start.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","-anchor-navigation-ex","hints","simpletabs","simple-page-toc","cuav-chapters","edit-link","gittalk","scripts"],"styles":{"website":"_styles/website.css","ebook":"_styles/ebook.css","pdf":"_styles/pdf.css","mobi":"_styles/mobi.css","epub":"_styles/epub.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"github":{"url":"https://github.com/emqx/emqx"},"simple-page-toc":{},"scripts":{"files":["./_js/emqx-docs.js"]},"search":{},"local-pagefooter":{"copyright":"© Copyright 2016-2020, EMQ Technologies Co., Ltd.","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"simpletabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":3},"sharing":{"facebook":false,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑","base":"https://github.com/emqx/emqx-docs-cn/source"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"gittalk":{"clientID":"3b2217a86bdbdc09d0d8","clientSecret":"aee2b15ea39c494eb80b775513d38791895adb63","repo":"emqx-docs-cn","owner":"emqx","admin":["wivwiv"],"distractionFreeMode":false}},"theme":"default","author":"EMQX Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EMQ X Broker 使用文档","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":"emqtt"}},"gitbook":"*","description":"EMQ X 百万级 MQTT 消息服务器使用文档"},"file":{"path":"getting-started/installation.md","mtime":"2020-03-12T06:50:11.604Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-13T03:27:18.827Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"安装","date":"2020-02-07T17:15:26.000Z","author":"wivwiv","keywords":null,"description":null,"category":null,"ref":"undefined","level":"1.2.1","depth":2,"next":{"title":"启动 EMQ X","level":"1.2.2","depth":2,"path":"getting-started/start.md","ref":"getting-started/start.md","articles":[]},"previous":{"title":"开始使用","level":"1.2","depth":1,"ref":"","articles":[{"title":"安装","level":"1.2.1","depth":2,"path":"getting-started/installation.md","ref":"getting-started/installation.md","articles":[]},{"title":"启动 EMQ X","level":"1.2.2","depth":2,"path":"getting-started/start.md","ref":"getting-started/start.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","-anchor-navigation-ex","hints","simpletabs","simple-page-toc","cuav-chapters","edit-link","gittalk","scripts"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":[]},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"github":{"url":"https://github.com/emqx/emqx"},"simple-page-toc":{},"scripts":{"files":["./_js/emqx-docs.js"]},"search":{},"local-pagefooter":{"copyright":"© Copyright 2016-2020, EMQ Technologies Co., Ltd.","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"simpletabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":3},"sharing":{"facebook":false,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑","base":"https://github.com/emqx/emqx-docs-cn/source"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"gittalk":{"clientID":"3b2217a86bdbdc09d0d8","clientSecret":"aee2b15ea39c494eb80b775513d38791895adb63","repo":"emqx-docs-cn","owner":"emqx","admin":["wivwiv"],"distractionFreeMode":false}},"theme":"default","author":"EMQX Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EMQ X Broker 使用文档","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":"emqtt"}},"gitbook":"*","description":"EMQ X 百万级 MQTT 消息服务器使用文档"},"file":{"path":"getting-started/installation.md","mtime":"2020-03-19T02:26:55.825Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-19T08:09:56.030Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
