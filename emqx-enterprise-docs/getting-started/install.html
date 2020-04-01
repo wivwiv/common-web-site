@@ -1,0 +1,2430 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>安装 · EMQ X 使用文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="EMQX Team">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-simpletabs/tabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="start.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    EMQ X 消息服务器简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../introduction/checklist.html">
+            
+                <a href="../introduction/checklist.html">
+            
+                    
+                    EMQ X 消息服务器功能列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="start.html">
+            
+                <a href="start.html">
+            
+                    
+                    启动 EMQ X
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="command-line.html">
+            
+                <a href="command-line.html">
+            
+                    
+                    基本命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="directory.html">
+            
+                <a href="directory.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="log.html">
+            
+                <a href="log.html">
+            
+                    
+                    日志与追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="dashboard.html">
+            
+                <a href="dashboard.html">
+            
+                    
+                    Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../advanced/retained.html">
+            
+                <a href="../advanced/retained.html">
+            
+                    
+                    保留消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../advanced/shared-subscriptions.html">
+            
+                <a href="../advanced/shared-subscriptions.html">
+            
+                    
+                    共享订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../advanced/delay-publish.html">
+            
+                <a href="../advanced/delay-publish.html">
+            
+                    
+                    延迟发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../advanced/proxy-subscriptions.html">
+            
+                <a href="../advanced/proxy-subscriptions.html">
+            
+                    
+                    代理订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../advanced/bridge.html">
+            
+                <a href="../advanced/bridge.html">
+            
+                    
+                    消息桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../advanced/topic-rewrite.html">
+            
+                <a href="../advanced/topic-rewrite.html">
+            
+                    
+                    主题重写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../advanced/system-topic.html">
+            
+                <a href="../advanced/system-topic.html">
+            
+                    
+                    $SYS 系统主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../advanced/blacklist.html">
+            
+                <a href="../advanced/blacklist.html">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    高级功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    认证
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../advanced/auth.html">
+            
+                <a href="../advanced/auth.html">
+            
+                    
+                    认证简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../advanced/auth-username.html">
+            
+                <a href="../advanced/auth-username.html">
+            
+                    
+                    Username 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../advanced/auth-clientid.html">
+            
+                <a href="../advanced/auth-clientid.html">
+            
+                    
+                    Cliend ID 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../advanced/auth-http.html">
+            
+                <a href="../advanced/auth-http.html">
+            
+                    
+                    HTTP 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="../advanced/auth-jwt.html">
+            
+                <a href="../advanced/auth-jwt.html">
+            
+                    
+                    JWT 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="../advanced/auth-ldap.html">
+            
+                <a href="../advanced/auth-ldap.html">
+            
+                    
+                    LDAP 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="../advanced/auth-mysql.html">
+            
+                <a href="../advanced/auth-mysql.html">
+            
+                    
+                    MySQL 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="../advanced/auth-postgresql.html">
+            
+                <a href="../advanced/auth-postgresql.html">
+            
+                    
+                    PostgreSQL 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="../advanced/auth-redis.html">
+            
+                <a href="../advanced/auth-redis.html">
+            
+                    
+                    Redis 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.10" data-path="../advanced/auth-mongodb.html">
+            
+                <a href="../advanced/auth-mongodb.html">
+            
+                    
+                    MongoDB 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    发布订阅 ACL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../advanced/acl.html">
+            
+                <a href="../advanced/acl.html">
+            
+                    
+                    发布订阅 ACL 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../advanced/acl-file.html">
+            
+                <a href="../advanced/acl-file.html">
+            
+                    
+                    内置 ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../advanced/acl-http.html">
+            
+                <a href="../advanced/acl-http.html">
+            
+                    
+                    HTTP ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../advanced/acl-mysql.html">
+            
+                <a href="../advanced/acl-mysql.html">
+            
+                    
+                    MySQL ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../advanced/acl-postgres.html">
+            
+                <a href="../advanced/acl-postgres.html">
+            
+                    
+                    PostgreSQL ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../advanced/acl-redis.html">
+            
+                <a href="../advanced/acl-redis.html">
+            
+                    
+                    Redis ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="../advanced/acl-mongodb.html">
+            
+                <a href="../advanced/acl-mongodb.html">
+            
+                    
+                    MongoDB ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../advanced/webhook.html">
+            
+                <a href="../advanced/webhook.html">
+            
+                    
+                    WebHook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../advanced/cluster.html">
+            
+                <a href="../advanced/cluster.html">
+            
+                    
+                    分布集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../advanced/hooks.html">
+            
+                <a href="../advanced/hooks.html">
+            
+                    
+                    钩子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../advanced/plugins.html">
+            
+                <a href="../advanced/plugins.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../advanced/multiple-language-support.html">
+            
+                <a href="../advanced/multiple-language-support.html">
+            
+                    
+                    多语言支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../advanced/metrics-and-stats.html">
+            
+                <a href="../advanced/metrics-and-stats.html">
+            
+                    
+                    指标监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../advanced/rate-limit.html">
+            
+                <a href="../advanced/rate-limit.html">
+            
+                    
+                    速率限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../advanced/inflight-window-and-message-queue.html">
+            
+                <a href="../advanced/inflight-window-and-message-queue.html">
+            
+                    
+                    飞行窗口与消息队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../advanced/retransmission.html">
+            
+                <a href="../advanced/retransmission.html">
+            
+                    
+                    消息重传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../advanced/cli.html">
+            
+                <a href="../advanced/cli.html">
+            
+                    
+                    命令行接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    管理监控 API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html">
+            
+                    
+                    管理监控 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-brokers">
+            
+                    
+                    基本信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-nodes">
+            
+                    
+                    节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-clients">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-subscriptions">
+            
+                    
+                    订阅信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-routes">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-publish">
+            
+                    
+                    消息发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-subscribe">
+            
+                    
+                    主题订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-plugins">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-listeners">
+            
+                    
+                    监听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-metrics">
+            
+                    
+                    统计指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-stats">
+            
+                    
+                    状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-alarms">
+            
+                    
+                    告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-banned">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-rules">
+            
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-actions">
+            
+                    
+                    动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-resource-types">
+            
+                    
+                    资源类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-resources">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    规则引擎
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../rule/rule-engine.html">
+            
+                <a href="../rule/rule-engine.html">
+            
+                    
+                    规则引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../rule/rule-create.html">
+            
+                <a href="../rule/rule-create.html">
+            
+                    
+                    创建规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html">
+            
+                    
+                    空动作 (调试)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#发送数据到-web-服务">
+            
+                    
+                    发送数据到 Web 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-mqtt-broker">
+            
+                    
+                    桥接数据到 MQTT Broker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-mysql">
+            
+                    
+                    保存数据到 MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-postgresql">
+            
+                    
+                    保存数据到 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-cassandra">
+            
+                    
+                    保存数据到 Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-mongodb">
+            
+                    
+                    保存数据到 MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-dynamodb">
+            
+                    
+                    保存数据到 DynamoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-redis">
+            
+                    
+                    保存数据到 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-opentsdb">
+            
+                    
+                    保存数据到 OpenTSDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-timescaledb">
+            
+                    
+                    保存数据到 TimescaleDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-influxdb">
+            
+                    
+                    保存数据到 InfluxDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-kafka">
+            
+                    
+                    桥接数据到 Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-pulsar">
+            
+                    
+                    桥接数据到 Pulsar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rocketmq">
+            
+                    
+                    桥接数据到 RocketMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rabbitmq">
+            
+                    
+                    桥接数据到 RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rpc-服务">
+            
+                    
+                    桥接数据到 RPC 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    数据存储
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html">
+            
+                    
+                    数据存储设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#redis-数据存储">
+            
+                    
+                    Redis 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#mysql-数据存储">
+            
+                    
+                    MySQL 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#postgresql-数据存储">
+            
+                    
+                    PostgreSQL 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#mongodb-消息存储">
+            
+                    
+                    MongoDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#cassandra-消息存储">
+            
+                    
+                    Cassandra 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#dynamodb-消息存储">
+            
+                    
+                    DynamoDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#influxdb-消息存储">
+            
+                    
+                    InfluxDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#opentsdb-消息存储">
+            
+                    
+                    OpenTSDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#timescale-消息存储">
+            
+                    
+                    Timescale 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    消息桥接
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#mqtt-桥接">
+            
+                    
+                    MQTT 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rpc-桥接">
+            
+                    
+                    RPC 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#kafka-桥接">
+            
+                    
+                    Kafka 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rabbitmq-桥接">
+            
+                    
+                    RabbitMQ 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#pulsar-桥接">
+            
+                    
+                    Pulsar 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rocketmq-桥接">
+            
+                    
+                    RocketMQ 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    进阶教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../tutorial/device-management.html">
+            
+                <a href="../tutorial/device-management.html">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../tutorial/turn.html">
+            
+                <a href="../tutorial/turn.html">
+            
+                    
+                    系统调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../tutorial/deploy.html">
+            
+                <a href="../tutorial/deploy.html">
+            
+                    
+                    生产部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../tutorial/prometheus.html">
+            
+                <a href="../tutorial/prometheus.html">
+            
+                    
+                    Prometheus 监控告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../tutorial/benchmark.html">
+            
+                <a href="../tutorial/benchmark.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../configuration/configuration.html">
+            
+                <a href="../configuration/configuration.html">
+            
+                    
+                    配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    SDK & Tools
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../development/client.html">
+            
+                <a href="../development/client.html">
+            
+                    
+                    MQTT 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../development/c.html">
+            
+                <a href="../development/c.html">
+            
+                    
+                    MQTT C 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../development/java.html">
+            
+                <a href="../development/java.html">
+            
+                    
+                    MQTT Java 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../development/go.html">
+            
+                <a href="../development/go.html">
+            
+                    
+                    MQTT Go 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../development/erlang.html">
+            
+                <a href="../development/erlang.html">
+            
+                    
+                    MQTT Erlang 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../development/javascript.html">
+            
+                <a href="../development/javascript.html">
+            
+                    
+                    MQTT JavaScript 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../development/python.html">
+            
+                <a href="../development/python.html">
+            
+                    
+                    MQTT Python 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../development/resource.html">
+            
+                <a href="../development/resource.html">
+            
+                    
+                    其他资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    FAQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../faq/faq.html">
+            
+                <a href="../faq/faq.html">
+            
+                    
+                    入门概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../faq/use-guide.html">
+            
+                <a href="../faq/use-guide.html">
+            
+                    
+                    使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../faq/deployment.html">
+            
+                <a href="../faq/deployment.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../faq/error.html">
+            
+                <a href="../faq/error.html">
+            
+                    
+                    常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../faq/enterprise.html">
+            
+                <a href="../faq/enterprise.html">
+            
+                    
+                    商业服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../faq/tags.html">
+            
+                <a href="../faq/tags.html">
+            
+                    
+                    FAQ 标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    版本发布
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../changes/changes.html">
+            
+                <a href="../changes/changes.html">
+            
+                    
+                    变更日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../changes/upgrade.html">
+            
+                <a href="../changes/upgrade.html">
+            
+                    
+                    升级指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    相关资料
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../design/design.html">
+            
+                <a href="../design/design.html">
+            
+                    
+                    架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../awesome/awesome.html">
+            
+                <a href="../awesome/awesome.html">
+            
+                    
+                    相关资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >安装</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;"><b></b>&#x5B89;&#x88C5;</a></li><ul><li><span class="title-icon "></span><a href="#shell-&#x811A;&#x672C;&#x4E00;&#x952E;&#x5B89;&#x88C5;-linux"><b></b>Shell &#x811A;&#x672C;&#x4E00;&#x952E;&#x5B89;&#x88C5; (Linux)</a></li><li><span class="title-icon "></span><a href="#&#x5305;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5;-linux"><b></b>&#x5305;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5; (Linux)</a></li><li><span class="title-icon "></span><a href="#&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5;-linux"><b></b>&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5; (Linux)</a></li><li><span class="title-icon "></span><a href="#zip-&#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5;-linux&#x3001;maxos&#x3001;windows"><b></b>ZIP &#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5; (Linux&#x3001;MaxOS&#x3001;Windows)</a></li><li><span class="title-icon "></span><a href="#&#x901A;&#x8FC7;-homebrew-&#x5B89;&#x88C5;-macos"><b></b>&#x901A;&#x8FC7; Homebrew &#x5B89;&#x88C5; (MacOS)</a></li><li><span class="title-icon "></span><a href="#&#x901A;&#x8FC7;-docker-&#x8FD0;&#x884C;-&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684;-docker-compose-&#x96C6;&#x7FA4;"><b></b>&#x901A;&#x8FC7; Docker &#x8FD0;&#x884C; (&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684; docker-compose &#x96C6;&#x7FA4;)</a></li><li><span class="title-icon "></span><a href="#&#x901A;&#x8FC7;-helkm-&#x5B89;&#x88C5;&#x5E76;&#x96C6;&#x7FA4;-k8s&#x3001;k3s"><b></b>&#x901A;&#x8FC7; Helkm &#x5B89;&#x88C5;&#x5E76;&#x96C6;&#x7FA4; (K8S&#x3001;K3S)</a></li><li><span class="title-icon "></span><a href="#&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;"><b></b>&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;</a></li></ul></ul></div><a href="#&#x5B89;&#x88C5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5B89;&#x88C5;"><a name="&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5B89;&#x88C5;" class="plugin-anchor" href="#&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;</h1>
+<p>EMQ X &#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;:</p>
+<ul>
+<li>Centos6</li>
+<li>Centos7</li>
+<li>OpenSUSE tumbleweed</li>
+<li>Debian 8</li>
+<li>Debian 9</li>
+<li>Debian 10</li>
+<li>Ubuntu 14.04</li>
+<li>Ubuntu 16.04</li>
+<li>Ubuntu 18.04</li>
+<li>macOS 10.13</li>
+<li>macOS 10.14</li>
+<li>macOS 10.15</li>
+<li>Windows Server 2019</li>
+</ul>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>&#x4EA7;&#x54C1;&#x90E8;&#x7F72;&#x5EFA;&#x8BAE; Linux &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4E0D;&#x63A8;&#x8350; Windows &#x670D;&#x52A1;&#x5668;&#x3002;</p>
+</div></div></p>
+<p><ul class="nav nav-tabs" role="tablist"><li role="presentation" class="active"><a href="#shell" aria-controls="shell" role="tab" data-toggle="tab">Shell &#x811A;&#x672C;&#x5B89;&#x88C5;</a></li><li role="presentation" class=""><a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">&#x5305;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5;</a></li><li role="presentation" class=""><a href="#binary" aria-controls="binary" role="tab" data-toggle="tab">&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5;</a></li><li role="presentation" class=""><a href="#zip" aria-controls="zip" role="tab" data-toggle="tab">ZIP &#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5;</a></li><li role="presentation" class=""><a href="#homebrew" aria-controls="homebrew" role="tab" data-toggle="tab">Homebrew &#x5B89;&#x88C5;</a></li><li role="presentation" class=""><a href="#docker" aria-controls="docker" role="tab" data-toggle="tab">Docker &#x8FD0;&#x884C;</a></li><li role="presentation" class=""><a href="#helm" aria-controls="helm" role="tab" data-toggle="tab">Helm &#x5B89;&#x88C5;&#x5E76;&#x96C6;&#x7FA4;</a></li><li role="presentation" class=""><a href="#build" aria-controls="build" role="tab" data-toggle="tab">&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;</a></li></ul><div class="tab-content"><div role="tabpanel" class="tab-pane active" id="shell"><h2 id="shell-&#x811A;&#x672C;&#x4E00;&#x952E;&#x5B89;&#x88C5;-linux"><a name="shell-&#x811A;&#x672C;&#x4E00;&#x952E;&#x5B89;&#x88C5;-linux" class="anchor-navigation-ex-anchor" href="#shell-&#x811A;&#x672C;&#x4E00;&#x952E;&#x5B89;&#x88C5;-linux"><i class="fa fa-link" aria-hidden="true"></i></a><a name="shell-&#x811A;&#x672C;&#x4E00;&#x952E;&#x5B89;&#x88C5;-linux" class="plugin-anchor" href="#shell-&#x811A;&#x672C;&#x4E00;&#x952E;&#x5B89;&#x88C5;-linux"><i class="fa fa-link" aria-hidden="true"></i></a>Shell &#x811A;&#x672C;&#x4E00;&#x952E;&#x5B89;&#x88C5; (Linux)</h2><pre class="language-"><code class="lang-bash"><span class="token function">curl</span> https://repos.emqx.io/install_emqx.sh <span class="token operator">|</span> <span class="token function">bash</span></code></pre>
+</div><div role="tabpanel" class="tab-pane " id="packages"><h2 id="&#x5305;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5;-linux"><a name="&#x5305;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5;-linux" class="anchor-navigation-ex-anchor" href="#&#x5305;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5;-linux"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5305;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5;-linux" class="plugin-anchor" href="#&#x5305;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5;-linux"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5305;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5; (Linux)</h2><h4 id="centos"><a name="centos" class="anchor-navigation-ex-anchor" href="#centos"><i class="fa fa-link" aria-hidden="true"></i></a><a name="centos" class="plugin-anchor" href="#centos"><i class="fa fa-link" aria-hidden="true"></i></a>Centos</h4><ol><li><p>&#x5B89;&#x88C5;&#x6240;&#x9700;&#x8981;&#x7684;&#x4F9D;&#x8D56;&#x5305;</p><pre class="language-"><code>$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x8BBE;&#x7F6E;&#x7A33;&#x5B9A;&#x5B58;&#x50A8;&#x5E93;&#xFF0C;&#x4EE5; CentOS7
+&#x4E3A;&#x4F8B;</p><pre class="language-"><code>$ sudo yum-config-manager --add-repo https://repos.emqx.io/emqx-ce/redhat/centos/7/emqx-ce.repo</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684; EMQ X Broker</p><pre class="language-"><code>$ sudo yum install emqx</code></pre>
+<p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x63A5;&#x53D7; GPG &#x5BC6;&#x94A5;&#xFF0C;&#x8BF7;&#x786E;&#x8BA4;&#x5BC6;&#x94A5;&#x7B26;&#x5408; fc84 1ba6 3775 5ca8 487b 1e3c c0b4 0946 3e64 0d53&#xFF0C;&#x5E76;&#x63A5;&#x53D7;&#x8BE5;&#x6307;&#x7EB9;&#x3002;</p></li>
+<li><p>&#x5B89;&#x88C5;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x7684; EMQ X Broker</p><ol><li><p>&#x67E5;&#x8BE2;&#x53EF;&#x7528;&#x7248;&#x672C;</p><pre class="language-"><code>$ yum list emqx --showduplicates | sort -r
+
+emqx.x86_64                     4.0.0-1.el7                        emqx-stable
+emqx.x86_64                     3.0.1-1.el7                        emqx-stable
+emqx.x86_64                     3.0.0-1.el7                        emqx-stable</code></pre>
+</li>
+<li><p>&#x6839;&#x636E;&#x7B2C;&#x4E8C;&#x5217;&#x4E2D;&#x7684;&#x7248;&#x672C;&#x5B57;&#x7B26;&#x4E32;&#x5B89;&#x88C5;&#x7279;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x4F8B;&#x5982; 4.0.0</p><pre class="language-"><code>$ sudo yum install emqx-4.0.0</code></pre>
+</li></ol>
+</li>
+<li><p>&#x542F;&#x52A8; EMQ X Broker</p><ul><li><p>&#x76F4;&#x63A5;&#x542F;&#x52A8;</p><pre class="language-"><code>$ emqx start
+emqx 4.0.0 is started successfully!
+
+$ emqx_ctl status
+Node &apos;emqx@127.0.0.1&apos; is started
+emqx v4.0.0 is running</code></pre>
+</li>
+<li><p>systemctl &#x542F;&#x52A8;</p><pre class="language-"><code>$ sudo systemctl start emqx</code></pre>
+</li>
+<li><p>service &#x542F;&#x52A8;</p><pre class="language-"><code>$ sudo service emqx start</code></pre>
+</li></ul>
+</li>
+<li><p>&#x505C;&#x6B62; EMQ X Broker</p><pre class="language-"><code>$ emqx stop
+ok</code></pre>
+</li>
+<li><p>&#x5378;&#x8F7D; EMQ X Broker</p><pre class="language-"><code>$ sudo yum remove emqx</code></pre>
+</li></ol>
+<h4 id="ubuntu&#x3001;debian"><a name="ubuntu&#x3001;debian" class="anchor-navigation-ex-anchor" href="#ubuntu&#x3001;debian"><i class="fa fa-link" aria-hidden="true"></i></a><a name="ubuntu&#x3001;debian" class="plugin-anchor" href="#ubuntu&#x3001;debian"><i class="fa fa-link" aria-hidden="true"></i></a>Ubuntu&#x3001;Debian</h4><ol><li><p>&#x5B89;&#x88C5;&#x6240;&#x9700;&#x8981;&#x7684;&#x4F9D;&#x8D56;&#x5305;</p><pre class="language-"><code>$ sudo apt update &amp;&amp; sudo apt install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common</code></pre>
+</li>
+<li><p>&#x6DFB;&#x52A0; EMQ X &#x7684;&#x5B98;&#x65B9; GPG &#x5BC6;&#x94A5;</p><pre class="language-"><code>$ curl -fsSL https://repos.emqx.io/gpg.pub | sudo apt-key add -</code></pre>
+<p>&#x9A8C;&#x8BC1;&#x5BC6;&#x94A5;</p><pre class="language-"><code>$ sudo apt-key fingerprint 3E640D53
+
+pub   rsa2048 2019-04-10 [SC]
+    FC84 1BA6 3775 5CA8 487B  1E3C C0B4 0946 3E64 0D53
+uid           [ unknown] emqx team <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>support@emqx.io</span><span class="token punctuation">&gt;</span></span></code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x8BBE;&#x7F6E; stable &#x5B58;&#x50A8;&#x5E93;&#x3002; &#x5982;&#x679C;&#x8981;&#x6DFB;&#x52A0; unstable &#x5B58;&#x50A8;&#x5E93;&#xFF0C;&#x8BF7;&#x5728;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x4E2D;&#x7684;&#x5355;&#x8BCD; stable &#x4E4B;&#x540E;&#x6DFB;&#x52A0;&#x5355;&#x8BCD;
+unstable&#x3002;</p><pre class="language-"><code>$ sudo add-apt-repository \
+    &quot;deb [arch=amd64] https://repos.emqx.io/emqx-ce/deb/ubuntu/ \
+    ./$(lsb_release -cs) \
+    stable&quot;</code></pre>
+<p>lsb_release -cs &#x5B50;&#x547D;&#x4EE4;&#x8FD4;&#x56DE;&#x53D1;&#x884C;&#x7248;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x4F8B;&#x5982; xenial&#x3002; &#x6709;&#x65F6;&#xFF0C;&#x5728;&#x50CF; Linux Mint
+&#x8FD9;&#x6837;&#x7684;&#x53D1;&#x884C;&#x7248;&#x4E2D;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5C06; $(lsb_release -cs) &#x66F4;&#x6539;&#x4E3A;&#x60A8;&#x7684;&#x7236;&#x53D1;&#x884C;&#x7248;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x4F7F;&#x7528;&#x7684;&#x662F; Linux Mint Tessa&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; bionic&#x3002; EMQ X Broker
+&#x4E0D;&#x5BF9;&#x672A;&#x7ECF;&#x6D4B;&#x8BD5;&#x548C;&#x4E0D;&#x53D7;&#x652F;&#x6301;&#x7684;&#x53D1;&#x884C;&#x7248;&#x63D0;&#x4F9B;&#x4EFB;&#x4F55;&#x4FDD;&#x8BC1;&#x3002;</p></li>
+<li><p>&#x66F4;&#x65B0; apt &#x5305;&#x7D22;&#x5F15;</p><pre class="language-"><code>$ sudo apt update</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684; EMQ X Broker</p><pre class="language-"><code>$ sudo apt install emqx</code></pre>
+<p>&#x5728;&#x542F;&#x7528;&#x4E86;&#x591A;&#x4E2A; EMQ X &#x4ED3;&#x5E93;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C; apt install &#x548C; apt update
+&#x547D;&#x4EE4;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5;&#x6700;&#x65B0;&#x7248;&#x7684; EMQ
+X Broker&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x6709;&#x7A33;&#x5B9A;&#x6027;&#x9700;&#x6C42;&#x7684;&#x7528;&#x6237;&#x6765;&#x8BF4;&#x662F;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p></li>
+<li><p>&#x5B89;&#x88C5;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x7684; EMQ X Broker</p><ol><li><p>&#x67E5;&#x8BE2;&#x53EF;&#x7528;&#x7248;&#x672C;</p><pre class="language-"><code>$ sudo apt-cache madison emqx
+
+emqx |      4.0.0 | https://repos.emqx.io/emqx-ce/deb/ubuntu bionic/stable amd64 Packages
+emqx |      3.0.1 | https://repos.emqx.io/emqx-ce/deb/ubuntu bionic/stable amd64 Packages
+emqx |      3.0.0 | https://repos.emqx.io/emqx-ce/deb/ubuntu bionic/stable amd64 Packages</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x7B2C;&#x4E8C;&#x5217;&#x4E2D;&#x7684;&#x7248;&#x672C;&#x5B57;&#x7B26;&#x4E32;&#x5B89;&#x88C5;&#x7279;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x4F8B;&#x5982; 4.0.0</p><pre class="language-"><code>$ sudo apt install emqx=4.0.0</code></pre>
+</li></ol>
+</li>
+<li><p>&#x542F;&#x52A8; EMQ X Broker</p><ul><li><p>&#x76F4;&#x63A5;&#x542F;&#x52A8;</p><pre class="language-"><code>$ emqx start
+emqx 4.0.0 is started successfully!
+
+$ emqx_ctl status
+Node &apos;emqx@127.0.0.1&apos; is started
+emqx v4.0.0 is running</code></pre>
+</li>
+<li><p>systemctl &#x542F;&#x52A8;</p><pre class="language-"><code>$ sudo systemctl start emqx</code></pre>
+</li>
+<li><p>service &#x542F;&#x52A8;</p><pre class="language-"><code>$ sudo service emqx start</code></pre>
+</li></ul>
+</li>
+<li><p>&#x505C;&#x6B62; EMQ X Broker</p><pre class="language-"><code>$ emqx stop
+ok</code></pre>
+</li>
+<li><p>&#x5378;&#x8F7D; EMQ X Broker</p><pre class="language-"><code>$ sudo apt remove emqx</code></pre>
+</li></ol>
+<h4 id="opensuse"><a name="opensuse" class="anchor-navigation-ex-anchor" href="#opensuse"><i class="fa fa-link" aria-hidden="true"></i></a><a name="opensuse" class="plugin-anchor" href="#opensuse"><i class="fa fa-link" aria-hidden="true"></i></a>OpenSUSE</h4><ol><li><p>&#x4E0B;&#x8F7D; GPG &#x516C;&#x94A5;&#x5E76;&#x5BFC;&#x5165;&#x3002;</p><pre class="language-"><code>$ curl -L -o /tmp/gpg.pub https://repos.emqx.io/gpg.pub
+$ sudo rpmkeys --import /tmp/gpg.pub</code></pre>
+</li>
+<li><p>&#x6DFB;&#x52A0;&#x50A8;&#x5B58;&#x5E93;&#x5730;&#x5740;</p><pre class="language-"><code>$ sudo zypper ar -f -c https://repos.emqx.io/emqx-ce/redhat/opensuse/leap/stable emqx</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684; EMQ X Broker</p><pre class="language-"><code>$ sudo zypper in emqx</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x7684; EMQ X Broker</p><ol><li><p>&#x67E5;&#x8BE2;&#x53EF;&#x7528;&#x7248;&#x672C;</p><pre class="language-"><code>$ sudo zypper pa emqx
+
+Loading repository data...
+Reading installed packages...
+S | Repository | Name | Version  | Arch
+--+------------+------+----------+-------
+  | emqx       | emqx | 4.0.0-1  | x86_64
+  | emqx       | emqx | 3.0.1-1  | x86_64
+  | emqx       | emqx | 3.0.0-1  | x86_64</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528; Version &#x5B89;&#x88C5;&#x7279;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x4F8B;&#x5982; 4.0.0</p><pre class="language-"><code>$ sudo zypper in emqx-4.0.0</code></pre>
+</li></ol>
+</li>
+<li><p>&#x542F;&#x52A8; EMQ X Broker</p><ul><li><p>&#x76F4;&#x63A5;&#x542F;&#x52A8;</p><pre class="language-"><code>$ emqx start
+emqx 4.0.0 is started successfully!
+
+$ emqx_ctl status
+Node &apos;emqx@127.0.0.1&apos; is started
+emqx v4.0.0 is running</code></pre>
+</li>
+<li><p>systemctl &#x542F;&#x52A8;</p><pre class="language-"><code>$ sudo systemctl start emqx</code></pre>
+</li>
+<li><p>service &#x542F;&#x52A8;</p><pre class="language-"><code>$ sudo service emqx start</code></pre>
+</li></ul>
+</li>
+<li><p>&#x505C;&#x6B62; EMQ X Broker</p><pre class="language-"><code>$ emqx stop
+ok</code></pre>
+</li>
+<li><p>&#x5378;&#x8F7D; EMQ X Broker</p><pre class="language-"><code>$ sudo zypper rm emqx</code></pre>
+</li></ol>
+</div><div role="tabpanel" class="tab-pane " id="binary"><h2 id="&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5;-linux"><a name="&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5;-linux" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5;-linux"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5;-linux" class="plugin-anchor" href="#&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5;-linux"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5; (Linux)</h2><ol><li><p>&#x901A;&#x8FC7; <a href="https://www.emqx.io/downloads/broker?osType=Linux" target="_blank">emqx.io</a> &#x6216; <a href="https://github.com/emqx/emqx/releases" target="_blank">Github</a> &#x9009;&#x62E9;&#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#xFF0C;&#x7136;&#x540E;&#x4E0B;&#x8F7D;&#x8981;&#x5B89;&#x88C5;&#x7684; EMQ X &#x7248;&#x672C;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x3002;</p></li>
+<li><p>&#x5B89;&#x88C5; EMQ X Broker&#xFF0C;&#x5C06;&#x4E0B;&#x9762;&#x7684;&#x8DEF;&#x5F84;&#x66F4;&#x6539;&#x4E3A;&#x60A8;&#x4E0B;&#x8F7D; EMQ X &#x8F6F;&#x4EF6;&#x5305;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p><ul><li><p>RPM &#x5305;:</p><pre class="language-"><code class="lang-shell">  $ <span class="token function">sudo</span> <span class="token function">rpm</span> -ivh emqx-cenots7-v4.0.0.x86_64.rpm</code></pre>
+</li>
+<li><p>DEB &#x5305;:</p><pre class="language-"><code>$ sudo dpkg -i emqx-ubuntu18.04-v4.0.0_amd64.deb</code></pre>
+</li></ul>
+</li>
+<li><p>&#x542F;&#x52A8; EMQ X Broker</p><ul><li><p>&#x76F4;&#x63A5;&#x542F;&#x52A8;</p><pre class="language-"><code>$ emqx start
+emqx 4.0.0 is started successfully!
+$ emqx_ctl status
+Node &apos;emqx@127.0.0.1&apos; is started
+emqx v4.0.0 is running</code></pre>
+</li>
+<li><p>systemctl &#x542F;&#x52A8;</p><pre class="language-"><code>$ sudo systemctl start emqx</code></pre>
+</li>
+<li><p>service &#x542F;&#x52A8;</p><pre class="language-"><code>$ sudo service emqx start</code></pre>
+</li></ul>
+</li>
+<li><p>&#x505C;&#x6B62; EMQ X Broker</p><pre class="language-"><code>$ emqx stop
+ok</code></pre>
+</li>
+<li><p>&#x5378;&#x8F7D; EMQ X Broker</p><ul><li><p>DEB &#x5305;:</p><pre class="language-"><code>$ dpkg -r emqx</code></pre>
+<p>&#x6216;</p><pre class="language-"><code>$ dpkg -P emqx</code></pre>
+</li>
+<li><p>RPM &#x5305;:</p><pre class="language-"><code>$ rpm -e emqx</code></pre>
+</li></ul>
+</li></ol>
+</div><div role="tabpanel" class="tab-pane " id="zip"><h2 id="zip-&#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5;-linux&#x3001;maxos&#x3001;windows"><a name="zip-&#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5;-linux&#x3001;maxos&#x3001;windows" class="anchor-navigation-ex-anchor" href="#zip-&#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5;-linux&#x3001;maxos&#x3001;windows"><i class="fa fa-link" aria-hidden="true"></i></a><a name="zip-&#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5;-linux&#x3001;maxos&#x3001;windows" class="plugin-anchor" href="#zip-&#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5;-linux&#x3001;maxos&#x3001;windows"><i class="fa fa-link" aria-hidden="true"></i></a>ZIP &#x538B;&#x7F29;&#x5305;&#x5B89;&#x88C5; (Linux&#x3001;MaxOS&#x3001;Windows)</h2><ol><li><p>&#x901A;&#x8FC7; <a href="https://www.emqx.io/downloads/broker?osType=Linux" target="_blank">emqx.io</a> &#x6216; <a href="https://github.com/emqx/emqx/releases" target="_blank">Github</a> &#x4E0B;&#x8F7D;&#x8981;&#x5B89;&#x88C5;&#x7684; EMQ X &#x7248;&#x672C;&#x7684; zip &#x5305;&#x3002;</p></li>
+<li><p>&#x89E3;&#x538B;&#x7A0B;&#x5E8F;&#x5305;</p><pre class="language-"><code class="lang-shell">$ <span class="token function">unzip</span> emqx-ubuntu18.04-v4.0.0.zip</code></pre>
+</li>
+<li><p>&#x542F;&#x52A8; EMQ X Broker</p><pre class="language-"><code>$ ./bin/emqx start
+emqx 4.0.0 is started successfully!
+
+$ ./bin/emqx_ctl status
+Node &apos;emqx@127.0.0.1&apos; is started
+emqx v4.0.0 is running</code></pre>
+</li>
+<li><p>&#x505C;&#x6B62; EMQ X Broker</p><pre class="language-"><code>$ ./bin/emqx stop
+ok</code></pre>
+</li>
+<li><p>&#x5378;&#x8F7D; EMQ X Broker</p><p>&#x76F4;&#x63A5;&#x5220;&#x9664; EMQ X &#x76EE;&#x5F55;&#x5373;&#x53EF;</p></li></ol>
+</div><div role="tabpanel" class="tab-pane " id="homebrew"><h2 id="&#x901A;&#x8FC7;-homebrew-&#x5B89;&#x88C5;-macos"><a name="&#x901A;&#x8FC7;-homebrew-&#x5B89;&#x88C5;-macos" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;-homebrew-&#x5B89;&#x88C5;-macos"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x901A;&#x8FC7;-homebrew-&#x5B89;&#x88C5;-macos" class="plugin-anchor" href="#&#x901A;&#x8FC7;-homebrew-&#x5B89;&#x88C5;-macos"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7; Homebrew &#x5B89;&#x88C5; (MacOS)</h2><ol><li><p>&#x6DFB;&#x52A0; EMQ X &#x7684; tap</p><pre class="language-"><code>$ brew tap emqx/emqx</code></pre>
+</li>
+<li><p>&#x5B89;&#x88C5; EMQ X Broker</p><pre class="language-"><code>$ brew install emqx</code></pre>
+</li>
+<li><p>&#x542F;&#x52A8; EMQ X Broker</p><pre class="language-"><code>$ emqx start
+emqx 4.0.0 is started successfully!
+
+$ emqx_ctl status
+Node &apos;emqx@127.0.0.1&apos; is started
+emqx v4.0.0 is running</code></pre>
+</li>
+<li><p>&#x505C;&#x6B62; EMQ X Broker</p><pre class="language-"><code>$ emqx stop
+ok</code></pre>
+</li>
+<li><p>&#x5378;&#x8F7D; EMQ X Broker</p><pre class="language-"><code>$ brew uninstall emqx</code></pre>
+</li></ol>
+</div><div role="tabpanel" class="tab-pane " id="docker"><h2 id="&#x901A;&#x8FC7;-docker-&#x8FD0;&#x884C;-&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684;-docker-compose-&#x96C6;&#x7FA4;"><a name="&#x901A;&#x8FC7;-docker-&#x8FD0;&#x884C;-&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684;-docker-compose-&#x96C6;&#x7FA4;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;-docker-&#x8FD0;&#x884C;-&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684;-docker-compose-&#x96C6;&#x7FA4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x901A;&#x8FC7;-docker-&#x8FD0;&#x884C;-&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684;-docker-compose-&#x96C6;&#x7FA4;" class="plugin-anchor" href="#&#x901A;&#x8FC7;-docker-&#x8FD0;&#x884C;-&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684;-docker-compose-&#x96C6;&#x7FA4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7; Docker &#x8FD0;&#x884C; (&#x5305;&#x542B;&#x7B80;&#x5355;&#x7684; docker-compose &#x96C6;&#x7FA4;)</h2><h4 id="&#x8FD0;&#x884C;&#x5355;&#x4E2A;&#x5BB9;&#x5668;"><a name="&#x8FD0;&#x884C;&#x5355;&#x4E2A;&#x5BB9;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x8FD0;&#x884C;&#x5355;&#x4E2A;&#x5BB9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FD0;&#x884C;&#x5355;&#x4E2A;&#x5BB9;&#x5668;" class="plugin-anchor" href="#&#x8FD0;&#x884C;&#x5355;&#x4E2A;&#x5BB9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD0;&#x884C;&#x5355;&#x4E2A;&#x5BB9;&#x5668;</h4><ol><li><p>&#x83B7;&#x53D6; docker &#x955C;&#x50CF;</p><ul><li><p>&#x901A;&#x8FC7; <a href="https://hub.docker.com/r/emqx/emqx" target="_blank">Docker Hub</a> &#x83B7;&#x53D6;</p><pre class="language-"><code>$ docker pull emqx/emqx:v4.0.0</code></pre>
+</li>
+<li><p>&#x901A;&#x8FC7; <a href="https://www.emqx.io/downloads/broker?osType=Linux" target="_blank">emqx.io</a> &#x6216; <a href="https://github.com/emqx/emqx/releases" target="_blank">Github</a> &#x4E0B;&#x8F7D; Docker &#x955C;&#x50CF;&#xFF0C;&#x5E76;&#x624B;&#x52A8;&#x52A0;&#x8F7D;</p><pre class="language-"><code>$ wget -O emqx-docker.zip https://www.emqx.io/downloads/broker/v4.0.0/emqx-docker-v4.0.0-alpine3.10-amd64.zip
+$ unzip emqx-docker.zip
+$ docker load &lt; emqx-docker-v4.0.0</code></pre>
+</li></ul>
+</li>
+<li><p>&#x542F;&#x52A8; docker &#x5BB9;&#x5668;</p><pre class="language-"><code>$ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx:v4.0.0</code></pre>
+</li></ol>
+<h4 id="&#x4F7F;&#x7528;-docker-compose-&#x521B;&#x5EFA;&#x7B80;&#x5355;&#x7684;-static-&#x96C6;&#x7FA4;"><a name="&#x4F7F;&#x7528;-docker-compose-&#x521B;&#x5EFA;&#x7B80;&#x5355;&#x7684;-static-&#x96C6;&#x7FA4;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;-docker-compose-&#x521B;&#x5EFA;&#x7B80;&#x5355;&#x7684;-static-&#x96C6;&#x7FA4;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F7F;&#x7528;-docker-compose-&#x521B;&#x5EFA;&#x7B80;&#x5355;&#x7684;-static-&#x96C6;&#x7FA4;" class="plugin-anchor" href="#&#x4F7F;&#x7528;-docker-compose-&#x521B;&#x5EFA;&#x7B80;&#x5355;&#x7684;-static-&#x96C6;&#x7FA4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528; docker-compose &#x521B;&#x5EFA;&#x7B80;&#x5355;&#x7684; static &#x96C6;&#x7FA4;</h4><ol><li><p>&#x521B;&#x5EFA; <code>docker-compose.yaml</code> &#x6587;&#x4EF6;</p><pre class="language-"><code>version: &apos;3&apos;
+
+services:
+  emqx1:
+    image: emqx/emqx:v4.0.0
+    environment:
+    - &quot;EMQX_NAME=emqx&quot;
+    - &quot;EMQX_HOST=node1.emqx.io&quot;
+    - &quot;EMQX_CLUSTER__DISCOVERY=static&quot;
+    - &quot;EMQX_CLUSTER__STATIC__SEEDS=emqx@node1.emqx.io, emqx@node2.emqx.io&quot;
+    - &quot;EMQX_ZONE__EXTERNAL__RETRY_INTERVAL=2s&quot;
+    - &quot;EMQX_MQTT__MAX_TOPIC_ALIAS=10&quot;
+    volumes:
+        - ./tmp/emqx.lic:/opt/emqx/etc/emqx.lic
+    healthcheck:
+      test: [&quot;CMD&quot;, &quot;/opt/emqx/bin/emqx_ctl&quot;, &quot;status&quot;]
+      interval: 5s
+      timeout: 25s
+      retries: 5
+    networks:
+      emqx-bridge:
+        aliases:
+        - node1.emqx.io
+
+  emqx2:
+    image: ${IMAGE}
+    environment:
+    - &quot;EMQX_NAME=emqx&quot;
+    - &quot;EMQX_HOST=node2.emqx.io&quot;
+    - &quot;EMQX_CLUSTER__DISCOVERY=static&quot;
+    - &quot;EMQX_CLUSTER__STATIC__SEEDS=emqx@node1.emqx.io, emqx@node2.emqx.io&quot;
+    - &quot;EMQX_ZONE__EXTERNAL__RETRY_INTERVAL=2s&quot;
+    - &quot;EMQX_MQTT__MAX_TOPIC_ALIAS=10&quot;
+    volumes:
+        - ./tmp/emqx.lic:/opt/emqx/etc/emqx.lic
+    healthcheck:
+      test: [&quot;CMD&quot;, &quot;/opt/emqx/bin/emqx_ctl&quot;, &quot;status&quot;]
+      interval: 5s
+      timeout: 25s
+      retries: 5
+    networks:
+      emqx-bridge:
+        aliases:
+        - node2.emqx.io
+
+  client:
+    image: python:3.7.2-alpine3.9
+    depends_on:
+      - emqx1
+      - emqx2
+    tty: true
+    networks:
+        emqx-bridge:
+
+networks:
+  emqx-bridge:
+    driver: bridge
+</code></pre>
+</li>
+<li><p>&#x542F;&#x52A8; docker-compose &#x96C6;&#x7FA4;</p><pre class="language-"><code>$ docker-compose -p my_emqx up -d</code></pre>
+</li>
+<li><p>&#x67E5;&#x770B;&#x96C6;&#x7FA4;</p><pre class="language-"><code>$ docker exec -it my_emqx_emqx1_1 sh -c &quot;emqx_ctl cluster status&quot;
+Cluster status: #{running_nodes =&gt; [&apos;emqx@node1.emqx.io&apos;,&apos;emqx@node2.emqx.io&apos;],
+                  stopped_nodes =&gt; []}</code></pre>
+</li></ol>
+<p>&#x66F4;&#x591A;&#x5173;&#x4E8E; EMQ X Docker &#x7684;&#x4FE1;&#x606F;&#x8BF7;&#x67E5;&#x770B; <a href="https://hub.docker.com/r/emqx/emqx" target="_blank">Docker Hub</a> &#x6216; <a href="https://github.com/emqx/emqx-rel/tree/master/deploy/docker" target="_blank">Github</a></p></div><div role="tabpanel" class="tab-pane " id="helm"><h2 id="&#x901A;&#x8FC7;-helkm-&#x5B89;&#x88C5;&#x5E76;&#x96C6;&#x7FA4;-k8s&#x3001;k3s"><a name="&#x901A;&#x8FC7;-helkm-&#x5B89;&#x88C5;&#x5E76;&#x96C6;&#x7FA4;-k8s&#x3001;k3s" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;-helkm-&#x5B89;&#x88C5;&#x5E76;&#x96C6;&#x7FA4;-k8s&#x3001;k3s"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x901A;&#x8FC7;-helkm-&#x5B89;&#x88C5;&#x5E76;&#x96C6;&#x7FA4;-k8s&#x3001;k3s" class="plugin-anchor" href="#&#x901A;&#x8FC7;-helkm-&#x5B89;&#x88C5;&#x5E76;&#x96C6;&#x7FA4;-k8s&#x3001;k3s"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7; Helkm &#x5B89;&#x88C5;&#x5E76;&#x96C6;&#x7FA4; (K8S&#x3001;K3S)</h2><ol><li><p>&#x6DFB;&#x52A0; helm &#x4ED3;&#x5E93;</p><pre class="language-"><code>$ helm repo add emqx https://repos.emqx.io/charts
+$ helm repo update</code></pre>
+</li>
+<li><p>&#x67E5;&#x8BE2; EMQ X Broker</p><pre class="language-"><code>helm search repo emqx
+NAME         CHART VERSION APP VERSION DESCRIPTION
+emqx/emqx    v4.0.0        v4.0.0      A Helm chart for EMQ X
+emqx/emqx-ee v4.0.0        v4.0.0      A Helm chart for EMQ X
+emqx/kuiper  0.1.1         0.1.1       A lightweight IoT edge analytic software</code></pre>
+</li>
+<li><p>&#x542F;&#x52A8; EMQ X &#x96C6;&#x7FA4;</p><pre class="language-"><code>$ helm install my-emqx emqx/emqx</code></pre>
+</li>
+<li><p>&#x67E5;&#x770B; EMQ X &#x96C6;&#x7FA4;&#x60C5;&#x51B5;</p><pre class="language-"><code>$ kubectl get pods
+NAME       READY  STATUS             RESTARTS  AGE
+my-emqx-0  1/1     Running   0          56s
+my-emqx-1  1/1     Running   0          40s
+my-emqx-2  1/1     Running   0          21s
+
+$ kubectl exec -it my-emqx-0 -- emqx_ctl cluster status
+Cluster status: #{running_nodes =&gt;
+                    [&apos;my-emqx@my-emqx-0.my-emqx-headless.default.svc.cluster.local&apos;,
+                     &apos;my-emqx@my-emqx-1.my-emqx-headless.default.svc.cluster.local&apos;,
+                     &apos;my-emqx@my-emqx-2.my-emqx-headless.default.svc.cluster.local&apos;],
+                stopped_nodes =&gt; []}</code></pre>
+</li></ol>
+</div><div role="tabpanel" class="tab-pane " id="build"><h2 id="&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;"><a name="&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;" class="plugin-anchor" href="#&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;</h2><ol><li>&#x83B7;&#x53D6;&#x6E90;&#x7801;
+</li></ol>
+<pre class="language-"><code class="lang-bash">$ <span class="token function">git</span> clone -b v4.0.0 https://github.com/emqx/emqx-rel.git</code></pre>
+<ol><li>&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;
+</li></ol>
+<pre class="language-"><code class="lang-bash">$ <span class="token builtin class-name">export</span> <span class="token assign-left variable">EMQX_DEPS_DEFAULT_VSN</span><span class="token operator">=</span>v4.0.0</code></pre>
+<ol><li>&#x7F16;&#x8BD1;
+</li></ol>
+<pre class="language-"><code class="lang-bash">$ <span class="token builtin class-name">cd</span> emqx-rel <span class="token operator">&amp;&amp;</span> <span class="token function">make</span></code></pre>
+<ol><li>&#x542F;&#x52A8; EMQ X Broker
+</li></ol>
+<pre class="language-"><code class="lang-bash">$ <span class="token builtin class-name">cd</span> _build/emqx-rel/_rel/emqx
+
+$ ./bin/emqx start
+emqx <span class="token number">4.0</span>.0 is started successfully<span class="token operator">!</span>
+
+$ ./bin/emqx_ctl status
+Node <span class="token string">&apos;emqx@127.0.0.1&apos;</span> is started
+emqx v4.0.0 is running</code></pre>
+</div></div></p>
+<p><div id="gitalk-container"></div><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script></p>
+<style>.emqxee { display: none; }</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="start.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 启动 EMQ X">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"安装","date":"2020-02-07T17:15:26.000Z","author":"wivwiv","keywords":null,"description":null,"category":null,"ref":"undefined","level":"1.2.1","depth":2,"next":{"title":"启动 EMQ X","level":"1.2.2","depth":2,"path":"getting-started/start.md","ref":"getting-started/start.md","articles":[]},"previous":{"title":"开始使用","level":"1.2","depth":1,"ref":"","articles":[{"title":"安装","level":"1.2.1","depth":2,"path":"getting-started/install.md","ref":"getting-started/install.md","articles":[]},{"title":"启动 EMQ X","level":"1.2.2","depth":2,"path":"getting-started/start.md","ref":"getting-started/start.md","articles":[]},{"title":"基本命令","level":"1.2.3","depth":2,"path":"getting-started/command-line.md","ref":"getting-started/command-line.md","articles":[]},{"title":"目录结构","level":"1.2.4","depth":2,"path":"getting-started/directory.md","ref":"getting-started/directory.md","articles":[]},{"title":"配置说明","level":"1.2.5","depth":2,"path":"getting-started/config.md","ref":"getting-started/config.md","articles":[]},{"title":"日志与追踪","level":"1.2.6","depth":2,"path":"getting-started/log.md","ref":"getting-started/log.md","articles":[]},{"title":"Dashboard","level":"1.2.7","depth":2,"path":"getting-started/dashboard.md","ref":"getting-started/dashboard.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","hints","simpletabs","cuav-chapters","edit-link","gittalk","scripts","anchors","anchor-navigation-ex","emqx","-lunr"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"github":{"url":"https://github.com/emqx/emqx"},"scripts":{"files":["./_js/emqx-docs.js"]},"search":{},"local-pagefooter":{"copyright":"© Copyright 2016-2020, EMQ Technologies Co., Ltd.","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"emqx":{},"simpletabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"sharing":{"facebook":false,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑","base":"https://github.com/emqx/emqx-docs-cn/source"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"gittalk":{"clientID":"3b2217a86bdbdc09d0d8","clientSecret":"aee2b15ea39c494eb80b775513d38791895adb63","repo":"emqx-docs-cn","owner":"emqx","admin":["wivwiv"],"distractionFreeMode":false}},"theme":"default","author":"EMQX Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"redirects":{},"variables":{},"title":"EMQ X 使用文档","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":"emqtt"}},"gitbook":"*","description":"EMQ X 百万级 MQTT 消息服务器使用文档"},"file":{"path":"getting-started/install.md","mtime":"2020-04-01T08:17:22.602Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-01T08:58:30.454Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-simpletabs/tabs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gittalk/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scripts/d2a49e656f2a2a19e1c4ec4742014516-emqx-docs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

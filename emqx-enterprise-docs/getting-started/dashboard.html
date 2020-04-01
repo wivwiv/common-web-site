@@ -1,0 +1,2402 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Dashboard · EMQ X 使用文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="EMQX Team">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-simpletabs/tabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="log.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    EMQ X 消息服务器简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../introduction/checklist.html">
+            
+                <a href="../introduction/checklist.html">
+            
+                    
+                    EMQ X 消息服务器功能列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="start.html">
+            
+                <a href="start.html">
+            
+                    
+                    启动 EMQ X
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="command-line.html">
+            
+                <a href="command-line.html">
+            
+                    
+                    基本命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="directory.html">
+            
+                <a href="directory.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="log.html">
+            
+                <a href="log.html">
+            
+                    
+                    日志与追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7" data-path="dashboard.html">
+            
+                <a href="dashboard.html">
+            
+                    
+                    Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../advanced/retained.html">
+            
+                <a href="../advanced/retained.html">
+            
+                    
+                    保留消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../advanced/shared-subscriptions.html">
+            
+                <a href="../advanced/shared-subscriptions.html">
+            
+                    
+                    共享订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../advanced/delay-publish.html">
+            
+                <a href="../advanced/delay-publish.html">
+            
+                    
+                    延迟发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../advanced/proxy-subscriptions.html">
+            
+                <a href="../advanced/proxy-subscriptions.html">
+            
+                    
+                    代理订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../advanced/bridge.html">
+            
+                <a href="../advanced/bridge.html">
+            
+                    
+                    消息桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../advanced/topic-rewrite.html">
+            
+                <a href="../advanced/topic-rewrite.html">
+            
+                    
+                    主题重写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../advanced/system-topic.html">
+            
+                <a href="../advanced/system-topic.html">
+            
+                    
+                    $SYS 系统主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../advanced/blacklist.html">
+            
+                <a href="../advanced/blacklist.html">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    高级功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    认证
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../advanced/auth.html">
+            
+                <a href="../advanced/auth.html">
+            
+                    
+                    认证简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../advanced/auth-username.html">
+            
+                <a href="../advanced/auth-username.html">
+            
+                    
+                    Username 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../advanced/auth-clientid.html">
+            
+                <a href="../advanced/auth-clientid.html">
+            
+                    
+                    Cliend ID 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../advanced/auth-http.html">
+            
+                <a href="../advanced/auth-http.html">
+            
+                    
+                    HTTP 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="../advanced/auth-jwt.html">
+            
+                <a href="../advanced/auth-jwt.html">
+            
+                    
+                    JWT 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="../advanced/auth-ldap.html">
+            
+                <a href="../advanced/auth-ldap.html">
+            
+                    
+                    LDAP 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="../advanced/auth-mysql.html">
+            
+                <a href="../advanced/auth-mysql.html">
+            
+                    
+                    MySQL 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="../advanced/auth-postgresql.html">
+            
+                <a href="../advanced/auth-postgresql.html">
+            
+                    
+                    PostgreSQL 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="../advanced/auth-redis.html">
+            
+                <a href="../advanced/auth-redis.html">
+            
+                    
+                    Redis 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.10" data-path="../advanced/auth-mongodb.html">
+            
+                <a href="../advanced/auth-mongodb.html">
+            
+                    
+                    MongoDB 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    发布订阅 ACL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../advanced/acl.html">
+            
+                <a href="../advanced/acl.html">
+            
+                    
+                    发布订阅 ACL 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../advanced/acl-file.html">
+            
+                <a href="../advanced/acl-file.html">
+            
+                    
+                    内置 ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../advanced/acl-http.html">
+            
+                <a href="../advanced/acl-http.html">
+            
+                    
+                    HTTP ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../advanced/acl-mysql.html">
+            
+                <a href="../advanced/acl-mysql.html">
+            
+                    
+                    MySQL ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../advanced/acl-postgres.html">
+            
+                <a href="../advanced/acl-postgres.html">
+            
+                    
+                    PostgreSQL ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../advanced/acl-redis.html">
+            
+                <a href="../advanced/acl-redis.html">
+            
+                    
+                    Redis ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="../advanced/acl-mongodb.html">
+            
+                <a href="../advanced/acl-mongodb.html">
+            
+                    
+                    MongoDB ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../advanced/webhook.html">
+            
+                <a href="../advanced/webhook.html">
+            
+                    
+                    WebHook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../advanced/cluster.html">
+            
+                <a href="../advanced/cluster.html">
+            
+                    
+                    分布集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../advanced/hooks.html">
+            
+                <a href="../advanced/hooks.html">
+            
+                    
+                    钩子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../advanced/plugins.html">
+            
+                <a href="../advanced/plugins.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../advanced/multiple-language-support.html">
+            
+                <a href="../advanced/multiple-language-support.html">
+            
+                    
+                    多语言支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../advanced/metrics-and-stats.html">
+            
+                <a href="../advanced/metrics-and-stats.html">
+            
+                    
+                    指标监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../advanced/rate-limit.html">
+            
+                <a href="../advanced/rate-limit.html">
+            
+                    
+                    速率限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../advanced/inflight-window-and-message-queue.html">
+            
+                <a href="../advanced/inflight-window-and-message-queue.html">
+            
+                    
+                    飞行窗口与消息队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../advanced/retransmission.html">
+            
+                <a href="../advanced/retransmission.html">
+            
+                    
+                    消息重传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../advanced/cli.html">
+            
+                <a href="../advanced/cli.html">
+            
+                    
+                    命令行接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    管理监控 API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html">
+            
+                    
+                    管理监控 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-brokers">
+            
+                    
+                    基本信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-nodes">
+            
+                    
+                    节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-clients">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-subscriptions">
+            
+                    
+                    订阅信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-routes">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-publish">
+            
+                    
+                    消息发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-subscribe">
+            
+                    
+                    主题订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-plugins">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-listeners">
+            
+                    
+                    监听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-metrics">
+            
+                    
+                    统计指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-stats">
+            
+                    
+                    状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-alarms">
+            
+                    
+                    告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-banned">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-rules">
+            
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-actions">
+            
+                    
+                    动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-resource-types">
+            
+                    
+                    资源类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-resources">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    规则引擎
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../rule/rule-engine.html">
+            
+                <a href="../rule/rule-engine.html">
+            
+                    
+                    规则引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../rule/rule-create.html">
+            
+                <a href="../rule/rule-create.html">
+            
+                    
+                    创建规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html">
+            
+                    
+                    空动作 (调试)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#发送数据到-web-服务">
+            
+                    
+                    发送数据到 Web 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-mqtt-broker">
+            
+                    
+                    桥接数据到 MQTT Broker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-mysql">
+            
+                    
+                    保存数据到 MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-postgresql">
+            
+                    
+                    保存数据到 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-cassandra">
+            
+                    
+                    保存数据到 Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-mongodb">
+            
+                    
+                    保存数据到 MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-dynamodb">
+            
+                    
+                    保存数据到 DynamoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-redis">
+            
+                    
+                    保存数据到 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-opentsdb">
+            
+                    
+                    保存数据到 OpenTSDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-timescaledb">
+            
+                    
+                    保存数据到 TimescaleDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-influxdb">
+            
+                    
+                    保存数据到 InfluxDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-kafka">
+            
+                    
+                    桥接数据到 Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-pulsar">
+            
+                    
+                    桥接数据到 Pulsar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rocketmq">
+            
+                    
+                    桥接数据到 RocketMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rabbitmq">
+            
+                    
+                    桥接数据到 RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rpc-服务">
+            
+                    
+                    桥接数据到 RPC 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    数据存储
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html">
+            
+                    
+                    数据存储设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#redis-数据存储">
+            
+                    
+                    Redis 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#mysql-数据存储">
+            
+                    
+                    MySQL 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#postgresql-数据存储">
+            
+                    
+                    PostgreSQL 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#mongodb-消息存储">
+            
+                    
+                    MongoDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#cassandra-消息存储">
+            
+                    
+                    Cassandra 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#dynamodb-消息存储">
+            
+                    
+                    DynamoDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#influxdb-消息存储">
+            
+                    
+                    InfluxDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#opentsdb-消息存储">
+            
+                    
+                    OpenTSDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#timescale-消息存储">
+            
+                    
+                    Timescale 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    消息桥接
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#mqtt-桥接">
+            
+                    
+                    MQTT 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rpc-桥接">
+            
+                    
+                    RPC 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#kafka-桥接">
+            
+                    
+                    Kafka 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rabbitmq-桥接">
+            
+                    
+                    RabbitMQ 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#pulsar-桥接">
+            
+                    
+                    Pulsar 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rocketmq-桥接">
+            
+                    
+                    RocketMQ 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    进阶教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../tutorial/device-management.html">
+            
+                <a href="../tutorial/device-management.html">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../tutorial/turn.html">
+            
+                <a href="../tutorial/turn.html">
+            
+                    
+                    系统调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../tutorial/deploy.html">
+            
+                <a href="../tutorial/deploy.html">
+            
+                    
+                    生产部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../tutorial/prometheus.html">
+            
+                <a href="../tutorial/prometheus.html">
+            
+                    
+                    Prometheus 监控告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../tutorial/benchmark.html">
+            
+                <a href="../tutorial/benchmark.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../configuration/configuration.html">
+            
+                <a href="../configuration/configuration.html">
+            
+                    
+                    配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    SDK & Tools
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../development/client.html">
+            
+                <a href="../development/client.html">
+            
+                    
+                    MQTT 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../development/c.html">
+            
+                <a href="../development/c.html">
+            
+                    
+                    MQTT C 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../development/java.html">
+            
+                <a href="../development/java.html">
+            
+                    
+                    MQTT Java 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../development/go.html">
+            
+                <a href="../development/go.html">
+            
+                    
+                    MQTT Go 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../development/erlang.html">
+            
+                <a href="../development/erlang.html">
+            
+                    
+                    MQTT Erlang 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../development/javascript.html">
+            
+                <a href="../development/javascript.html">
+            
+                    
+                    MQTT JavaScript 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../development/python.html">
+            
+                <a href="../development/python.html">
+            
+                    
+                    MQTT Python 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../development/resource.html">
+            
+                <a href="../development/resource.html">
+            
+                    
+                    其他资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    FAQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../faq/faq.html">
+            
+                <a href="../faq/faq.html">
+            
+                    
+                    入门概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../faq/use-guide.html">
+            
+                <a href="../faq/use-guide.html">
+            
+                    
+                    使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../faq/deployment.html">
+            
+                <a href="../faq/deployment.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../faq/error.html">
+            
+                <a href="../faq/error.html">
+            
+                    
+                    常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../faq/enterprise.html">
+            
+                <a href="../faq/enterprise.html">
+            
+                    
+                    商业服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../faq/tags.html">
+            
+                <a href="../faq/tags.html">
+            
+                    
+                    FAQ 标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    版本发布
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../changes/changes.html">
+            
+                <a href="../changes/changes.html">
+            
+                    
+                    变更日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../changes/upgrade.html">
+            
+                <a href="../changes/upgrade.html">
+            
+                    
+                    升级指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    相关资料
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../design/design.html">
+            
+                <a href="../design/design.html">
+            
+                    
+                    架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../awesome/awesome.html">
+            
+                <a href="../awesome/awesome.html">
+            
+                    
+                    相关资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Dashboard</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#dashboard"><b></b>Dashboard</a></li><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b></b>&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x7528;-dashboard"><b></b>&#x542F;&#x7528; Dashboard</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;-dashboard"><b></b>&#x67E5;&#x770B; Dashboard</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;-dashboard"><b></b>&#x914D;&#x7F6E; Dashboard</a></li><li><span class="title-icon "></span><a href="#dashboard-&#x754C;&#x9762;"><b></b>Dashboard &#x754C;&#x9762;</a></li><ul><li><span class="title-icon "></span><a href="#monitoring"><b></b>MONITORING</a></li><li><span class="title-icon "></span><a href="#rule-engine"><b></b>RULE ENGINE</a></li><li><span class="title-icon "></span><a href="#management"><b></b>MANAGEMENT</a></li><li><span class="title-icon "></span><a href="#tools"><b></b>TOOLS</a></li><li><span class="title-icon "></span><a href="#admin"><b></b>ADMIN</a></li></ul></ul></ul></div><a href="#dashboard" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="dashboard"><a name="dashboard" class="anchor-navigation-ex-anchor" href="#dashboard"><i class="fa fa-link" aria-hidden="true"></i></a><a name="dashboard" class="plugin-anchor" href="#dashboard"><i class="fa fa-link" aria-hidden="true"></i></a>Dashboard</h1>
+<h2 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7B80;&#x4ECB;" class="plugin-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B80;&#x4ECB;</h2>
+<p>EMQ X &#x63D0;&#x4F9B;&#x4E86; Dashboard &#x4EE5;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x8BBE;&#x5907;&#x4E0E;&#x76D1;&#x63A7;&#x76F8;&#x5173;&#x6307;&#x6807;&#x3002;&#x901A;&#x8FC7; Dashboard&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x670D;&#x52A1;&#x5668;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x3001;&#x8D1F;&#x8F7D;&#x60C5;&#x51B5;&#x548C;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x7B49;&#x4FE1;&#x606F;&#x751A;&#x81F3;&#x65AD;&#x5F00;&#x5176;&#x8FDE;&#x63A5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x52A0;&#x8F7D;&#x548C;&#x5378;&#x8F7D;&#x6307;&#x5B9A;&#x63D2;&#x4EF6;&#x3002;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;EMQ X Dashboard &#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x89C4;&#x5219;&#x5F15;&#x64CE;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x64CD;&#x4F5C;&#x754C;&#x9762;&#xFF0C;&#x540C;&#x65F6;&#x96C6;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x6613;&#x7684; MQTT &#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#x4F9B;&#x7528;&#x6237;&#x6D4B;&#x8BD5;&#x4F7F;&#x7528;&#x3002;</p>
+<h2 id="&#x542F;&#x7528;-dashboard"><a name="&#x542F;&#x7528;-dashboard" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x7528;-dashboard"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x542F;&#x7528;-dashboard" class="plugin-anchor" href="#&#x542F;&#x7528;-dashboard"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x7528; Dashboard</h2>
+<p>EMQ X Dashboard &#x529F;&#x80FD;&#x7531; <a href="https://github.com/emqx/emqx-dashboard" target="_blank">emqx-dashboard</a> &#x63D2;&#x4EF6;&#x5B9E;&#x73B0;&#xFF0C;&#x8BE5;&#x63D2;&#x4EF6;&#x9ED8;&#x8BA4;&#x5904;&#x4E8E;&#x542F;&#x7528;&#x72B6;&#x6001;&#xFF0C;&#x5B83;&#x5C06;&#x5728; EMQ X &#x542F;&#x52A8;&#x65F6;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x7981;&#x7528; Dashboard &#x529F;&#x80FD;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06; <code>data/loaded_plugins</code>&#xFF08;&#x8BF7;&#x53C2;&#x89C1; <a href="../advanced/plugins.html#">&#x63D2;&#x4EF6;</a>&#xFF09;&#x4E2D;&#x7684; <code>{emqx_dashboard, true}</code> &#x4FEE;&#x6539;&#x4E3A; <code>{emqx_dashboard, false}</code>&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">{</span>emqx_dashboard, true<span class="token punctuation">}</span>.
+</code></pre>
+<h2 id="&#x67E5;&#x770B;-dashboard"><a name="&#x67E5;&#x770B;-dashboard" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;-dashboard"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x67E5;&#x770B;-dashboard" class="plugin-anchor" href="#&#x67E5;&#x770B;-dashboard"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B; Dashboard</h2>
+<p>EMQ X Dashboard &#x662F;&#x4E00;&#x4E2A; Web &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x6765;&#x8BBF;&#x95EE;&#x5B83;&#xFF0C;&#x65E0;&#x9700;&#x5B89;&#x88C5;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x8F6F;&#x4EF6;&#x3002;</p>
+<p>&#x5F53; EMQ X &#x6210;&#x529F;&#x8FD0;&#x884C;&#x5728;&#x4F60;&#x7684;&#x672C;&#x5730;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x4E14; EMQ X Dashboard &#x88AB;&#x9ED8;&#x8BA4;&#x542F;&#x7528;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE; <a href="http://localhost:18083" target="_blank">http://localhost:18083</a> &#x6765;&#x67E5;&#x770B;&#x4F60;&#x7684; Dashboard&#xFF0C;&#x9ED8;&#x8BA4;&#x7528;&#x6237;&#x540D;&#x662F; <code>admin</code>&#xFF0C;&#x5BC6;&#x7801;&#x662F; <code>public</code>&#x3002;</p>
+<h2 id="&#x914D;&#x7F6E;-dashboard"><a name="&#x914D;&#x7F6E;-dashboard" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;-dashboard"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x914D;&#x7F6E;-dashboard" class="plugin-anchor" href="#&#x914D;&#x7F6E;-dashboard"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E; Dashboard</h2>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x5728; <code>etc/plugins/emqx_dashboard.conf</code> &#x4E2D;&#x67E5;&#x770B;&#x6216;&#x4FEE;&#x6539; EMQ X Dashboard &#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x6CE8;&#x610F;&#x6B64;&#x5904;&#x7684; <code>etc</code> &#x5E76;&#x975E;&#x6307;&#x7CFB;&#x7EDF;&#x76EE;&#x5F55;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1; <a href="directory.html#">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</a>&#x3002;</p>
+<p>EMQ X Dashboard &#x914D;&#x7F6E;&#x9879;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;<strong>&#x9ED8;&#x8BA4;&#x7528;&#x6237;</strong>&#x4E0E;<strong>&#x76D1;&#x542C;&#x5668;</strong>&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#xFF1A;</p>
+<p><strong>&#x9ED8;&#x8BA4;&#x7528;&#x6237;</strong></p>
+<p>EMQ X Dashboard &#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x591A;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x4F46;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x4EC5;&#x652F;&#x6301;&#x914D;&#x7F6E;&#x9ED8;&#x8BA4;&#x7528;&#x6237;&#x3002;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x4E00;&#x65E6;&#x60A8;&#x901A;&#x8FC7; Dashboard &#x4FEE;&#x6539;&#x4E86;&#x9ED8;&#x8BA4;&#x7528;&#x6237;&#x7684;&#x5BC6;&#x7801;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x7528;&#x6237;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x5C06;&#x4EE5;&#x60A8;&#x5728; Dashboard &#x4E0A;&#x7684;&#x6700;&#x65B0;&#x6539;&#x52A8;&#x4E3A;&#x51C6;&#xFF0C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x7528;&#x6237;&#x914D;&#x7F6E;&#x5C06;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+<p><strong>&#x76D1;&#x542C;&#x5668;</strong></p>
+<p>EMQ X Dashboard &#x652F;&#x6301; HTTP &#x548C; HTTPS &#x4E24;&#x79CD; Listener&#xFF0C;&#x4F46;&#x9ED8;&#x8BA4;&#x53EA;&#x542F;&#x7528;&#x4E86;&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#x4E3A; 18083 &#x7684; HTTP Listener&#xFF0C;&#x5173;&#x4E8E; Listener &#x7684;&#x4ECB;&#x7ECD;&#x8BF7;&#x53C2;&#x89C1; <a href="config.html#">&#x914D;&#x7F6E;&#x8BF4;&#x660E;</a>&#x3002;</p>
+<p>&#x5173;&#x4E8E; Dashboard &#x7684;&#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&#x9879;&#x8BF4;&#x660E;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1; <a href="../configuration/configuration.html">&#x914D;&#x7F6E;&#x9879;</a>&#x3002;</p>
+<h2 id="dashboard-&#x754C;&#x9762;"><a name="dashboard-&#x754C;&#x9762;" class="anchor-navigation-ex-anchor" href="#dashboard-&#x754C;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="dashboard-&#x754C;&#x9762;" class="plugin-anchor" href="#dashboard-&#x754C;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a>Dashboard &#x754C;&#x9762;</h2>
+<p>&#x4E3A;&#x4E86;&#x4F7F;&#x7528;&#x6237;&#x5728;&#x64CD;&#x4F5C;&#x548C;&#x6D4F;&#x89C8;&#x4E2D;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x5730;&#x5B9A;&#x4F4D;&#x548C;&#x5207;&#x6362;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#xFF0C;EMQ X Dashboard &#x91C7;&#x7528;&#x4E86;&#x4FA7;&#x8FB9;&#x5BFC;&#x822A;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B; Dashboard &#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x4E00;&#x7EA7;&#x5BFC;&#x822A;&#x9879;&#x76EE;&#xFF1A;  </p>
+<table>
+<thead>
+<tr>
+<th>&#x5BFC;&#x822A;&#x9879;&#x76EE;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MONITORING</td>
+<td>&#x63D0;&#x4F9B;&#x4E86;&#x670D;&#x52A1;&#x7AEF;&#x4E0E;&#x5BA2;&#x6237;&#x7AEF;&#x76D1;&#x63A7;&#x4FE1;&#x606F;&#x7684;&#x5C55;&#x793A;&#x9875;&#x9762;</td>
+</tr>
+<tr>
+<td>RULE ENGINE</td>
+<td>&#x63D0;&#x4F9B;&#x4E86;&#x89C4;&#x5219;&#x5F15;&#x64CE;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x64CD;&#x4F5C;&#x9875;&#x9762;</td>
+</tr>
+<tr>
+<td>MANAGEMENT</td>
+<td>&#x63D0;&#x4F9B;&#x4E86;&#x6269;&#x5C55;&#x63D2;&#x4EF6;&#x4E0E;&#x5E94;&#x7528;&#x7684;&#x7BA1;&#x7406;&#x9875;&#x9762;</td>
+</tr>
+<tr>
+<td>TOOLS</td>
+<td>&#x63D0;&#x4F9B;&#x4E86; WebSocket &#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#x4EE5;&#x53CA; HTTP API &#x901F;&#x67E5;&#x9875;&#x9762;</td>
+</tr>
+<tr>
+<td>ADMIN</td>
+<td>&#x63D0;&#x4F9B;&#x4E86; Dashboard &#x7528;&#x6237;&#x7BA1;&#x7406;&#x548C;&#x663E;&#x793A;&#x8BBE;&#x7F6E;&#x7B49;&#x9875;&#x9762;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="monitoring"><a name="monitoring" class="anchor-navigation-ex-anchor" href="#monitoring"><i class="fa fa-link" aria-hidden="true"></i></a><a name="monitoring" class="plugin-anchor" href="#monitoring"><i class="fa fa-link" aria-hidden="true"></i></a>MONITORING</h3>
+<p>EMQ X Dashboard &#x63D0;&#x4F9B;&#x4E86;&#x975E;&#x5E38;&#x4E30;&#x5BCC;&#x7684;&#x6570;&#x636E;&#x76D1;&#x63A7;&#x9879;&#x76EE;&#xFF0C;&#x5B8C;&#x6574;&#x5730;&#x8986;&#x76D6;&#x4E86;&#x670D;&#x52A1;&#x7AEF;&#x4E0E;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x90FD;&#x5C06;&#x5728; <code>MONITORING</code> &#x4E0B;&#x7684;&#x9875;&#x9762;&#x4E2D;&#x88AB;&#x5408;&#x7406;&#x5730;&#x5C55;&#x793A;&#x7ED9;&#x7528;&#x6237;&#x3002;</p>
+<h4 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a><a name="overview" class="plugin-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>Overview</h4>
+<p><code>Overview</code> &#x4F5C;&#x4E3A; Dashboard &#x7684;&#x9ED8;&#x8BA4;&#x5C55;&#x793A;&#x9875;&#x9762;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86; EMQ X &#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x548C;&#x96C6;&#x7FA4;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x7684;&#x5173;&#x952E;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x5E2E;&#x52A9;&#x7528;&#x6237;&#x5FEB;&#x901F;&#x638C;&#x63E1;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<p><img src="../assets/dashboard-overview.png" alt="image"></p>
+<h4 id="clients"><a name="clients" class="anchor-navigation-ex-anchor" href="#clients"><i class="fa fa-link" aria-hidden="true"></i></a><a name="clients" class="plugin-anchor" href="#clients"><i class="fa fa-link" aria-hidden="true"></i></a>Clients</h4>
+<p><code>Clients</code> &#x9875;&#x9762;&#x63D0;&#x4F9B;&#x4E86;&#x8FDE;&#x63A5;&#x5230;&#x6307;&#x5B9A;&#x8282;&#x70B9;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x5217;&#x8868;&#xFF0C;&#x540C;&#x65F6;&#x652F;&#x6301;&#x901A;&#x8FC7; <code>Client ID</code> &#x76F4;&#x63A5;&#x641C;&#x7D22;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x9664;&#x4E86;&#x67E5;&#x770B;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#xFF0C;&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x70B9;&#x51FB;&#x6BCF;&#x6761;&#x8BB0;&#x5F55;&#x53F3;&#x4FA7;&#x7684; <code>Kick Out</code> &#x6309;&#x94AE;&#x8E22;&#x6389;&#x8BE5;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x6CE8;&#x610F;&#x6B64;&#x64CD;&#x4F5C;&#x5C06;&#x65AD;&#x5F00;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x5E76;&#x7EC8;&#x7ED3;&#x5176;&#x4F1A;&#x8BDD;&#x3002;</p>
+<p><code>Clients</code> &#x9875;&#x9762;&#x4F7F;&#x7528;&#x5FEB;&#x7167;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5C55;&#x793A;&#x5BA2;&#x6237;&#x7AEF;&#x5217;&#x8868;&#xFF0C;&#x56E0;&#x6B64;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x72B6;&#x6001;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x9875;&#x9762;&#x5E76;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x5237;&#x65B0;&#xFF0C;&#x9700;&#x8981;&#x60A8;&#x624B;&#x52A8;&#x5237;&#x65B0;&#x6D4F;&#x89C8;&#x5668;&#x6765;&#x83B7;&#x53D6;&#x6700;&#x65B0;&#x5BA2;&#x6237;&#x7AEF;&#x6570;&#x636E;&#x3002;</p>
+<p><img src="../assets/dashboard-clients.png" alt="image"></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x65E0;&#x6CD5;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x5217;&#x8868;&#x83B7;&#x53D6;&#x5230;&#x4F60;&#x9700;&#x8981;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5355;&#x51FB; <code>Client ID</code> &#x6765;&#x67E5;&#x770B;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x3002;</p>
+<p><img src="../assets/dashboard-clients-basic-info.png" alt="image"></p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x5BA2;&#x6237;&#x7AEF;&#x8BE6;&#x60C5;&#x4E2D;&#x7684;&#x5404;&#x4E2A;&#x5B57;&#x6BB5;&#x5206;&#x4E3A;&#x4E86; <strong>&#x8FDE;&#x63A5;</strong>&#xFF0C;<strong>&#x4F1A;&#x8BDD;</strong> &#x548C; <strong>&#x6307;&#x6807;</strong> &#x4E09;&#x7C7B;&#xFF0C;&#x4EE5;&#x4E0B;&#x4E3A;&#x5404;&#x5B57;&#x6BB5;&#x7684;&#x8BF4;&#x660E;&#xFF1A;</p>
+<p><strong>&#x8FDE;&#x63A5;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Node</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x7684;&#x8282;&#x70B9;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>Client ID</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;&#x6807;&#x8BC6;&#x7B26;</td>
+</tr>
+<tr>
+<td>Username</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x51FA;&#x4E8E;&#x5B89;&#x5168;&#x6027;&#x8003;&#x8651;&#xFF0C;&#x5BC6;&#x7801;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x5C55;&#x793A;</td>
+</tr>
+<tr>
+<td>Protocol</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;&#x4F7F;&#x7528;&#x7684;&#x534F;&#x8BAE;&#x540D;&#x79F0;&#x53CA;&#x5176;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>IP Address</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x7F51;&#x7EDC; IP &#x5730;&#x5740;&#xFF0C;&#x5730;&#x5740;&#x53EF;&#x4EE5;&#x662F; IPv4 &#x6216; IPv6</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;&#x6E90;&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td>Is Bridge</td>
+<td>&#x6307;&#x793A;&#x5BA2;&#x6237;&#x7AEF;&#x662F;&#x5426;&#x901A;&#x8FC7;&#x6865;&#x63A5;&#x65B9;&#x5F0F;&#x8FDE;&#x63A5;</td>
+</tr>
+<tr>
+<td>Connected At</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>Disconnected At</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;&#x79BB;&#x7EBF;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>Connection Status</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>Zone</td>
+<td>&#x6307;&#x793A;&#x5BA2;&#x6237;&#x7AEF;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x914D;&#x7F6E;&#x7EC4;</td>
+</tr>
+<tr>
+<td>Keepalive</td>
+<td>&#x4FDD;&#x6301;&#x8FDE;&#x63A5;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#xFF1A;&#x79D2;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x4F1A;&#x8BDD;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clean Session</td>
+<td>&#x6307;&#x793A;&#x5BA2;&#x6237;&#x7AEF;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x4E86;&#x5168;&#x65B0;&#x7684;&#x4F1A;&#x8BDD;</td>
+</tr>
+<tr>
+<td>Expiry Interval</td>
+<td>&#x4F1A;&#x8BDD;&#x8FC7;&#x671F;&#x95F4;&#x9694;&#xFF0C;&#x5355;&#x4F4D;&#xFF1A;&#x79D2;</td>
+</tr>
+<tr>
+<td>Created At</td>
+<td>&#x4F1A;&#x8BDD;&#x521B;&#x5EFA;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>Subscriptions Count</td>
+<td>&#x5F53;&#x524D;&#x8BA2;&#x9605;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Maximum Subscriptions Count</td>
+<td>&#x5141;&#x8BB8;&#x5EFA;&#x7ACB;&#x7684;&#x6700;&#x5927;&#x8BA2;&#x9605;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Inflight Window Size</td>
+<td>&#x5F53;&#x524D;&#x98DE;&#x884C;&#x7A97;&#x53E3;&#x5927;&#x5C0F;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1; <a href="../advanced/inflight-window-and-message-queue.html#">&#x98DE;&#x884C;&#x7A97;&#x53E3;&#x4E0E;&#x6D88;&#x606F;&#x961F;&#x5217;</a></td>
+</tr>
+<tr>
+<td>Maximum Inflight Window Size</td>
+<td>&#x98DE;&#x884C;&#x7A97;&#x53E3;&#x6700;&#x5927;&#x5927;&#x5C0F;</td>
+</tr>
+<tr>
+<td>Message Queue Size</td>
+<td>&#x5F53;&#x524D;&#x6D88;&#x606F;&#x961F;&#x5217;&#x5927;&#x5C0F;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1; <a href="../advanced/inflight-window-and-message-queue.html#">&#x98DE;&#x884C;&#x7A97;&#x53E3;&#x4E0E;&#x6D88;&#x606F;&#x961F;&#x5217;</a></td>
+</tr>
+<tr>
+<td>Maximum Message Queue Size</td>
+<td>&#x6D88;&#x606F;&#x961F;&#x5217;&#x6700;&#x5927;&#x5927;&#x5C0F;</td>
+</tr>
+<tr>
+<td>Uncomfirmed PUBREC Packets</td>
+<td>&#x672A;&#x786E;&#x8BA4;&#x7684; PUBREC &#x62A5;&#x6587;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Maximum Uncomfirmed PUBREC Packets</td>
+<td>&#x5141;&#x8BB8;&#x5B58;&#x5728;&#x672A;&#x786E;&#x8BA4;&#x7684; PUBREC &#x62A5;&#x6587;&#x7684;&#x6700;&#x5927;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x6307;&#x6807;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of Bytes Received</td>
+<td>EMQ X Broker&#xFF08;&#x4E0B;&#x540C;&#xFF09;&#x63A5;&#x6536;&#x7684;&#x5B57;&#x8282;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Number of TCP Packets Received</td>
+<td>&#x63A5;&#x6536;&#x7684; TCP &#x62A5;&#x6587;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Number of MQTT Packets Received</td>
+<td>&#x63A5;&#x6536;&#x7684; MQTT &#x62A5;&#x6587;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Number of PUBLISH Packets Received</td>
+<td>&#x63A5;&#x6536;&#x7684; PUBLISH &#x62A5;&#x6587;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Number of Bytes Sent</td>
+<td>&#x53D1;&#x9001;&#x7684;&#x5B57;&#x8282;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Number of TCP Packets Sent</td>
+<td>&#x53D1;&#x9001;&#x7684; TCP &#x62A5;&#x6587;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Number of MQTT Packets Sent</td>
+<td>&#x53D1;&#x9001;&#x7684; MQTT &#x62A5;&#x6587;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Number of PUBLISH Packets Sent</td>
+<td>&#x53D1;&#x9001;&#x7684; PUBLISH &#x62A5;&#x6587;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x8BE6;&#x60C5;&#x7684; <code>Subscriptions</code> &#x6807;&#x7B7E;&#x9875;&#x4E2D;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BA2;&#x9605;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x53CA;&#x65B0;&#x5EFA;&#x6216;&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#xFF1A;</p>
+<p><img src="../assets/dashboard-clients-subscriptions.png" alt="image"></p>
+<h4 id="subscriptions"><a name="subscriptions" class="anchor-navigation-ex-anchor" href="#subscriptions"><i class="fa fa-link" aria-hidden="true"></i></a><a name="subscriptions" class="plugin-anchor" href="#subscriptions"><i class="fa fa-link" aria-hidden="true"></i></a>Subscriptions</h4>
+<p><code>Subscriptions</code> &#x9875;&#x9762;&#x63D0;&#x4F9B;&#x4E86;&#x6307;&#x5B9A;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x8BA2;&#x9605;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x7528;&#x6237;&#x901A;&#x8FC7; <code>Client ID</code> &#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x6240;&#x6709;&#x8BA2;&#x9605;&#x3002;</p>
+<p><img src="../assets/dashboard-subscriptions.png" alt="image"></p>
+<h3 id="rule-engine"><a name="rule-engine" class="anchor-navigation-ex-anchor" href="#rule-engine"><i class="fa fa-link" aria-hidden="true"></i></a><a name="rule-engine" class="plugin-anchor" href="#rule-engine"><i class="fa fa-link" aria-hidden="true"></i></a>RULE ENGINE</h3>
+<p>&#x4F7F;&#x7528; EMQ X &#x7684;&#x89C4;&#x5219;&#x5F15;&#x64CE;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x5730;&#x5904;&#x7406;&#x6D88;&#x606F;&#x548C;&#x4E8B;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982;&#x5C06;&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x6210;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x540E;&#x5B58;&#x5165;&#x6570;&#x636E;&#x5E93;&#x8868;&#x6216;&#x8005;&#x91CD;&#x65B0;&#x53D1;&#x9001;&#x5230;&#x6D88;&#x606F;&#x961F;&#x5217;&#x7B49;&#x7B49;&#x3002;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x66F4;&#x597D;&#x5730;&#x4F7F;&#x7528;&#x89C4;&#x5219;&#x5F15;&#x64CE;&#xFF0C;EMQ X Dashboard &#x63D0;&#x4F9B;&#x4E86;&#x76F8;&#x5E94;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x64CD;&#x4F5C;&#x9875;&#x9762;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x70B9;&#x51FB; <code>RULE ENGINE</code> &#x5BFC;&#x822A;&#x9879;&#x76EE;&#x6765;&#x8BBF;&#x95EE;&#x8FD9;&#x4E9B;&#x9875;&#x9762;&#x3002;</p>
+<p>&#x9274;&#x4E8E;&#x89C4;&#x5219;&#x5F15;&#x64CE;&#x7684;&#x76F8;&#x5173;&#x6982;&#x5FF5;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#xFF0C; &#x6D89;&#x53CA;&#x5230;&#x7684;&#x64CD;&#x4F5C;&#x53EF;&#x80FD;&#x4F1A;&#x5360;&#x636E;&#x76F8;&#x5F53;&#x5927;&#x7684;&#x7BC7;&#x5E45;&#xFF0C;&#x8003;&#x8651;&#x5230;&#x60A8;&#x7684;&#x9605;&#x8BFB;&#x4F53;&#x9A8C;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x901A;&#x8FC7;&#x989D;&#x5916;&#x7684;&#x6587;&#x6863;&#x6765;&#x4ECB;&#x7ECD;&#x89C4;&#x5219;&#x5F15;&#x64CE;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1; <a href="../rule/rule-engine.html#">&#x89C4;&#x5219;&#x5F15;&#x64CE;</a>&#x3002;</p>
+<h3 id="management"><a name="management" class="anchor-navigation-ex-anchor" href="#management"><i class="fa fa-link" aria-hidden="true"></i></a><a name="management" class="plugin-anchor" href="#management"><i class="fa fa-link" aria-hidden="true"></i></a>MANAGEMENT</h3>
+<p>&#x76EE;&#x524D; EMQ X Dashboard &#x7684; <code>MANAGEMENT</code> &#x5BFC;&#x822A;&#x9879;&#x76EE;&#x4E0B;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x6269;&#x5C55;&#x63D2;&#x4EF6;&#xFF08;&#x8BF7;&#x53C2;&#x89C1; <a href="../advanced/plugins.html#">&#x63D2;&#x4EF6;</a>&#xFF09;&#x7684;&#x76D1;&#x63A7;&#x7BA1;&#x7406;&#x9875;&#x9762;&#x548C;&#x7528;&#x4E8E; HTTP API &#x8BA4;&#x8BC1;&#x7684; AppID &#x4E0E; AppSerect&#xFF08;&#x8BF7;&#x53C2;&#x89C1; <a href="../advanced/http-api.html#">HTTP API</a>&#xFF09;&#x7684;&#x7BA1;&#x7406;&#x9875;&#x9762;&#x3002;</p>
+<h4 id="plugins"><a name="plugins" class="anchor-navigation-ex-anchor" href="#plugins"><i class="fa fa-link" aria-hidden="true"></i></a><a name="plugins" class="plugin-anchor" href="#plugins"><i class="fa fa-link" aria-hidden="true"></i></a>Plugins</h4>
+<p><code>Plugins</code> &#x9875;&#x9762;&#x5217;&#x4E3E;&#x4E86; EMQ X &#x80FD;&#x591F;&#x53D1;&#x73B0;&#x7684;&#x6240;&#x6709;&#x63D2;&#x4EF6;&#xFF0C;&#x5305;&#x62EC; EMQ X &#x5B98;&#x65B9;&#x63D2;&#x4EF6;&#x4E0E;&#x60A8;&#x9075;&#x5FAA; EMQ X &#x5B98;&#x65B9;&#x6807;&#x51C6;&#x81EA;&#x884C;&#x5F00;&#x53D1;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x9875;&#x9762;&#x67E5;&#x770B;&#x63D2;&#x4EF6;&#x5F53;&#x524D;&#x7684;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x4EE5;&#x53CA;&#x968F;&#x65F6;&#x542F;&#x505C;&#x63D2;&#x4EF6;&#x3002;</p>
+<p><img src="../assets/dashboard-plugins.png" alt="image"></p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x9664;&#x4E86; <a href="https://github.com/emqx/emqx-dashboard" target="_blank">emqx-dashboard</a> &#x4EE5;&#x5916;&#xFF0C;EMQ X &#x8FD8;&#x5C06;&#x9ED8;&#x8BA4;&#x542F;&#x52A8; <a href="https://github.com/emqx/emqx-rule-engine" target="_blank">emqx-rule-engine</a> &#x7B49; 4 &#x4E2A;&#x63D2;&#x4EF6;&#xFF1A;</p>
+<p><img src="../assets/dashboard-running-plugins.png" alt="image"></p>
+<h4 id="applications"><a name="applications" class="anchor-navigation-ex-anchor" href="#applications"><i class="fa fa-link" aria-hidden="true"></i></a><a name="applications" class="plugin-anchor" href="#applications"><i class="fa fa-link" aria-hidden="true"></i></a>Applications</h4>
+<p><code>Applications</code> &#x9875;&#x9762;&#x5217;&#x4E3E;&#x4E86;&#x5F53;&#x524D;&#x5DF2;&#x521B;&#x5EFA;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x9875;&#x9762;&#x8FDB;&#x884C;&#x8BF8;&#x5982;&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x3001;&#x4E34;&#x65F6;&#x7981;&#x7528;&#x6216;&#x542F;&#x52A8;&#x67D0;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x7B49;&#x64CD;&#x4F5C;&#x3002;EMQ X &#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; AppID &#x4E3A; <code>admin</code>&#xFF0C;AppSecret &#x4E3A; <code>publish</code> &#x7684;&#x9ED8;&#x8BA4;&#x5E94;&#x7528;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x9996;&#x6B21;&#x8BBF;&#x95EE;&#xFF1A;</p>
+<p><img src="../assets/dashboard-applications.png" alt="image"></p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x70B9;&#x51FB; <code>Application</code> &#x9875;&#x9762;&#x53F3;&#x4E0A;&#x89D2;&#x7684; <code>New App</code> &#x6309;&#x94AE;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x5176;&#x4E2D; AppID &#x4E0E; AppSecret &#x662F;&#x5FC5;&#x9009;&#x9879;&#x3002;&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x540E;&#x60A8;&#x53EF;&#x4EE5;&#x70B9;&#x51FB; <code>View</code> &#x6309;&#x94AE;&#x6765;&#x67E5;&#x770B;&#x5E94;&#x7528;&#x8BE6;&#x60C5;&#xFF0C;AppSecret &#x4E5F;&#x4F1A;&#x5728;&#x8BE6;&#x60C5;&#x4E2D;&#x663E;&#x793A;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x76F8;&#x5173;&#x5B57;&#x6BB5;&#x7684;&#x8BF4;&#x660E;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AppID</td>
+<td>&#x5E94;&#x7528;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x7528;&#x4E8E;&#x533A;&#x5206;&#x4E0D;&#x540C;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x53EF;&#x91CD;&#x590D;&#xFF0C;&#x5728;&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x65F6; Dashboard &#x5C06;&#x81EA;&#x52A8;&#x4E3A;&#x4F60;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x7684;&#x5EFA;&#x8BAE;&#x5E94;&#x7528;&#x6807;&#x8BC6;&#x7B26;</td>
+</tr>
+<tr>
+<td>AppName</td>
+<td>&#x5E94;&#x7528;&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#xFF0C;&#x4F46;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x60A8;&#x81EA;&#x5DF1;&#x4F7F;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x91CD;&#x590D;&#x7684;&#x5E94;&#x7528;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>AppSecret</td>
+<td>&#x7531; EMQ X &#x5206;&#x914D;&#x7684;&#x5E94;&#x7528;&#x5BC6;&#x94A5;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x5E94;&#x7528;&#x8BE6;&#x60C5;&#x4E2D;&#x67E5;&#x770B;</td>
+</tr>
+<tr>
+<td>Expired date</td>
+<td>&#x5E94;&#x7528;&#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x6C38;&#x4E0D;&#x8FC7;&#x671F;</td>
+</tr>
+<tr>
+<td>Remark</td>
+<td>&#x60A8;&#x5BF9;&#x5E94;&#x7528;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x65B9;&#x4FBF;&#x540E;&#x671F;&#x7BA1;&#x7406;</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>&#x5E94;&#x7528;&#x72B6;&#x6001;&#xFF0C;&#x53EA;&#x6709; Allowed &#x4E0E; Denied &#x4E24;&#x79CD;&#xFF0C;Denied &#x72B6;&#x6001;&#x4E0B; EMQ X &#x5C06;&#x62D2;&#x7EDD;&#x4F7F;&#x7528;&#x8BE5; AppID &#x4E0E; App Secret &#x7684; HTTP API &#x7684;&#x8BBF;&#x95EE;&#x8BF7;&#x6C42;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tools"><a name="tools" class="anchor-navigation-ex-anchor" href="#tools"><i class="fa fa-link" aria-hidden="true"></i></a><a name="tools" class="plugin-anchor" href="#tools"><i class="fa fa-link" aria-hidden="true"></i></a>TOOLS</h3>
+<p>&#x76EE;&#x524D; EMQ X Dashboard &#x7684; <code>TOOLS</code> &#x5BFC;&#x822A;&#x9879;&#x76EE;&#x4E0B;&#x4E3B;&#x8981;&#x5305;&#x62EC; WebSocket &#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#x9875;&#x9762;&#x4EE5;&#x53CA; HTTP API &#x901F;&#x67E5;&#x9875;&#x9762;&#x3002;</p>
+<h4 id="websocket"><a name="websocket" class="anchor-navigation-ex-anchor" href="#websocket"><i class="fa fa-link" aria-hidden="true"></i></a><a name="websocket" class="plugin-anchor" href="#websocket"><i class="fa fa-link" aria-hidden="true"></i></a>Websocket</h4>
+<p><code>Websocket</code> &#x9875;&#x9762;&#x4E3A;&#x60A8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x6613;&#x4F46;&#x6709;&#x6548;&#x7684; WebSocket &#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x4E86;&#x8FDE;&#x63A5;&#x3001;&#x8BA2;&#x9605;&#x548C;&#x53D1;&#x5E03;&#x529F;&#x80FD;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x80FD;&#x67E5;&#x770B;&#x81EA;&#x5DF1;&#x53D1;&#x9001;&#x548C;&#x63A5;&#x6536;&#x7684;&#x62A5;&#x6587;&#x6570;&#x636E;&#xFF0C;&#x6211;&#x4EEC;&#x671F;&#x671B;&#x5B83;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x60A8;&#x5FEB;&#x901F;&#x5730;&#x5B8C;&#x6210;&#x67D0;&#x4E9B;&#x573A;&#x666F;&#x6216;&#x529F;&#x80FD;&#x7684;&#x6D4B;&#x8BD5;&#x9A8C;&#x8BC1;&#xFF1A;</p>
+<p><img src="../assets/dashboard-websocket.png" alt="image"></p>
+<h4 id="http-api"><a name="http-api" class="anchor-navigation-ex-anchor" href="#http-api"><i class="fa fa-link" aria-hidden="true"></i></a><a name="http-api" class="plugin-anchor" href="#http-api"><i class="fa fa-link" aria-hidden="true"></i></a>HTTP API</h4>
+<p><code>HTTP API</code> &#x9875;&#x9762;&#x5217;&#x4E3E;&#x4E86; EMQ X &#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x6240;&#x6709; HTTP API &#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;</p>
+<p><img src="../assets/dashboard-http-api.png" alt="image"></p>
+<h3 id="admin"><a name="admin" class="anchor-navigation-ex-anchor" href="#admin"><i class="fa fa-link" aria-hidden="true"></i></a><a name="admin" class="plugin-anchor" href="#admin"><i class="fa fa-link" aria-hidden="true"></i></a>ADMIN</h3>
+<h4 id="users"><a name="users" class="anchor-navigation-ex-anchor" href="#users"><i class="fa fa-link" aria-hidden="true"></i></a><a name="users" class="plugin-anchor" href="#users"><i class="fa fa-link" aria-hidden="true"></i></a>Users</h4>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x5728; <code>Users</code> &#x9875;&#x9762;&#x67E5;&#x770B;&#x548C;&#x7BA1;&#x7406;&#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x548C;&#x64CD;&#x4F5C; Dashboard &#x7684;&#x7528;&#x6237;&#xFF1A;</p>
+<p><img src="../assets/dashboard-users.png" alt="image"></p>
+<h4 id="settings"><a name="settings" class="anchor-navigation-ex-anchor" href="#settings"><i class="fa fa-link" aria-hidden="true"></i></a><a name="settings" class="plugin-anchor" href="#settings"><i class="fa fa-link" aria-hidden="true"></i></a>Settings</h4>
+<p>&#x76EE;&#x524D; EMQ X Dashboard &#x4EC5;&#x652F;&#x6301;&#x4FEE;&#x6539;&#x4E3B;&#x9898;&#x548C;&#x8BED;&#x8A00;&#x4E24;&#x79CD;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<p><img src="../assets/dashboard-settings.png" alt="image"></p>
+<h4 id="help"><a name="help" class="anchor-navigation-ex-anchor" href="#help"><i class="fa fa-link" aria-hidden="true"></i></a><a name="help" class="plugin-anchor" href="#help"><i class="fa fa-link" aria-hidden="true"></i></a>Help</h4>
+<p>&#x5982;&#x679C;&#x60A8;&#x5728;&#x4F7F;&#x7528; EMQ X &#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x9047;&#x5230;&#x4E86;&#x4EFB;&#x4F55;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x5728; <code>Help</code> &#x9875;&#x9762;&#x4E3A;&#x60A8;&#x63D0;&#x4F9B;&#x4E86; FAQ &#x7B49;&#x6587;&#x6863;&#x7684;&#x94FE;&#x63A5;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x73B0;&#x6709;&#x7684;&#x6587;&#x6863;&#x4F9D;&#x7136;&#x65E0;&#x6CD5;&#x89E3;&#x51B3;&#x60A8;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x524D;&#x5F80;&#x6211;&#x4EEC;&#x5728; Github &#x7684;&#x5F00;&#x6E90;&#x793E;&#x533A;&#x54A8;&#x8BE2;&#x6211;&#x4EEC;&#x7684;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x3002;</p>
+<p><img src="../assets/dashboard-help.png" alt="image"></p>
+<p><div id="gitalk-container"></div><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script></p>
+<style>.emqxee { display: none; }</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="log.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 日志与追踪">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Dashboard","date":"2020-02-25T17:15:26.000Z","author":"tigercl","keywords":null,"description":null,"category":null,"ref":"undefined","level":"1.2.7","depth":2,"next":{"title":"基础功能","level":"1.3","depth":1,"ref":"","articles":[{"title":"保留消息","level":"1.3.1","depth":2,"path":"advanced/retained.md","ref":"advanced/retained.md","articles":[]},{"title":"共享订阅","level":"1.3.2","depth":2,"path":"advanced/shared-subscriptions.md","ref":"advanced/shared-subscriptions.md","articles":[]},{"title":"延迟发布","level":"1.3.3","depth":2,"path":"advanced/delay-publish.md","ref":"advanced/delay-publish.md","articles":[]},{"title":"代理订阅","level":"1.3.4","depth":2,"path":"advanced/proxy-subscriptions.md","ref":"advanced/proxy-subscriptions.md","articles":[]},{"title":"消息桥接","level":"1.3.5","depth":2,"path":"advanced/bridge.md","ref":"advanced/bridge.md","articles":[]},{"title":"主题重写","level":"1.3.6","depth":2,"path":"advanced/topic-rewrite.md","ref":"advanced/topic-rewrite.md","articles":[]},{"title":"$SYS 系统主题","level":"1.3.7","depth":2,"path":"advanced/system-topic.md","ref":"advanced/system-topic.md","articles":[]},{"title":"黑名单","level":"1.3.8","depth":2,"path":"advanced/blacklist.md","ref":"advanced/blacklist.md","articles":[]}]},"previous":{"title":"日志与追踪","level":"1.2.6","depth":2,"path":"getting-started/log.md","ref":"getting-started/log.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","hints","simpletabs","cuav-chapters","edit-link","gittalk","scripts","anchors","anchor-navigation-ex","emqx","-lunr"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"github":{"url":"https://github.com/emqx/emqx"},"scripts":{"files":["./_js/emqx-docs.js"]},"search":{},"local-pagefooter":{"copyright":"© Copyright 2016-2020, EMQ Technologies Co., Ltd.","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"emqx":{},"simpletabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"sharing":{"facebook":false,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑","base":"https://github.com/emqx/emqx-docs-cn/source"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"gittalk":{"clientID":"3b2217a86bdbdc09d0d8","clientSecret":"aee2b15ea39c494eb80b775513d38791895adb63","repo":"emqx-docs-cn","owner":"emqx","admin":["wivwiv"],"distractionFreeMode":false}},"theme":"default","author":"EMQX Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"redirects":{},"variables":{},"title":"EMQ X 使用文档","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":"emqtt"}},"gitbook":"*","description":"EMQ X 百万级 MQTT 消息服务器使用文档"},"file":{"path":"getting-started/dashboard.md","mtime":"2020-04-01T07:24:43.381Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-01T08:58:30.454Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-simpletabs/tabs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gittalk/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scripts/d2a49e656f2a2a19e1c4ec4742014516-emqx-docs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

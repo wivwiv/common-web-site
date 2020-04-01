@@ -1,0 +1,2288 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>日志与追踪 · EMQ X 使用文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="EMQX Team">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-simpletabs/tabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dashboard.html" />
+    
+    
+    <link rel="prev" href="config.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    EMQ X 消息服务器简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../introduction/checklist.html">
+            
+                <a href="../introduction/checklist.html">
+            
+                    
+                    EMQ X 消息服务器功能列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="start.html">
+            
+                <a href="start.html">
+            
+                    
+                    启动 EMQ X
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="command-line.html">
+            
+                <a href="command-line.html">
+            
+                    
+                    基本命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="directory.html">
+            
+                <a href="directory.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="log.html">
+            
+                <a href="log.html">
+            
+                    
+                    日志与追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="dashboard.html">
+            
+                <a href="dashboard.html">
+            
+                    
+                    Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    基础功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../advanced/retained.html">
+            
+                <a href="../advanced/retained.html">
+            
+                    
+                    保留消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../advanced/shared-subscriptions.html">
+            
+                <a href="../advanced/shared-subscriptions.html">
+            
+                    
+                    共享订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../advanced/delay-publish.html">
+            
+                <a href="../advanced/delay-publish.html">
+            
+                    
+                    延迟发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../advanced/proxy-subscriptions.html">
+            
+                <a href="../advanced/proxy-subscriptions.html">
+            
+                    
+                    代理订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../advanced/bridge.html">
+            
+                <a href="../advanced/bridge.html">
+            
+                    
+                    消息桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../advanced/topic-rewrite.html">
+            
+                <a href="../advanced/topic-rewrite.html">
+            
+                    
+                    主题重写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../advanced/system-topic.html">
+            
+                <a href="../advanced/system-topic.html">
+            
+                    
+                    $SYS 系统主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../advanced/blacklist.html">
+            
+                <a href="../advanced/blacklist.html">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    高级功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    认证
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../advanced/auth.html">
+            
+                <a href="../advanced/auth.html">
+            
+                    
+                    认证简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../advanced/auth-username.html">
+            
+                <a href="../advanced/auth-username.html">
+            
+                    
+                    Username 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../advanced/auth-clientid.html">
+            
+                <a href="../advanced/auth-clientid.html">
+            
+                    
+                    Cliend ID 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../advanced/auth-http.html">
+            
+                <a href="../advanced/auth-http.html">
+            
+                    
+                    HTTP 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="../advanced/auth-jwt.html">
+            
+                <a href="../advanced/auth-jwt.html">
+            
+                    
+                    JWT 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="../advanced/auth-ldap.html">
+            
+                <a href="../advanced/auth-ldap.html">
+            
+                    
+                    LDAP 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="../advanced/auth-mysql.html">
+            
+                <a href="../advanced/auth-mysql.html">
+            
+                    
+                    MySQL 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="../advanced/auth-postgresql.html">
+            
+                <a href="../advanced/auth-postgresql.html">
+            
+                    
+                    PostgreSQL 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="../advanced/auth-redis.html">
+            
+                <a href="../advanced/auth-redis.html">
+            
+                    
+                    Redis 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.10" data-path="../advanced/auth-mongodb.html">
+            
+                <a href="../advanced/auth-mongodb.html">
+            
+                    
+                    MongoDB 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    发布订阅 ACL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../advanced/acl.html">
+            
+                <a href="../advanced/acl.html">
+            
+                    
+                    发布订阅 ACL 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../advanced/acl-file.html">
+            
+                <a href="../advanced/acl-file.html">
+            
+                    
+                    内置 ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../advanced/acl-http.html">
+            
+                <a href="../advanced/acl-http.html">
+            
+                    
+                    HTTP ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../advanced/acl-mysql.html">
+            
+                <a href="../advanced/acl-mysql.html">
+            
+                    
+                    MySQL ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../advanced/acl-postgres.html">
+            
+                <a href="../advanced/acl-postgres.html">
+            
+                    
+                    PostgreSQL ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../advanced/acl-redis.html">
+            
+                <a href="../advanced/acl-redis.html">
+            
+                    
+                    Redis ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="../advanced/acl-mongodb.html">
+            
+                <a href="../advanced/acl-mongodb.html">
+            
+                    
+                    MongoDB ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../advanced/webhook.html">
+            
+                <a href="../advanced/webhook.html">
+            
+                    
+                    WebHook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../advanced/cluster.html">
+            
+                <a href="../advanced/cluster.html">
+            
+                    
+                    分布集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../advanced/hooks.html">
+            
+                <a href="../advanced/hooks.html">
+            
+                    
+                    钩子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../advanced/plugins.html">
+            
+                <a href="../advanced/plugins.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../advanced/multiple-language-support.html">
+            
+                <a href="../advanced/multiple-language-support.html">
+            
+                    
+                    多语言支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../advanced/metrics-and-stats.html">
+            
+                <a href="../advanced/metrics-and-stats.html">
+            
+                    
+                    指标监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../advanced/rate-limit.html">
+            
+                <a href="../advanced/rate-limit.html">
+            
+                    
+                    速率限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../advanced/inflight-window-and-message-queue.html">
+            
+                <a href="../advanced/inflight-window-and-message-queue.html">
+            
+                    
+                    飞行窗口与消息队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../advanced/retransmission.html">
+            
+                <a href="../advanced/retransmission.html">
+            
+                    
+                    消息重传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../advanced/cli.html">
+            
+                <a href="../advanced/cli.html">
+            
+                    
+                    命令行接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    管理监控 API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html">
+            
+                    
+                    管理监控 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-brokers">
+            
+                    
+                    基本信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-nodes">
+            
+                    
+                    节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-clients">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-subscriptions">
+            
+                    
+                    订阅信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-routes">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-publish">
+            
+                    
+                    消息发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-subscribe">
+            
+                    
+                    主题订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-plugins">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-listeners">
+            
+                    
+                    监听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-metrics">
+            
+                    
+                    统计指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-stats">
+            
+                    
+                    状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-alarms">
+            
+                    
+                    告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-banned">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-rules">
+            
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-actions">
+            
+                    
+                    动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-resource-types">
+            
+                    
+                    资源类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" data-path="../advanced/http-api.html">
+            
+                <a href="../advanced/http-api.html#endpoint-resources">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    规则引擎
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../rule/rule-engine.html">
+            
+                <a href="../rule/rule-engine.html">
+            
+                    
+                    规则引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../rule/rule-create.html">
+            
+                <a href="../rule/rule-create.html">
+            
+                    
+                    创建规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html">
+            
+                    
+                    空动作 (调试)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#发送数据到-web-服务">
+            
+                    
+                    发送数据到 Web 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-mqtt-broker">
+            
+                    
+                    桥接数据到 MQTT Broker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-mysql">
+            
+                    
+                    保存数据到 MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-postgresql">
+            
+                    
+                    保存数据到 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-cassandra">
+            
+                    
+                    保存数据到 Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-mongodb">
+            
+                    
+                    保存数据到 MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-dynamodb">
+            
+                    
+                    保存数据到 DynamoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-redis">
+            
+                    
+                    保存数据到 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-opentsdb">
+            
+                    
+                    保存数据到 OpenTSDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-timescaledb">
+            
+                    
+                    保存数据到 TimescaleDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-influxdb">
+            
+                    
+                    保存数据到 InfluxDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-kafka">
+            
+                    
+                    桥接数据到 Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-pulsar">
+            
+                    
+                    桥接数据到 Pulsar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rocketmq">
+            
+                    
+                    桥接数据到 RocketMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rabbitmq">
+            
+                    
+                    桥接数据到 RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rpc-服务">
+            
+                    
+                    桥接数据到 RPC 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    数据存储
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html">
+            
+                    
+                    数据存储设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#redis-数据存储">
+            
+                    
+                    Redis 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#mysql-数据存储">
+            
+                    
+                    MySQL 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#postgresql-数据存储">
+            
+                    
+                    PostgreSQL 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#mongodb-消息存储">
+            
+                    
+                    MongoDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#cassandra-消息存储">
+            
+                    
+                    Cassandra 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#dynamodb-消息存储">
+            
+                    
+                    DynamoDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#influxdb-消息存储">
+            
+                    
+                    InfluxDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#opentsdb-消息存储">
+            
+                    
+                    OpenTSDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#timescale-消息存储">
+            
+                    
+                    Timescale 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    消息桥接
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#mqtt-桥接">
+            
+                    
+                    MQTT 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rpc-桥接">
+            
+                    
+                    RPC 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#kafka-桥接">
+            
+                    
+                    Kafka 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rabbitmq-桥接">
+            
+                    
+                    RabbitMQ 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#pulsar-桥接">
+            
+                    
+                    Pulsar 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rocketmq-桥接">
+            
+                    
+                    RocketMQ 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    进阶教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../tutorial/device-management.html">
+            
+                <a href="../tutorial/device-management.html">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../tutorial/turn.html">
+            
+                <a href="../tutorial/turn.html">
+            
+                    
+                    系统调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../tutorial/deploy.html">
+            
+                <a href="../tutorial/deploy.html">
+            
+                    
+                    生产部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../tutorial/prometheus.html">
+            
+                <a href="../tutorial/prometheus.html">
+            
+                    
+                    Prometheus 监控告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../tutorial/benchmark.html">
+            
+                <a href="../tutorial/benchmark.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../configuration/configuration.html">
+            
+                <a href="../configuration/configuration.html">
+            
+                    
+                    配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    SDK & Tools
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../development/client.html">
+            
+                <a href="../development/client.html">
+            
+                    
+                    MQTT 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../development/c.html">
+            
+                <a href="../development/c.html">
+            
+                    
+                    MQTT C 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../development/java.html">
+            
+                <a href="../development/java.html">
+            
+                    
+                    MQTT Java 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../development/go.html">
+            
+                <a href="../development/go.html">
+            
+                    
+                    MQTT Go 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../development/erlang.html">
+            
+                <a href="../development/erlang.html">
+            
+                    
+                    MQTT Erlang 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../development/javascript.html">
+            
+                <a href="../development/javascript.html">
+            
+                    
+                    MQTT JavaScript 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../development/python.html">
+            
+                <a href="../development/python.html">
+            
+                    
+                    MQTT Python 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../development/resource.html">
+            
+                <a href="../development/resource.html">
+            
+                    
+                    其他资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    FAQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../faq/faq.html">
+            
+                <a href="../faq/faq.html">
+            
+                    
+                    入门概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../faq/use-guide.html">
+            
+                <a href="../faq/use-guide.html">
+            
+                    
+                    使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../faq/deployment.html">
+            
+                <a href="../faq/deployment.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../faq/error.html">
+            
+                <a href="../faq/error.html">
+            
+                    
+                    常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../faq/enterprise.html">
+            
+                <a href="../faq/enterprise.html">
+            
+                    
+                    商业服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../faq/tags.html">
+            
+                <a href="../faq/tags.html">
+            
+                    
+                    FAQ 标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    版本发布
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../changes/changes.html">
+            
+                <a href="../changes/changes.html">
+            
+                    
+                    变更日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../changes/upgrade.html">
+            
+                <a href="../changes/upgrade.html">
+            
+                    
+                    升级指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    相关资料
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../design/design.html">
+            
+                <a href="../design/design.html">
+            
+                    
+                    架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../awesome/awesome.html">
+            
+                <a href="../awesome/awesome.html">
+            
+                    
+                    相关资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >日志与追踪</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#log-and-trace"><b></b>&#x65E5;&#x5FD7;&#x4E0E;&#x8FFD;&#x8E2A; </a></li><ul><li><span class="title-icon "></span><a href="#log-to"><b></b>&#x63A7;&#x5236;&#x65E5;&#x5FD7;&#x8F93;&#x51FA; </a></li><li><span class="title-icon "></span><a href="#log-levels"><b></b>&#x65E5;&#x5FD7;&#x7EA7;&#x522B; </a></li><li><span class="title-icon "></span><a href="#log-file-and-log-rotation"><b></b>&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x548C;&#x65E5;&#x5FD7;&#x6EDA;&#x52A8; </a></li><li><span class="title-icon "></span><a href="#log-file-for-specific-levels"><b></b>&#x9488;&#x5BF9;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x6587;&#x4EF6; </a></li><li><span class="title-icon "></span><a href="#log-format"><b></b>&#x65E5;&#x5FD7;&#x683C;&#x5F0F; </a></li><li><span class="title-icon "></span><a href="#log-level-and-log-handlers"><b></b>&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x548C; log handlers </a></li><li><span class="title-icon "></span><a href="#set-log-level-at-runtime"><b></b>&#x8FD0;&#x884C;&#x65F6;&#x4FEE;&#x6539;&#x65E5;&#x5FD7;&#x7EA7;&#x522B; </a></li><li><span class="title-icon "></span><a href="#log-trace"><b></b>&#x65E5;&#x5FD7;&#x8FFD;&#x8E2A; </a></li><ul><li><span class="title-icon "></span><a href="#how-log-trace-works"><b></b>&#x65E5;&#x5FD7;&#x8FFD;&#x8E2A;&#x7684;&#x539F;&#x7406; </a></li></ul></ul></ul></div><a href="#log-and-trace" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="log-and-trace"><a name="log-and-trace" class="anchor-navigation-ex-anchor" href="#log-and-trace"><i class="fa fa-link" aria-hidden="true"></i></a><a name="log-and-trace" class="plugin-anchor" href="#log-and-trace"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x5FD7;&#x4E0E;&#x8FFD;&#x8E2A; </h1>
+<h2 id="log-to"><a name="log-to" class="anchor-navigation-ex-anchor" href="#log-to"><i class="fa fa-link" aria-hidden="true"></i></a><a name="log-to" class="plugin-anchor" href="#log-to"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A7;&#x5236;&#x65E5;&#x5FD7;&#x8F93;&#x51FA; </h2>
+<p>EMQ X &#x652F;&#x6301;&#x5C06;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x5230;&#x63A7;&#x5236;&#x53F0;&#x6216;&#x8005;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x6216;&#x8005;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E24;&#x8005;&#x3002;&#x53EF;&#x5728; <code>emqx.conf</code> &#x4E2D;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre class="language-"><code>log.to = both
+</code></pre><p><code>log.to</code> &#x9ED8;&#x8BA4;&#x503C;&#x662F; both&#xFF0C;&#x53EF;&#x9009;&#x7684;&#x503C;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li><p><strong>off:</strong> &#x5B8C;&#x5168;&#x5173;&#x95ED;&#x65E5;&#x5FD7;&#x529F;&#x80FD;</p>
+</li>
+<li><p><strong>file:</strong> &#x4EC5;&#x5C06;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x5230;&#x6587;&#x4EF6;</p>
+</li>
+<li><p><strong>console:</strong> &#x4EC5;&#x5C06;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;(emqx &#x63A7;&#x5236;&#x53F0;)</p>
+</li>
+<li><p><strong>both:</strong> &#x540C;&#x65F6;&#x5C06;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x5230;&#x6587;&#x4EF6;&#x548C;&#x6807;&#x51C6;&#x8F93;&#x51FA;(emqx &#x63A7;&#x5236;&#x53F0;)</p>
+</li>
+</ul>
+<h2 id="log-levels"><a name="log-levels" class="anchor-navigation-ex-anchor" href="#log-levels"><i class="fa fa-link" aria-hidden="true"></i></a><a name="log-levels" class="plugin-anchor" href="#log-levels"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x5FD7;&#x7EA7;&#x522B; </h2>
+<p>EMQ X &#x7684;&#x65E5;&#x5FD7;&#x5206; 8 &#x4E2A;&#x7B49;&#x7EA7; (<a href="https://www.ietf.org/rfc/rfc5424.txt" target="_blank">RFC 5424</a>)&#xFF0C;&#x7531;&#x4F4E;&#x5230;&#x9AD8;&#x5206;&#x522B;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">debug <span class="token operator">&lt;</span> info <span class="token operator">&lt;</span> notice <span class="token operator">&lt;</span> warning <span class="token operator">&lt;</span> error <span class="token operator">&lt;</span> critical <span class="token operator">&lt;</span> alert <span class="token operator">&lt;</span> emergency
+</code></pre>
+<p>EMQ X &#x7684;&#x9ED8;&#x8BA4;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x4E3A; warning&#xFF0C;&#x53EF;&#x5728; <code>emqx.conf</code> &#x4E2D;&#x4FEE;&#x6539;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">log.level <span class="token operator">=</span> warning
+</code></pre>
+<p>&#x6B64;&#x914D;&#x7F6E;&#x5C06;&#x6240;&#x6709; log handler &#x7684;&#x914D;&#x7F6E;&#x8BBE;&#x7F6E;&#x4E3A; warning&#x3002;</p>
+<h2 id="log-file-and-log-rotation"><a name="log-file-and-log-rotation" class="anchor-navigation-ex-anchor" href="#log-file-and-log-rotation"><i class="fa fa-link" aria-hidden="true"></i></a><a name="log-file-and-log-rotation" class="plugin-anchor" href="#log-file-and-log-rotation"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x548C;&#x65E5;&#x5FD7;&#x6EDA;&#x52A8; </h2>
+<p>EMQ X &#x7684;&#x9ED8;&#x8BA4;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x5728; <code>./log</code> (zip&#x5305;&#x89E3;&#x538B;&#x5B89;&#x88C5;) &#x6216;&#x8005; <code>/var/log/emqx</code> (&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5B89;&#x88C5;)&#x3002;&#x53EF;&#x5728; <code>emqx.conf</code> &#x4E2D;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">log.dir <span class="token operator">=</span> log
+</code></pre>
+<p>&#x5728;&#x6587;&#x4EF6;&#x65E5;&#x5FD7;&#x542F;&#x7528;&#x7684;&#x60C5;&#x51B5;&#x4E0B; (log.to = file &#x6216; both)&#xFF0C;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#x4E0B;&#x4F1A;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x79CD;&#x6587;&#x4EF6;:</p>
+<ul>
+<li><strong>emqx.log.N:</strong> &#x4EE5; emqx.log &#x4E3A;&#x524D;&#x7F00;&#x7684;&#x6587;&#x4EF6;&#x4E3A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x542B;&#x4E86; EMQ X &#x7684;&#x6240;&#x6709;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x3002;&#x6BD4;&#x5982; <code>emqx.log.1</code>, <code>emqx.log.2</code> ...</li>
+<li><strong>emqx.log.siz &#x548C; emqx.log.idx:</strong> &#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#x6EDA;&#x52A8;&#x4FE1;&#x606F;&#x7684;&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;&#x3002;</li>
+<li><strong>run_erl.log:</strong> &#x4EE5; <code>emqx start</code> &#x65B9;&#x5F0F;&#x540E;&#x53F0;&#x542F;&#x52A8; EMQ X &#x65F6;&#xFF0C;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x542F;&#x52A8;&#x4FE1;&#x606F;&#x7684;&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;&#x3002;</li>
+<li><strong>erlang.log.N:</strong> &#x4EE5; erlang.log &#x4E3A;&#x524D;&#x7F00;&#x7684;&#x6587;&#x4EF6;&#x4E3A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x662F;&#x4EE5; <code>emqx start</code> &#x65B9;&#x5F0F;&#x540E;&#x53F0;&#x542F;&#x52A8; EMQ X &#x65F6;&#xFF0C;&#x63A7;&#x5236;&#x53F0;&#x65E5;&#x5FD7;&#x7684;&#x526F;&#x672C;&#x6587;&#x4EF6;&#x3002;&#x6BD4;&#x5982; <code>erlang.log.1</code>, <code>erlang.log.2</code> ...</li>
+</ul>
+<p>&#x53EF;&#x5728; <code>emqx.conf</code> &#x4E2D;&#x4FEE;&#x6539;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x7684;&#x524D;&#x7F00;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <code>emqx.log</code>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">log.file <span class="token operator">=</span> emqx.log
+</code></pre>
+<p>EMQ X &#x9ED8;&#x8BA4;&#x5728;&#x5355;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x8D85;&#x8FC7; 10MB &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6EDA;&#x52A8;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x6700;&#x591A;&#x53EF;&#x6709; 5 &#x4E2A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF1A;&#x7B2C; 1 &#x4E2A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4E3A; emqx.log.1&#xFF0C;&#x7B2C; 2 &#x4E2A;&#x4E3A; emqx.log.2&#xFF0C;&#x5E76;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;&#x5F53;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4E5F;&#x5199;&#x6EE1; 10MB &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C06;&#x4ECE;&#x5E8F;&#x53F7;&#x6700;&#x5C0F;&#x7684;&#x65E5;&#x5FD7;&#x7684;&#x6587;&#x4EF6;&#x5F00;&#x59CB;&#x8986;&#x76D6;&#x3002;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;&#x548C;&#x6700;&#x5927;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4E2A;&#x6570;&#x53EF;&#x5728; <code>emqx.conf</code> &#x4E2D;&#x4FEE;&#x6539;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">log.rotation.size <span class="token operator">=</span> 10MB
+log.rotation.count <span class="token operator">=</span> <span class="token number">5</span>
+</code></pre>
+<h2 id="log-file-for-specific-levels"><a name="log-file-for-specific-levels" class="anchor-navigation-ex-anchor" href="#log-file-for-specific-levels"><i class="fa fa-link" aria-hidden="true"></i></a><a name="log-file-for-specific-levels" class="plugin-anchor" href="#log-file-for-specific-levels"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9488;&#x5BF9;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x6587;&#x4EF6; </h2>
+<p>&#x5982;&#x679C;&#x60F3;&#x628A;&#x5927;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;&#x67D0;&#x4E2A;&#x7EA7;&#x522B;&#x7684;&#x65E5;&#x5FD7;&#x5199;&#x5165;&#x5230;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728; <code>emqx.conf</code> &#x4E2D;&#x914D;&#x7F6E; <code>log.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>level</span><span class="token punctuation">&gt;</span></span>.file</code>&#xFF1A;</p>
+<p>&#x5C06; info &#x53CA; info &#x4EE5;&#x4E0A;&#x7684;&#x65E5;&#x5FD7;&#x5355;&#x72EC;&#x8F93;&#x51FA;&#x5230; <code>info.log.N</code> &#x6587;&#x4EF6;&#x4E2D;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">log.info.file <span class="token operator">=</span> info.log
+</code></pre>
+<p>&#x5C06; error &#x53CA; error &#x4EE5;&#x4E0A;&#x7684;&#x65E5;&#x5FD7;&#x5355;&#x72EC;&#x8F93;&#x51FA;&#x5230; <code>error.log.N</code> &#x6587;&#x4EF6;&#x4E2D;</p>
+<pre class="language-"><code class="lang-bash">log.error.file <span class="token operator">=</span> error.log
+</code></pre>
+<h2 id="log-format"><a name="log-format" class="anchor-navigation-ex-anchor" href="#log-format"><i class="fa fa-link" aria-hidden="true"></i></a><a name="log-format" class="plugin-anchor" href="#log-format"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x5FD7;&#x683C;&#x5F0F; </h2>
+<p>&#x53EF;&#x5728; <code>emqx.conf</code> &#x4E2D;&#x4FEE;&#x6539;&#x5355;&#x4E2A;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x7684;&#x6700;&#x5927;&#x5B57;&#x7B26;&#x957F;&#x5EA6;&#xFF0C;&#x5982;&#x957F;&#x5EA6;&#x8D85;&#x8FC7;&#x9650;&#x5236;&#x5219;&#x622A;&#x65AD;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x5E76;&#x7528; <code>...</code> &#x586B;&#x5145;&#x3002;&#x9ED8;&#x8BA4;&#x4E0D;&#x9650;&#x5236;&#x957F;&#x5EA6;&#xFF1A;</p>
+<p>&#x5C06;&#x5355;&#x4E2A;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x7684;&#x6700;&#x5927;&#x5B57;&#x7B26;&#x957F;&#x5EA6;&#x8BBE;&#x7F6E;&#x4E3A; 8192:</p>
+<pre class="language-"><code class="lang-bash">log.chars_limit <span class="token operator">=</span> <span class="token number">8192</span>
+</code></pre>
+<p>&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x7684;&#x683C;&#x5F0F;&#x4E3A;(&#x5404;&#x4E2A;&#x5B57;&#x6BB5;&#x4E4B;&#x95F4;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x9694;)&#xFF1A;</p>
+<p><strong>date time level client_info module_info msg</strong></p>
+<ul>
+<li><strong>date:</strong> &#x5F53;&#x5730;&#x65F6;&#x95F4;&#x7684;&#x65E5;&#x671F;&#x3002;&#x683C;&#x5F0F;&#x4E3A;&#xFF1A;YYYY-MM-DD</li>
+<li><strong>time:</strong> &#x5F53;&#x5730;&#x65F6;&#x95F4;&#xFF0C;&#x7CBE;&#x786E;&#x5230;&#x6BEB;&#x79D2;&#x3002;&#x683C;&#x5F0F;&#x4E3A;&#xFF1A;hh:mm:ss.ms</li>
+<li><strong>level:</strong> &#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF0C;&#x4F7F;&#x7528;&#x4E2D;&#x62EC;&#x53F7;&#x5305;&#x88F9;&#x3002;&#x683C;&#x5F0F;&#x4E3A;&#xFF1A;[Level]</li>
+<li><strong>client_info:</strong> &#x53EF;&#x9009;&#x5B57;&#x6BB5;&#xFF0C;&#x4EC5;&#x5F53;&#x6B64;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E0E;&#x67D0;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x76F8;&#x5173;&#x65F6;&#x5B58;&#x5728;&#x3002;&#x5176;&#x683C;&#x5F0F;&#x4E3A;&#xFF1A;ClientId@Peername &#x6216; ClientId &#x6216; Peername</li>
+<li><strong>module_info:</strong> &#x53EF;&#x9009;&#x5B57;&#x6BB5;&#xFF0C;&#x4EC5;&#x5F53;&#x6B64;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E0E;&#x67D0;&#x4E2A;&#x6A21;&#x5757;&#x76F8;&#x5173;&#x65F6;&#x5B58;&#x5728;&#x3002;&#x5176;&#x683C;&#x5F0F;&#x4E3A;&#xFF1A;[Module Info]</li>
+<li><strong>msg:</strong> &#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x5185;&#x5BB9;&#x3002;&#x683C;&#x5F0F;&#x4EFB;&#x610F;&#xFF0C;&#x53EF;&#x5305;&#x542B;&#x7A7A;&#x683C;&#x3002;</li>
+</ul>
+<h4 id="&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B;-1&#xFF1A;"><a name="&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B;-1&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B;-1&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B;-1&#xFF1A;" class="plugin-anchor" href="#&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B;-1&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B; 1&#xFF1A;</h4>
+<pre class="language-"><code class="lang-bash"><span class="token number">2020</span>-02-18 <span class="token number">16</span>:10:03.872 <span class="token punctuation">[</span>debug<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span><span class="token string">&quot;mqttjs_9e49354bb3&quot;</span><span class="token operator">&gt;&gt;</span>@127.0.0.1:57105 <span class="token punctuation">[</span>MQTT/WS<span class="token punctuation">]</span> SEND CONNACK<span class="token punctuation">(</span>Q0, R0, D0, <span class="token assign-left variable">AckFlags</span><span class="token operator">=</span><span class="token number">0</span>, <span class="token assign-left variable">ReasonCode</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6B64;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x91CC;&#x5404;&#x4E2A;&#x5B57;&#x6BB5;&#x5206;&#x522B;&#x4E3A;:</p>
+<ul>
+<li><strong>date:</strong> <code>2020-02-18</code></li>
+<li><strong>time:</strong> <code>16:10:03.872</code></li>
+<li><strong>level:</strong> <code>[debug]</code></li>
+<li><strong>client_info:</strong> <code>&lt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&quot;mqttjs_9e49354bb3&quot;</span><span class="token punctuation">&gt;</span></span>&gt;@127.0.0.1:57105</code></li>
+<li><strong>module_info:</strong> <code>[MQTT/WS]</code></li>
+<li><strong>msg:</strong> <code>SEND CONNACK(Q0, R0, D0, AckFlags=0, ReasonCode=0)</code></li>
+</ul>
+<h4 id="&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B;-2&#xFF1A;"><a name="&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B;-2&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B;-2&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B;-2&#xFF1A;" class="plugin-anchor" href="#&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B;-2&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E3E;&#x4F8B; 2&#xFF1A;</h4>
+<pre class="language-"><code class="lang-bash"><span class="token number">2020</span>-02-18 <span class="token number">16</span>:10:08.474 <span class="token punctuation">[</span>warning<span class="token punctuation">]</span> <span class="token punctuation">[</span>Alarm Handler<span class="token punctuation">]</span> New Alarm: system_memory_high_watermark, Alarm Info: <span class="token punctuation">[</span><span class="token punctuation">]</span>
+</code></pre>
+<p>&#x6B64;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x91CC;&#x5404;&#x4E2A;&#x5B57;&#x6BB5;&#x5206;&#x522B;&#x4E3A;:</p>
+<ul>
+<li><strong>date:</strong> <code>2020-02-18</code></li>
+<li><strong>time:</strong> <code>16:10:08.474</code></li>
+<li><strong>level:</strong> <code>[warning]</code></li>
+<li><strong>module_info:</strong> <code>[Alarm Handler]</code></li>
+<li><strong>msg:</strong> <code>New Alarm: system_memory_high_watermark, Alarm Info: []</code></li>
+</ul>
+<p>&#x6CE8;&#x610F;&#x6B64;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E2D;&#xFF0C;client_info &#x5B57;&#x6BB5;&#x4E0D;&#x5B58;&#x5728;&#x3002;</p>
+<h2 id="log-level-and-log-handlers"><a name="log-level-and-log-handlers" class="anchor-navigation-ex-anchor" href="#log-level-and-log-handlers"><i class="fa fa-link" aria-hidden="true"></i></a><a name="log-level-and-log-handlers" class="plugin-anchor" href="#log-level-and-log-handlers"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x548C; log handlers </h2>
+<p>EMQ X &#x4F7F;&#x7528;&#x4E86;&#x5206;&#x5C42;&#x7684;&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#xFF0C;&#x5728;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x4E0A;&#xFF0C;&#x5305;&#x62EC;&#x5168;&#x5C40;&#x65E5;&#x5FD7;&#x7EA7;&#x522B; (primary log level)&#x3001;&#x4EE5;&#x53CA;&#x5404; log hanlder &#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x3002;</p>
+<pre class="language-"><code class="lang-bash">     <span class="token punctuation">[</span>Primary Level<span class="token punctuation">]</span>        -- global log level and filters
+           / <span class="token punctuation">\</span>
+<span class="token punctuation">[</span>Handler <span class="token number">1</span><span class="token punctuation">]</span>  <span class="token punctuation">[</span>Handler <span class="token number">2</span><span class="token punctuation">]</span>    -- log levels and filters at each handler
+</code></pre>
+<p>log handler &#x662F;&#x8D1F;&#x8D23;&#x65E5;&#x5FD7;&#x5904;&#x7406;&#x548C;&#x8F93;&#x51FA;&#x7684;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;&#xFF0C;&#x5B83;&#x7531; log handler id &#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF0C;&#x5E76;&#x8D1F;&#x6709;&#x5982;&#x4E0B;&#x4EFB;&#x52A1;&#xFF1A;</p>
+<ul>
+<li>&#x63A5;&#x6536;&#x4EC0;&#x4E48;&#x7EA7;&#x522B;&#x7684;&#x65E5;&#x5FD7;</li>
+<li>&#x5982;&#x4F55;&#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;&#x6D88;&#x606F;</li>
+<li>&#x5C06;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x5230;&#x4EC0;&#x4E48;&#x5730;&#x65B9;</li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E0B; emqx &#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x7684; log handlers:</p>
+<pre class="language-"><code class="lang-bash">$ emqx_ctl log handlers list
+
+LogHandler<span class="token punctuation">(</span>id<span class="token operator">=</span>ssl_handler, <span class="token assign-left variable">level</span><span class="token operator">=</span>debug, <span class="token assign-left variable">destination</span><span class="token operator">=</span>console<span class="token punctuation">)</span>
+LogHandler<span class="token punctuation">(</span>id<span class="token operator">=</span>file, <span class="token assign-left variable">level</span><span class="token operator">=</span>debug, <span class="token assign-left variable">destination</span><span class="token operator">=</span>log/emqx.log<span class="token punctuation">)</span>
+LogHandler<span class="token punctuation">(</span>id<span class="token operator">=</span>default, <span class="token assign-left variable">level</span><span class="token operator">=</span>debug, <span class="token assign-left variable">destination</span><span class="token operator">=</span>console<span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>file: &#x8D1F;&#x8D23;&#x8F93;&#x51FA;&#x5230;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x7684; log handler&#x3002;&#x5B83;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#x7279;&#x6B8A;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#xFF0C;&#x5373;&#x6240;&#x6709;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x53EA;&#x8981;&#x7EA7;&#x522B;&#x6EE1;&#x8DB3;&#x8981;&#x6C42;&#x5C31;&#x8F93;&#x51FA;&#x3002;&#x8F93;&#x51FA;&#x76EE;&#x7684;&#x5730;&#x4E3A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x3002;</li>
+<li>default: &#x8D1F;&#x8D23;&#x8F93;&#x51FA;&#x5230;&#x63A7;&#x5236;&#x53F0;&#x7684; log handler&#x3002;&#x5B83;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#x7279;&#x6B8A;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#xFF0C;&#x5373;&#x6240;&#x6709;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x53EA;&#x8981;&#x7EA7;&#x522B;&#x6EE1;&#x8DB3;&#x8981;&#x6C42;&#x5C31;&#x8F93;&#x51FA;&#x3002;&#x8F93;&#x51FA;&#x76EE;&#x7684;&#x5730;&#x4E3A;&#x63A7;&#x5236;&#x53F0;&#x3002;</li>
+<li>ssl_handler: ssl &#x7684; log handler&#x3002;&#x5B83;&#x7684;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#x8BBE;&#x7F6E;&#x4E3A;&#x5F53;&#x65E5;&#x5FD7;&#x662F;&#x6765;&#x81EA; ssl &#x6A21;&#x5757;&#x65F6;&#x8F93;&#x51FA;&#x3002;&#x8F93;&#x51FA;&#x76EE;&#x7684;&#x5730;&#x4E3A;&#x63A7;&#x5236;&#x53F0;&#x3002;</li>
+</ul>
+<p>&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x8F93;&#x51FA;&#x524D;&#xFF0C;&#x9996;&#x5148;&#x68C0;&#x67E5;&#x6D88;&#x606F;&#x662F;&#x5426;&#x9AD8;&#x4E8E; primary log level&#xFF0C;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x901A;&#x8FC7;&#x68C0;&#x67E5;&#x540E;&#x6D41;&#x5165;&#x5404; log handler&#xFF0C;&#x518D;&#x68C0;&#x67E5;&#x5404; handler &#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF0C;&#x5982;&#x679C;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x4E5F;&#x9AD8;&#x4E8E; handler level&#xFF0C;&#x5219;&#x7531;&#x5BF9;&#x5E94;&#x7684; handler &#x6267;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#xFF0C;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#x901A;&#x8FC7;&#x5219;&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x8BBE;&#x60F3;&#x4E00;&#x4E2A;&#x573A;&#x666F;&#xFF0C;&#x5047;&#x8BBE; primary log level &#x8BBE;&#x7F6E;&#x4E3A; info&#xFF0C;log handler <code>default</code> (&#x8D1F;&#x8D23;&#x8F93;&#x51FA;&#x5230;&#x63A7;&#x5236;&#x53F0;) &#x7684;&#x7EA7;&#x522B;&#x8BBE;&#x7F6E;&#x4E3A; debug&#xFF0C;log handler <code>file</code> (&#x8D1F;&#x8D23;&#x8F93;&#x51FA;&#x5230;&#x6587;&#x4EF6;) &#x7684;&#x7EA7;&#x522B;&#x8BBE;&#x7F6E;&#x4E3A; warning&#xFF1A;</p>
+<ul>
+<li>&#x867D;&#x7136; console &#x65E5;&#x5FD7;&#x662F; debug &#x7EA7;&#x522B;&#xFF0C;&#x4F46;&#x6B64;&#x65F6; console &#x65E5;&#x5FD7;&#x53EA;&#x80FD;&#x8F93;&#x51FA; info &#x4EE5;&#x53CA; info &#x4EE5;&#x4E0A;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x56E0;&#x4E3A;&#x7ECF;&#x8FC7; primary level &#x8FC7;&#x6EE4;&#x4E4B;&#x540E;&#xFF0C;&#x6D41;&#x5230; default &#x548C; file &#x7684;&#x65E5;&#x5FD7;&#x53EA;&#x5269;&#x4E0B; info &#x53CA;&#x4EE5;&#x4E0A;&#x7684;&#x7EA7;&#x522B;&#xFF1B;</li>
+<li>emqx.log.N &#x6587;&#x4EF6;&#x91CC;&#x9762;&#xFF0C;&#x5305;&#x542B;&#x4E86; warning &#x4EE5;&#x53CA; warning &#x4EE5;&#x4E0A;&#x7684;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x3002;</li>
+</ul>
+<p>&#x5728; <a href="#log-levels">&#x65E5;&#x5FD7;&#x7EA7;&#x522B;</a> &#x7AE0;&#x8282;&#x4E2D;&#x63D0;&#x5230;&#x7684; <code>log.level</code> &#x662F;&#x4FEE;&#x6539;&#x4E86;&#x5168;&#x5C40;&#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x3002;&#x8FD9;&#x5305;&#x62EC; primary log level &#x548C;&#x5404;&#x4E2A; handlers &#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF0C;&#x90FD;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E86;&#x540C;&#x4E00;&#x4E2A;&#x503C;&#x3002;</p>
+<p>Primary Log Level &#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x4E2A;&#x81EA;&#x6765;&#x6C34;&#x7BA1;&#x9053;&#x7CFB;&#x7EDF;&#x7684;&#x603B;&#x5F00;&#x5173;&#xFF0C;&#x4E00;&#x65E6;&#x5173;&#x95ED;&#x5219;&#x5404;&#x4E2A;&#x5206;&#x652F;&#x7BA1;&#x9053;&#x90FD;&#x4E0D;&#x518D;&#x6709;&#x6C34;&#x6D41;&#x901A;&#x8FC7;&#x3002;&#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x4FDD;&#x8BC1;&#x4E86;&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x7684;&#x9AD8;&#x6027;&#x80FD;&#x8FD0;&#x4F5C;&#x3002;</p>
+<h2 id="set-log-level-at-runtime"><a name="set-log-level-at-runtime" class="anchor-navigation-ex-anchor" href="#set-log-level-at-runtime"><i class="fa fa-link" aria-hidden="true"></i></a><a name="set-log-level-at-runtime" class="plugin-anchor" href="#set-log-level-at-runtime"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD0;&#x884C;&#x65F6;&#x4FEE;&#x6539;&#x65E5;&#x5FD7;&#x7EA7;&#x522B; </h2>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; EMQ X &#x7684;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177; <code>emqx_ctl</code> &#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4FEE;&#x6539; emqx &#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;</p>
+<h4 id="&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;"><a name="&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;" class="plugin-anchor" href="#&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;</h4>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5C06; primary log level &#x4EE5;&#x53CA;&#x6240;&#x6709; log handlers &#x7684;&#x7EA7;&#x522B;&#x8BBE;&#x7F6E;&#x4E3A; debug&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ emqx_ctl log set-level debug
+</code></pre>
+<h4 id="&#x4FEE;&#x6539;&#x4E3B;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;"><a name="&#x4FEE;&#x6539;&#x4E3B;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;&#x4E3B;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4FEE;&#x6539;&#x4E3B;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;" class="plugin-anchor" href="#&#x4FEE;&#x6539;&#x4E3B;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x6539;&#x4E3B;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;</h4>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5C06; primary log level &#x8BBE;&#x7F6E;&#x4E3A; debug:</p>
+<pre class="language-"><code class="lang-bash">$ emqx_ctl log primary-level debug
+</code></pre>
+<h4 id="&#x4FEE;&#x6539;&#x67D0;&#x4E2A;-log-handler-&#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;"><a name="&#x4FEE;&#x6539;&#x67D0;&#x4E2A;-log-handler-&#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;&#x67D0;&#x4E2A;-log-handler-&#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4FEE;&#x6539;&#x67D0;&#x4E2A;-log-handler-&#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;" class="plugin-anchor" href="#&#x4FEE;&#x6539;&#x67D0;&#x4E2A;-log-handler-&#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x6539;&#x67D0;&#x4E2A; log handler &#x7684;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF1A;</h4>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5C06; log handler <code>file</code> &#x8BBE;&#x7F6E;&#x4E3A; debug:</p>
+<pre class="language-"><code class="lang-bash">$ emqx_ctl log handlers set-level <span class="token function">file</span> debug
+</code></pre>
+<h2 id="log-trace"><a name="log-trace" class="anchor-navigation-ex-anchor" href="#log-trace"><i class="fa fa-link" aria-hidden="true"></i></a><a name="log-trace" class="plugin-anchor" href="#log-trace"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x5FD7;&#x8FFD;&#x8E2A; </h2>
+<p>EMQ X &#x652F;&#x6301;&#x9488;&#x5BF9; ClientID &#x6216; Topic &#x8FC7;&#x6EE4;&#x65E5;&#x5FD7;&#x5E76;&#x8F93;&#x51FA;&#x5230;&#x6587;&#x4EF6;&#x3002;&#x5728;&#x4F7F;&#x7528;&#x65E5;&#x5FD7;&#x8FFD;&#x8E2A;&#x529F;&#x80FD;&#x4E4B;&#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x5C06; primary log level &#x8BBE;&#x7F6E;&#x4E3A; debug&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ emqx_ctl log primary-level debug
+</code></pre>
+<p>&#x5F00;&#x542F; ClientID &#x65E5;&#x5FD7;&#x8FFD;&#x8E2A;&#xFF0C;&#x5C06;&#x6240;&#x6709; ClientID &#x4E3A; &apos;my_client&apos; &#x7684;&#x65E5;&#x5FD7;&#x90FD;&#x8F93;&#x51FA;&#x5230; log/my_client.log:</p>
+<pre class="language-"><code class="lang-bash">$ emqx_ctl log primary-level debug
+debug
+
+$ emqx_ctl trace start client my_client log/my_client.log
+trace clientid my_client successfully
+</code></pre>
+<p>&#x5F00;&#x542F; Topic &#x65E5;&#x5FD7;&#x8FFD;&#x8E2A;&#xFF0C;&#x5C06;&#x4E3B;&#x9898;&#x80FD;&#x5339;&#x914D;&#x5230; &apos;t/#&apos; &#x7684;&#x6D88;&#x606F;&#x53D1;&#x5E03;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x5230; log/topic_t.log:</p>
+<pre class="language-"><code class="lang-bash">$ emqx_ctl log primary-level debug
+debug
+
+$ emqx_ctl trace start topic <span class="token string">&apos;t/#&apos;</span> log/topic_t.log
+trace topic t/<span class="token comment"># successfully</span>
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>&#x5373;&#x4F7F; <code>emqx.conf</code> &#x4E2D;&#xFF0C;<code>log.level</code> &#x8BBE;&#x7F6E;&#x4E3A; error&#xFF0C;&#x4F7F;&#x7528;&#x6D88;&#x606F;&#x8FFD;&#x8E2A;&#x529F;&#x80FD;&#x4ECD;&#x7136;&#x80FD;&#x591F;&#x6253;&#x5370;&#x51FA;&#x67D0; client &#x6216; topic &#x7684; debug &#x7EA7;&#x522B;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x8FD9;&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</p>
+</div></div></p>
+<h3 id="how-log-trace-works"><a name="how-log-trace-works" class="anchor-navigation-ex-anchor" href="#how-log-trace-works"><i class="fa fa-link" aria-hidden="true"></i></a><a name="how-log-trace-works" class="plugin-anchor" href="#how-log-trace-works"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x5FD7;&#x8FFD;&#x8E2A;&#x7684;&#x539F;&#x7406; </h3>
+<p>&#x65E5;&#x5FD7;&#x8FFD;&#x8E2A;&#x7684;&#x539F;&#x7406;&#x662F;&#x7ED9; emqx &#x5B89;&#x88C5;&#x4E00;&#x4E2A;&#x65B0;&#x7684; log handler&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E; handler &#x7684;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#x3002;&#x5728; <a href="#log-level-and-log-handlers">&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x548C; log handlers</a> &#x5C0F;&#x8282;&#xFF0C;&#x6211;&#x4EEC;&#x8BA8;&#x8BBA;&#x8FC7; log handler &#x7684;&#x7EC6;&#x8282;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x542F;&#x7528; client &#x65E5;&#x5FD7;&#x8FFD;&#x8E2A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ emqx_ctl log primary-level debug <span class="token operator">&amp;&amp;</span> emqx_ctl trace start client my_client log/my_client.log
+</code></pre>
+<p>&#x7136;&#x540E;&#x67E5;&#x8BE2;&#x5DF2;&#x7ECF;&#x5F00;&#x542F;&#x7684;&#x8FFD;&#x8E2A;:</p>
+<pre class="language-"><code class="lang-bash">$ emqx_ctl trace list
+Trace<span class="token punctuation">(</span>clientid<span class="token operator">=</span>my_client, <span class="token assign-left variable">level</span><span class="token operator">=</span>debug, <span class="token assign-left variable">destination</span><span class="token operator">=</span><span class="token string">&quot;log/my_client.log&quot;</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x5728;&#x540E;&#x53F0;&#xFF0C;emqx &#x4F1A;&#x5B89;&#x88C5;&#x4E00;&#x4E2A;&#x65B0;&#x7684; log handler&#xFF0C;&#x5E76;&#x7ED9;&#x5176;&#x6307;&#x5B9A;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#x4E3A;&#xFF1A;&#x4EC5;&#x5F53; ClientID &#x4E3A; &quot;my_client&quot; &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ emqx_ctl log handlers list
+LogHandler<span class="token punctuation">(</span>id<span class="token operator">=</span>trace_clientid_my_client, <span class="token assign-left variable">level</span><span class="token operator">=</span>debug, <span class="token assign-left variable">destination</span><span class="token operator">=</span>log/my_client.log<span class="token punctuation">)</span>
+<span class="token punctuation">..</span>.
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x770B;&#x5230;&#x65B0;&#x6DFB;&#x52A0;&#x7684; log handler &#x7684; id &#x4E3A; trace_clientid_my_client&#xFF0C;&#x5E76;&#x4E14; handler level &#x4E3A; debug&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x5728; trace &#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x5C06; primary log level &#x8BBE;&#x7F6E;&#x4E3A; debug&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684; primary log level (warning)&#xFF0C;&#x8FD9;&#x4E2A;log handler &#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x8F93;&#x51FA; warning &#x4EE5;&#x4E0B;&#x7684;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x662F;&#x542F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684; log handler&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x7684;&#x65E5;&#x5FD7;&#x8FFD;&#x8E2A;&#x4E0D;&#x53D7;&#x63A7;&#x5236;&#x53F0;&#x65E5;&#x5FD7;&#x548C; emqx.log.N &#x6587;&#x4EF6;&#x65E5;&#x5FD7;&#x7684;&#x7EA7;&#x522B;&#x7684;&#x7EA6;&#x675F;&#x3002;&#x5373;&#x4F7F; log.level = warning&#xFF0C;&#x6211;&#x4EEC;&#x4EFB;&#x7136;&#x53EF;&#x4EE5;&#x8FFD;&#x8E2A;&#x5230; my_client &#x7684; debug &#x7EA7;&#x522B;&#x7684;&#x65E5;&#x5FD7;&#x3002;</p>
+<p><div id="gitalk-container"></div><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script></p>
+<style>.emqxee { display: none; }</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="config.html" class="navigation navigation-prev " aria-label="Previous page: 配置说明">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dashboard.html" class="navigation navigation-next " aria-label="Next page: Dashboard">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"日志与追踪","date":"2020-02-18T13:52:34.000Z","author":"terry-xiaoyu","keywords":null,"description":null,"category":null,"ref":"undefined","level":"1.2.6","depth":2,"next":{"title":"Dashboard","level":"1.2.7","depth":2,"path":"getting-started/dashboard.md","ref":"getting-started/dashboard.md","articles":[]},"previous":{"title":"配置说明","level":"1.2.5","depth":2,"path":"getting-started/config.md","ref":"getting-started/config.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","hints","simpletabs","cuav-chapters","edit-link","gittalk","scripts","anchors","anchor-navigation-ex","emqx","-lunr"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"github":{"url":"https://github.com/emqx/emqx"},"scripts":{"files":["./_js/emqx-docs.js"]},"search":{},"local-pagefooter":{"copyright":"© Copyright 2016-2020, EMQ Technologies Co., Ltd.","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"emqx":{},"simpletabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"sharing":{"facebook":false,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑","base":"https://github.com/emqx/emqx-docs-cn/source"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"gittalk":{"clientID":"3b2217a86bdbdc09d0d8","clientSecret":"aee2b15ea39c494eb80b775513d38791895adb63","repo":"emqx-docs-cn","owner":"emqx","admin":["wivwiv"],"distractionFreeMode":false}},"theme":"default","author":"EMQX Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"redirects":{},"variables":{},"title":"EMQ X 使用文档","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":"emqtt"}},"gitbook":"*","description":"EMQ X 百万级 MQTT 消息服务器使用文档"},"file":{"path":"getting-started/log.md","mtime":"2020-03-25T06:15:50.925Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-01T08:58:30.454Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-simpletabs/tabs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gittalk/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scripts/d2a49e656f2a2a19e1c4ec4742014516-emqx-docs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
