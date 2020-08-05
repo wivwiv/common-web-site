@@ -23,18 +23,19 @@
   * [WebHook](advanced/webhook.md)
   * [分布集群](advanced/cluster.md)
   * [钩子](advanced/hooks.md)
-  * [插件](advanced/plugins.md)
   * [多语言支持](advanced/multiple-language-support.md)
   * [指标监控](advanced/metrics-and-stats.md)
   * [速率限制](advanced/rate-limit.md)
   * [飞行窗口与消息队列](advanced/inflight-window-and-message-queue.md)
   * [消息重传](advanced/retransmission.md)
-  * [命令行接口](advanced/cli.md)
+
+* [插件](advanced/plugins.md)
 
 * 认证
   * [认证简介](advanced/auth.md)
-  * [Username 认证](advanced/auth-username.md)
-  * [Cliend ID 认证](advanced/auth-clientid.md)
+  * [Username 认证（即将废弃）](advanced/auth-username.md)
+  * [Cliend ID 认证（即将废弃）](advanced/auth-clientid.md)
+  * [Mnesia 认证](advanced/auth-mnesia.md)
   * [HTTP 认证](advanced/auth-http.md)
   * [JWT 认证](advanced/auth-jwt.md)
   * [LDAP 认证](advanced/auth-ldap.md)
@@ -46,14 +47,15 @@
 * 发布订阅 ACL
   * [发布订阅 ACL 简介](advanced/acl.md)
   * [内置 ACL](advanced/acl-file.md)
+  * [Mnesia ACL](advanced/acl-mnesia.md)
   * [HTTP ACL](advanced/acl-http.md)
   * [MySQL ACL](advanced/acl-mysql.md)
   * [PostgreSQL ACL](advanced/acl-postgres.md)
   * [Redis ACL](advanced/acl-redis.md)
   * [MongoDB ACL](advanced/acl-mongodb.md)
 
-* 管理监控 API
-  * [管理监控 API](advanced/http-api.md)
+* HTTP API
+  * [HTTP API](advanced/http-api.md)
   * [基本信息](advanced/http-api.md#endpoint-brokers)
   * [节点](advanced/http-api.md#endpoint-nodes)
   * [客户端](advanced/http-api.md#endpoint-clients)
@@ -84,6 +86,8 @@
   * [保存数据到 MongoDB](rule/rule-example.md#保存数据到-mongodb)
   * [保存数据到 DynamoDB](rule/rule-example.md#保存数据到-dynamodb)
   * [保存数据到 Redis](rule/rule-example.md#保存数据到-redis)
+  * [保存数据到 ClickHouse](rule/rule-example.md#保存数据到-clickhouse)
+  * [保存数据到 TDengine](rule/rule-example.md#保存数据到-tdengine)
   * [保存数据到 OpenTSDB](rule/rule-example.md#保存数据到-opentsdb)
   * [保存数据到 TimescaleDB](rule/rule-example.md#保存数据到-timescaledb)
   * [保存数据到 InfluxDB](rule/rule-example.md#保存数据到-influxdb)
@@ -92,6 +96,18 @@
   * [桥接数据到 RocketMQ](rule/rule-example.md#桥接数据到-rocketmq)
   * [桥接数据到 RabbitMQ](rule/rule-example.md#桥接数据到-rabbitmq)
   * [桥接数据到 RPC 服务](rule/rule-example.md#桥接数据到-rpc-服务)
+  * [离线消息保存到 Redis](rule/rule-example.md#离线消息保存到-redis)
+  * [离线消息保存到 MySQL](rule/rule-example.md#离线消息保存到-mysql)
+  * [离线消息保存到 PostgreSQL](rule/rule-example.md#离线消息保存到-postgresql)
+  * [离线消息保存到 Cassandra](rule/rule-example.md#离线消息保存到-cassandra)
+  * [离线消息保存到 MongoDB](rule/rule-example.md#离线消息保存到-mongodb)
+  * [从 Redis 中获取订阅关系](rule/rule-example.md#从-redis-中获取订阅关系)
+  * [从 MySQL 中获取订阅关系](rule/rule-example.md#从-mysql-中获取订阅关系)
+  * [从 PostgreSQL 中获取订阅关系](rule/rule-example.md#从-postgresql-中获取订阅关系)
+  * [从 Cassandra 中获取订阅关系](rule/rule-example.md#从-cassandra-中获取订阅关系)
+  * [从 MongoDB 中获取订阅关系](rule/rule-example.md#从-mongodb-中获取订阅关系)
+  * [从 Kafka 消费消息到 EMQX](rule/rule-example.md#从-kafka-消费消息到emqx)
+  * [从 Pulsar 消费消息到 EMQX](rule/rule-example.md#从-pulsar-消费消息到emqx)
 
 * 数据存储
   * [数据存储设计](backend/backend.md)
@@ -115,13 +131,20 @@
 
 * 进阶教程
   * [设备管理](tutorial/device-management.md)
-  * [系统调优](tutorial/turn.md)
+  * [系统调优](tutorial/tune.md)
   * [生产部署](tutorial/deploy.md)
   * [Prometheus 监控告警](tutorial/prometheus.md)
   * [性能测试](tutorial/benchmark.md)
 
-* 配置项
-  * [配置项](configuration/configuration.md)
+* [配置项](configuration/configuration.md)
+* [命令行接口](advanced/cli.md)
+
+* 协议介绍
+  * [MQTT 协议](development/protocol.md)
+  * [MQTT-SN 协议](development/protocol.md#mqtt-sn-协议)
+  * [LwM2M 协议](development/protocol.md#lwm2m-协议)
+  * [私有 TCP 协议](development/protocol.md#私有-tcp-协议)
+
 
 * SDK & Tools
   * [MQTT 客户端库](development/client.md)

@@ -1,6 +1,6 @@
 ---
 # 标题
-title: 相关资料
+title: 资源
 # 编写日期
 date: 2020-02-07 17:15:26
 # 作者 Github 名称
@@ -15,7 +15,7 @@ category:
 ref:
 ---
 
-# 相关资料
+# 资源
 
 [![GitHub Release](https://img.shields.io/github/release/emqx/emqx?color=brightgreen)](https://github.com/emqx/emqx/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/emqx/emqx)](https://hub.docker.com/r/emqx/emqx)
@@ -25,7 +25,7 @@ ref:
 
 ## 官方资源
 
-  - [EMQ 官方网站](https://www.emqx.io?spm=docs)
+  - [EMQ 官方网站](https://www.emqx.io/cn?spm=docs)
   - [EMQ 官方博客](https://www.emqx.io/cn/blog?spm=docs)
   - [EMQ X GitHub 仓库](https://github.com/emqx/emqx)
 
@@ -33,7 +33,7 @@ ref:
 
 你可通过以下途径与 EMQ 社区及开发者联系：
 
-  - [EMQ X Slack](http://emqx.slack.com)
+  - [EMQ X Slack](https://slack-invite.emqx.io)
   - [Twitter](https://twitter.com/emqtt)
   - [Forum](https://groups.google.com/d/forum/emqtt)
   - [Medium](https://medium.com/@emqtt)

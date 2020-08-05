@@ -1,0 +1,2513 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Mnesia ACL · EMQ X 使用文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="EMQX Team">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-simpletabs/tabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="acl-http.html" />
+    
+    
+    <link rel="prev" href="acl-file.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    概览
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    EMQ X 消息服务器简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../introduction/checklist.html">
+            
+                <a href="../introduction/checklist.html">
+            
+                    
+                    EMQ X 消息服务器功能列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../getting-started/install.html">
+            
+                <a href="../getting-started/install.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../getting-started/start.html">
+            
+                <a href="../getting-started/start.html">
+            
+                    
+                    启动 EMQ X
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../getting-started/command-line.html">
+            
+                <a href="../getting-started/command-line.html">
+            
+                    
+                    基本命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../getting-started/directory.html">
+            
+                <a href="../getting-started/directory.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../getting-started/config.html">
+            
+                <a href="../getting-started/config.html">
+            
+                    
+                    配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../getting-started/log.html">
+            
+                <a href="../getting-started/log.html">
+            
+                    
+                    日志与追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../getting-started/dashboard.html">
+            
+                <a href="../getting-started/dashboard.html">
+            
+                    
+                    Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    功能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="retained.html">
+            
+                <a href="retained.html">
+            
+                    
+                    保留消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="shared-subscriptions.html">
+            
+                <a href="shared-subscriptions.html">
+            
+                    
+                    共享订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="delay-publish.html">
+            
+                <a href="delay-publish.html">
+            
+                    
+                    延迟发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="proxy-subscriptions.html">
+            
+                <a href="proxy-subscriptions.html">
+            
+                    
+                    代理订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="bridge.html">
+            
+                <a href="bridge.html">
+            
+                    
+                    消息桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="topic-rewrite.html">
+            
+                <a href="topic-rewrite.html">
+            
+                    
+                    主题重写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="system-topic.html">
+            
+                <a href="system-topic.html">
+            
+                    
+                    $SYS 系统主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="blacklist.html">
+            
+                <a href="blacklist.html">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="webhook.html">
+            
+                <a href="webhook.html">
+            
+                    
+                    WebHook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="cluster.html">
+            
+                <a href="cluster.html">
+            
+                    
+                    分布集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="hooks.html">
+            
+                <a href="hooks.html">
+            
+                    
+                    钩子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="multiple-language-support.html">
+            
+                <a href="multiple-language-support.html">
+            
+                    
+                    多语言支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="metrics-and-stats.html">
+            
+                <a href="metrics-and-stats.html">
+            
+                    
+                    指标监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="rate-limit.html">
+            
+                <a href="rate-limit.html">
+            
+                    
+                    速率限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="inflight-window-and-message-queue.html">
+            
+                <a href="inflight-window-and-message-queue.html">
+            
+                    
+                    飞行窗口与消息队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="retransmission.html">
+            
+                <a href="retransmission.html">
+            
+                    
+                    消息重传
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="plugins.html">
+            
+                <a href="plugins.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    认证
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="auth.html">
+            
+                <a href="auth.html">
+            
+                    
+                    认证简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="auth-username.html">
+            
+                <a href="auth-username.html">
+            
+                    
+                    Username 认证（即将废弃）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="auth-clientid.html">
+            
+                <a href="auth-clientid.html">
+            
+                    
+                    Cliend ID 认证（即将废弃）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="auth-mnesia.html">
+            
+                <a href="auth-mnesia.html">
+            
+                    
+                    Mnesia 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="auth-http.html">
+            
+                <a href="auth-http.html">
+            
+                    
+                    HTTP 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="auth-jwt.html">
+            
+                <a href="auth-jwt.html">
+            
+                    
+                    JWT 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="auth-ldap.html">
+            
+                <a href="auth-ldap.html">
+            
+                    
+                    LDAP 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="auth-mysql.html">
+            
+                <a href="auth-mysql.html">
+            
+                    
+                    MySQL 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="auth-postgresql.html">
+            
+                <a href="auth-postgresql.html">
+            
+                    
+                    PostgreSQL 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="auth-redis.html">
+            
+                <a href="auth-redis.html">
+            
+                    
+                    Redis 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="auth-mongodb.html">
+            
+                <a href="auth-mongodb.html">
+            
+                    
+                    MongoDB 认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    发布订阅 ACL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="acl.html">
+            
+                <a href="acl.html">
+            
+                    
+                    发布订阅 ACL 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="acl-file.html">
+            
+                <a href="acl-file.html">
+            
+                    
+                    内置 ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="acl-mnesia.html">
+            
+                <a href="acl-mnesia.html">
+            
+                    
+                    Mnesia ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="acl-http.html">
+            
+                <a href="acl-http.html">
+            
+                    
+                    HTTP ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="acl-mysql.html">
+            
+                <a href="acl-mysql.html">
+            
+                    
+                    MySQL ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="acl-postgres.html">
+            
+                <a href="acl-postgres.html">
+            
+                    
+                    PostgreSQL ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="acl-redis.html">
+            
+                <a href="acl-redis.html">
+            
+                    
+                    Redis ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="acl-mongodb.html">
+            
+                <a href="acl-mongodb.html">
+            
+                    
+                    MongoDB ACL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    HTTP API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="http-api.html">
+            
+                <a href="http-api.html">
+            
+                    
+                    HTTP API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-brokers">
+            
+                    
+                    基本信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-nodes">
+            
+                    
+                    节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-clients">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-subscriptions">
+            
+                    
+                    订阅信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-routes">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-publish">
+            
+                    
+                    消息发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-subscribe">
+            
+                    
+                    主题订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-plugins">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-listeners">
+            
+                    
+                    监听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-metrics">
+            
+                    
+                    统计指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-stats">
+            
+                    
+                    状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-alarms">
+            
+                    
+                    告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-banned">
+            
+                    
+                    黑名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-rules">
+            
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.16" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-actions">
+            
+                    
+                    动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.17" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-resource-types">
+            
+                    
+                    资源类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.18" data-path="http-api.html">
+            
+                <a href="http-api.html#endpoint-resources">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    规则引擎
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../rule/rule-engine.html">
+            
+                <a href="../rule/rule-engine.html">
+            
+                    
+                    规则引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../rule/rule-create.html">
+            
+                <a href="../rule/rule-create.html">
+            
+                    
+                    创建规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#空动作-调试">
+            
+                    
+                    空动作 (调试)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#发送数据到-web-服务">
+            
+                    
+                    发送数据到 Web 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-mqtt-broker">
+            
+                    
+                    桥接数据到 MQTT Broker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-mysql">
+            
+                    
+                    保存数据到 MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-postgresql">
+            
+                    
+                    保存数据到 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-cassandra">
+            
+                    
+                    保存数据到 Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-mongodb">
+            
+                    
+                    保存数据到 MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-dynamodb">
+            
+                    
+                    保存数据到 DynamoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-redis">
+            
+                    
+                    保存数据到 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-clickhouse">
+            
+                    
+                    保存数据到 ClickHouse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-tdengine">
+            
+                    
+                    保存数据到 TDengine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-opentsdb">
+            
+                    
+                    保存数据到 OpenTSDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-timescaledb">
+            
+                    
+                    保存数据到 TimescaleDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.16" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#保存数据到-influxdb">
+            
+                    
+                    保存数据到 InfluxDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.17" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-kafka">
+            
+                    
+                    桥接数据到 Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.18" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-pulsar">
+            
+                    
+                    桥接数据到 Pulsar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.19" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rocketmq">
+            
+                    
+                    桥接数据到 RocketMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rabbitmq">
+            
+                    
+                    桥接数据到 RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.21" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#桥接数据到-rpc-服务">
+            
+                    
+                    桥接数据到 RPC 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.22" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#离线消息保存到-redis">
+            
+                    
+                    离线消息保存到 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.23" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#离线消息保存到-mysql">
+            
+                    
+                    离线消息保存到 MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.24" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#离线消息保存到-postgresql">
+            
+                    
+                    离线消息保存到 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.25" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#离线消息保存到-cassandra">
+            
+                    
+                    离线消息保存到 Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.26" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#离线消息保存到-mongodb">
+            
+                    
+                    离线消息保存到 MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.27" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#从-redis-中获取订阅关系">
+            
+                    
+                    从 Redis 中获取订阅关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.28" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#从-mysql-中获取订阅关系">
+            
+                    
+                    从 MySQL 中获取订阅关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.29" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#从-postgresql-中获取订阅关系">
+            
+                    
+                    从 PostgreSQL 中获取订阅关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.30" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#从-cassandra-中获取订阅关系">
+            
+                    
+                    从 Cassandra 中获取订阅关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.31" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#从-mongodb-中获取订阅关系">
+            
+                    
+                    从 MongoDB 中获取订阅关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.32" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#从-kafka-消费消息到emqx">
+            
+                    
+                    从 Kafka 消费消息到 EMQX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.33" data-path="../rule/rule-example.html">
+            
+                <a href="../rule/rule-example.html#从-pulsar-消费消息到emqx">
+            
+                    
+                    从 Pulsar 消费消息到 EMQX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    数据存储
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html">
+            
+                    
+                    数据存储设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#redis-数据存储">
+            
+                    
+                    Redis 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#mysql-数据存储">
+            
+                    
+                    MySQL 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#postgresql-数据存储">
+            
+                    
+                    PostgreSQL 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#mongodb-消息存储">
+            
+                    
+                    MongoDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#cassandra-消息存储">
+            
+                    
+                    Cassandra 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#dynamodb-消息存储">
+            
+                    
+                    DynamoDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#influxdb-消息存储">
+            
+                    
+                    InfluxDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#opentsdb-消息存储">
+            
+                    
+                    OpenTSDB 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../backend/backend.html">
+            
+                <a href="../backend/backend.html#timescale-消息存储">
+            
+                    
+                    Timescale 消息存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    消息桥接
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#mqtt-桥接">
+            
+                    
+                    MQTT 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rpc-桥接">
+            
+                    
+                    RPC 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#kafka-桥接">
+            
+                    
+                    Kafka 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rabbitmq-桥接">
+            
+                    
+                    RabbitMQ 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#pulsar-桥接">
+            
+                    
+                    Pulsar 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html#rocketmq-桥接">
+            
+                    
+                    RocketMQ 桥接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    进阶教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../tutorial/device-management.html">
+            
+                <a href="../tutorial/device-management.html">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../tutorial/tune.html">
+            
+                <a href="../tutorial/tune.html">
+            
+                    
+                    系统调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../tutorial/deploy.html">
+            
+                <a href="../tutorial/deploy.html">
+            
+                    
+                    生产部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../tutorial/prometheus.html">
+            
+                <a href="../tutorial/prometheus.html">
+            
+                    
+                    Prometheus 监控告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../tutorial/benchmark.html">
+            
+                <a href="../tutorial/benchmark.html">
+            
+                    
+                    性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../configuration/configuration.html">
+            
+                <a href="../configuration/configuration.html">
+            
+                    
+                    配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="cli.html">
+            
+                <a href="cli.html">
+            
+                    
+                    命令行接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    协议介绍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../development/protocol.html">
+            
+                <a href="../development/protocol.html">
+            
+                    
+                    MQTT 协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../development/protocol.html">
+            
+                <a href="../development/protocol.html#mqtt-sn-协议">
+            
+                    
+                    MQTT-SN 协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../development/protocol.html">
+            
+                <a href="../development/protocol.html#lwm2m-协议">
+            
+                    
+                    LwM2M 协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../development/protocol.html">
+            
+                <a href="../development/protocol.html#私有-tcp-协议">
+            
+                    
+                    私有 TCP 协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    SDK & Tools
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../development/client.html">
+            
+                <a href="../development/client.html">
+            
+                    
+                    MQTT 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../development/c.html">
+            
+                <a href="../development/c.html">
+            
+                    
+                    MQTT C 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../development/java.html">
+            
+                <a href="../development/java.html">
+            
+                    
+                    MQTT Java 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../development/go.html">
+            
+                <a href="../development/go.html">
+            
+                    
+                    MQTT Go 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../development/erlang.html">
+            
+                <a href="../development/erlang.html">
+            
+                    
+                    MQTT Erlang 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../development/javascript.html">
+            
+                <a href="../development/javascript.html">
+            
+                    
+                    MQTT JavaScript 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../development/python.html">
+            
+                <a href="../development/python.html">
+            
+                    
+                    MQTT Python 客户端库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../development/resource.html">
+            
+                <a href="../development/resource.html">
+            
+                    
+                    其他资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    FAQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../faq/faq.html">
+            
+                <a href="../faq/faq.html">
+            
+                    
+                    入门概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../faq/use-guide.html">
+            
+                <a href="../faq/use-guide.html">
+            
+                    
+                    使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../faq/deployment.html">
+            
+                <a href="../faq/deployment.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../faq/error.html">
+            
+                <a href="../faq/error.html">
+            
+                    
+                    常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../faq/enterprise.html">
+            
+                <a href="../faq/enterprise.html">
+            
+                    
+                    商业服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../faq/tags.html">
+            
+                <a href="../faq/tags.html">
+            
+                    
+                    FAQ 标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    版本发布
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../changes/changes.html">
+            
+                <a href="../changes/changes.html">
+            
+                    
+                    变更日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../changes/upgrade.html">
+            
+                <a href="../changes/upgrade.html">
+            
+                    
+                    升级指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    相关资料
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../design/design.html">
+            
+                <a href="../design/design.html">
+            
+                    
+                    架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../awesome/awesome.html">
+            
+                <a href="../awesome/awesome.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Mnesia ACL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#mnesia-acl"><b></b>Mnesia ACL</a></li><ul><li><span class="title-icon "></span><a href="#acl&#x89C4;&#x5219;"><b></b>ACL&#x89C4;&#x5219;</a></li><ul><li><span class="title-icon "></span><a href="#acl-&#x89C4;&#x5219;&#x7ED3;&#x6784;&#x4F53;"><b></b>ACL &#x89C4;&#x5219;&#x7ED3;&#x6784;&#x4F53;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;-http-api-&#x7BA1;&#x7406;-acl-&#x89C4;&#x5219;"><b></b>&#x4F7F;&#x7528; HTTP API &#x7BA1;&#x7406; ACL &#x89C4;&#x5219;</a></li></ul><li><span class="title-icon "></span><a href="#request"><b></b>Request</a></li><li><span class="title-icon "></span><a href="#&#x8BF7;&#x6CE8;&#x610F;-topic-&#x9700;&#x8981;&#x4F7F;&#x7528;-urlencode-&#x7F16;&#x7801;"><b></b>&#x8BF7;&#x6CE8;&#x610F; ${topic} &#x9700;&#x8981;&#x4F7F;&#x7528; UrlEncode &#x7F16;&#x7801;</a></li><li><span class="title-icon "></span><a href="#response"><b></b>Response</a></li></ul></div><a href="#mnesia-acl" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="mnesia-acl"><a name="mnesia-acl" class="anchor-navigation-ex-anchor" href="#mnesia-acl"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mnesia-acl" class="plugin-anchor" href="#mnesia-acl"><i class="fa fa-link" aria-hidden="true"></i></a>Mnesia ACL</h1>
+<p>Mnesia ACL &#x4F7F;&#x7528; EMQ X &#x5185;&#x7F6E;&#x7684; Mnesia &#x6570;&#x636E;&#x5E93;&#x5B58;&#x50A8; ACL &#x89C4;&#x5219;&#xFF0C;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x3001;&#x52A8;&#x6001;&#x7BA1;&#x7406; ACL&#xFF0C;&#x65B9;&#x4FBF;&#x4E0E;&#x5916;&#x90E8;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x96C6;&#x6210;</p>
+<p>&#x63D2;&#x4EF6;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">emqx_auth_mnesia
+</code></pre>
+<h2 id="acl&#x89C4;&#x5219;"><a name="acl&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#acl&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="acl&#x89C4;&#x5219;" class="plugin-anchor" href="#acl&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>ACL&#x89C4;&#x5219;</h2>
+<p>Mnesia ACL &#x9ED8;&#x8BA4;&#x57FA;&#x4E8E; MQTT &#x62A5;&#x6587;&#x4E2D;&#x7684; Username &#x548C;&#x5BC6;&#x7801;&#x8FDB;&#x884C;&#x6743;&#x9650;&#x8BA4;&#x8BC1;, &#x53EF;&#x5728; <code>etc/plugins/emqx_auth_mnesia.conf</code> &#x4E2D;&#x66F4;&#x6539;&#x4E3A;&#x4F7F;&#x7528; MQTT &#x62A5;&#x6587;&#x7684;&#x7684; Client ID &#x4E0E;&#x5BC6;&#x7801;&#x8BA4;&#x8BC1;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment">## Auth and ACL base on username or clientid.</span>
+<span class="token comment">##</span>
+<span class="token comment">## Value: username | clientid</span>
+auth.mnesia.as <span class="token operator">=</span> username
+</code></pre>
+<h3 id="acl-&#x89C4;&#x5219;&#x7ED3;&#x6784;&#x4F53;"><a name="acl-&#x89C4;&#x5219;&#x7ED3;&#x6784;&#x4F53;" class="anchor-navigation-ex-anchor" href="#acl-&#x89C4;&#x5219;&#x7ED3;&#x6784;&#x4F53;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="acl-&#x89C4;&#x5219;&#x7ED3;&#x6784;&#x4F53;" class="plugin-anchor" href="#acl-&#x89C4;&#x5219;&#x7ED3;&#x6784;&#x4F53;"><i class="fa fa-link" aria-hidden="true"></i></a>ACL &#x89C4;&#x5219;&#x7ED3;&#x6784;&#x4F53;</h3>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;login&quot;</span><span class="token operator">:</span><span class="token string">&quot;emqx&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;topic&quot;</span><span class="token operator">:</span><span class="token string">&quot;testtopic/1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;action&quot;</span><span class="token operator">:</span><span class="token string">&quot;pub&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;allow&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x89C4;&#x5219;&#x5B57;&#x6BB5;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>login&#xFF1A;&#x6839;&#x636E; <code>auth.mnesia.as</code> &#x7684;&#x503C;&#x5339;&#x914D;&#x5BA2;&#x6237;&#x7AEF;&#x7684; Username &#x6216; Client ID.</li>
+<li>topic&#xFF1A;&#x63A7;&#x5236;&#x7684;&#x4E3B;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5728;&#x4E3B;&#x9898;&#x4E2D;&#x52A0;&#x5165;&#x5360;&#x4F4D;&#x7B26;&#x6765;&#x5339;&#x914D;&#x5BA2;&#x6237;&#x7AEF;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982; <code>t/%c</code> &#x5219;&#x5728;&#x5339;&#x914D;&#x65F6;&#x4E3B;&#x9898;&#x5C06;&#x4F1A;&#x66FF;&#x6362;&#x4E3A;&#x5F53;&#x524D;&#x5BA2;&#x6237;&#x7AEF;&#x7684; Client ID<ul>
+<li>%u&#xFF1A;&#x7528;&#x6237;&#x540D;</li>
+<li>%c&#xFF1A;Client ID</li>
+</ul>
+</li>
+<li>action&#xFF1A;&#x64CD;&#x4F5C;&#x884C;&#x4E3A;&#xFF0C;&#x53EF;&#x9009;&#x503C;&#xFF1A;pub | sub | pubsub</li>
+<li>allow&#xFF1A;&#x662F;&#x5426;&#x5141;&#x8BB8;</li>
+</ul>
+<p>Mnesia ACL &#x9ED8;&#x8BA4;&#x4E0D;&#x8BBE;&#x89C4;&#x5219;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; HTTP API &#x7BA1;&#x7406; ACL &#x89C4;&#x5219;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;-http-api-&#x7BA1;&#x7406;-acl-&#x89C4;&#x5219;"><a name="&#x4F7F;&#x7528;-http-api-&#x7BA1;&#x7406;-acl-&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;-http-api-&#x7BA1;&#x7406;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F7F;&#x7528;-http-api-&#x7BA1;&#x7406;-acl-&#x89C4;&#x5219;" class="plugin-anchor" href="#&#x4F7F;&#x7528;-http-api-&#x7BA1;&#x7406;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528; HTTP API &#x7BA1;&#x7406; ACL &#x89C4;&#x5219;</h2>
+<h4 id="&#x6DFB;&#x52A0;-acl-&#x89C4;&#x5219;"><a name="&#x6DFB;&#x52A0;-acl-&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6DFB;&#x52A0;-acl-&#x89C4;&#x5219;" class="plugin-anchor" href="#&#x6DFB;&#x52A0;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0; ACL &#x89C4;&#x5219;</h4>
+<p>API &#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># Request</span>
+POST api/v4/emqx_acl
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;login&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;emqx&quot;</span>,
+    <span class="token string">&quot;topic&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;Topic/A&quot;</span>,
+    <span class="token string">&quot;action&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;pub&quot;</span>,
+    <span class="token string">&quot;allow&quot;</span><span class="token builtin class-name">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># Response</span>
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;data&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;emqx&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;ok&quot;</span>
+    <span class="token punctuation">}</span>,
+    <span class="token string">&quot;code&quot;</span><span class="token builtin class-name">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="&#x6279;&#x91CF;&#x6DFB;&#x52A0;-acl-&#x89C4;&#x5219;"><a name="&#x6279;&#x91CF;&#x6DFB;&#x52A0;-acl-&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#&#x6279;&#x91CF;&#x6DFB;&#x52A0;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6279;&#x91CF;&#x6DFB;&#x52A0;-acl-&#x89C4;&#x5219;" class="plugin-anchor" href="#&#x6279;&#x91CF;&#x6DFB;&#x52A0;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6279;&#x91CF;&#x6DFB;&#x52A0; ACL &#x89C4;&#x5219;</h4>
+<p>API &#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># Request</span>
+POST api/v4/emqx_acl
+<span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">&quot;login&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;emqx_1&quot;</span>,
+    <span class="token string">&quot;topic&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;Topic/A&quot;</span>,
+    <span class="token string">&quot;action&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;pub&quot;</span>,
+    <span class="token string">&quot;allow&quot;</span><span class="token builtin class-name">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>,
+  <span class="token punctuation">{</span>
+    <span class="token string">&quot;login&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;emqx_2&quot;</span>,
+    <span class="token string">&quot;topic&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;Topic/A&quot;</span>,
+    <span class="token string">&quot;action&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;pub&quot;</span>,
+    <span class="token string">&quot;allow&quot;</span><span class="token builtin class-name">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+
+<span class="token comment"># Response</span>
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;data&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;emqx_2&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;ok&quot;</span>,
+        <span class="token string">&quot;emqx_1&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;ok&quot;</span>
+    <span class="token punctuation">}</span>,
+    <span class="token string">&quot;code&quot;</span><span class="token builtin class-name">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684;-acl-&#x89C4;&#x5219;"><a name="&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684;-acl-&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684;-acl-&#x89C4;&#x5219;" class="plugin-anchor" href="#&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684; ACL &#x89C4;&#x5219;</h4>
+<p>API &#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># Request</span>
+GET api/v4/emqx_acl
+
+<span class="token comment"># Response</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;meta&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;page&quot;</span><span class="token builtin class-name">:</span> <span class="token number">1</span>,
+    <span class="token string">&quot;limit&quot;</span><span class="token builtin class-name">:</span> <span class="token number">10</span>,
+    <span class="token string">&quot;count&quot;</span><span class="token builtin class-name">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>,
+  <span class="token string">&quot;data&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;topic&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;Topic/A&quot;</span>,
+      <span class="token string">&quot;login&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;emqx&quot;</span>,
+      <span class="token string">&quot;action&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pub&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>,
+  <span class="token string">&quot;code&quot;</span><span class="token builtin class-name">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="&#x67E5;&#x770B;&#x6307;&#x5B9A;-acl-&#x89C4;&#x5219;"><a name="&#x67E5;&#x770B;&#x6307;&#x5B9A;-acl-&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x6307;&#x5B9A;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x67E5;&#x770B;&#x6307;&#x5B9A;-acl-&#x89C4;&#x5219;" class="plugin-anchor" href="#&#x67E5;&#x770B;&#x6307;&#x5B9A;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x6307;&#x5B9A; ACL &#x89C4;&#x5219;</h4>
+<p>API &#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># Request</span>
+GET api/v4/emqx_acl/<span class="token variable">${login}</span>
+
+<span class="token comment"># Response</span>
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;data&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;topic&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;Topic/A&quot;</span>,
+        <span class="token string">&quot;login&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;emqx&quot;</span>,
+        <span class="token string">&quot;allow&quot;</span><span class="token builtin class-name">:</span> true,
+        <span class="token string">&quot;action&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pub&quot;</span>
+    <span class="token punctuation">}</span>,
+    <span class="token string">&quot;code&quot;</span><span class="token builtin class-name">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="&#x5220;&#x9664;-acl-&#x89C4;&#x5219;"><a name="&#x5220;&#x9664;-acl-&#x89C4;&#x5219;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5220;&#x9664;-acl-&#x89C4;&#x5219;" class="plugin-anchor" href="#&#x5220;&#x9664;-acl-&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664; ACL &#x89C4;&#x5219;</h4>
+<p>&#x5220;&#x9664;&#x6307;&#x5B9A; ACL &#x89C4;&#x5219;&#xFF1A;</p>
+<p>API &#x5B9A;&#x4E49;&#xFF1A;</p>
+<p>```bash</p>
+<h1 id="request"><a name="request" class="anchor-navigation-ex-anchor" href="#request"><i class="fa fa-link" aria-hidden="true"></i></a><a name="request" class="plugin-anchor" href="#request"><i class="fa fa-link" aria-hidden="true"></i></a>Request</h1>
+<h1 id="&#x8BF7;&#x6CE8;&#x610F;-topic-&#x9700;&#x8981;&#x4F7F;&#x7528;-urlencode-&#x7F16;&#x7801;"><a name="&#x8BF7;&#x6CE8;&#x610F;-topic-&#x9700;&#x8981;&#x4F7F;&#x7528;-urlencode-&#x7F16;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x8BF7;&#x6CE8;&#x610F;-topic-&#x9700;&#x8981;&#x4F7F;&#x7528;-urlencode-&#x7F16;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8BF7;&#x6CE8;&#x610F;-topic-&#x9700;&#x8981;&#x4F7F;&#x7528;-urlencode-&#x7F16;&#x7801;" class="plugin-anchor" href="#&#x8BF7;&#x6CE8;&#x610F;-topic-&#x9700;&#x8981;&#x4F7F;&#x7528;-urlencode-&#x7F16;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BF7;&#x6CE8;&#x610F; ${topic} &#x9700;&#x8981;&#x4F7F;&#x7528; UrlEncode &#x7F16;&#x7801;</h1>
+<p>DELETE api/v4/emqx_acl/${login}/${topic}</p>
+<h1 id="response"><a name="response" class="anchor-navigation-ex-anchor" href="#response"><i class="fa fa-link" aria-hidden="true"></i></a><a name="response" class="plugin-anchor" href="#response"><i class="fa fa-link" aria-hidden="true"></i></a>Response</h1>
+<p>{
+    &quot;code&quot;: 0
+}
+```<div id="gitalk-container"></div><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script></p>
+<style>.emqxee { display: none; }</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="acl-file.html" class="navigation navigation-prev " aria-label="Previous page: 内置 ACL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="acl-http.html" class="navigation navigation-next " aria-label="Next page: HTTP ACL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Mnesia ACL","date":"2020-02-07T17:15:26.000Z","author":"wivwiv","keywords":null,"description":null,"category":null,"ref":"undefined","level":"1.6.3","depth":2,"next":{"title":"HTTP ACL","level":"1.6.4","depth":2,"path":"advanced/acl-http.md","ref":"advanced/acl-http.md","articles":[]},"previous":{"title":"内置 ACL","level":"1.6.2","depth":2,"path":"advanced/acl-file.md","ref":"advanced/acl-file.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","prism","hints","simpletabs","cuav-chapters","edit-link","gittalk","scripts","anchors","anchor-navigation-ex","emqx","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"github":{"url":"https://github.com/emqx/emqx"},"scripts":{"files":["./_js/emqx-docs.js"]},"search-pro":{},"local-pagefooter":{"copyright":"© Copyright 2016-2020, EMQ Technologies Co., Ltd.","islocal":true,"modify_label":"The document reversion time: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"hints":{"info":"fa fa-info-circle","tip":"fa fa-mortar-board","danger":"fa fa-exclamation-circle","working":"fa fa-wrench"},"emqx":{},"simpletabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"sharing":{"facebook":false,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑","base":"https://github.com/emqx/emqx-docs-cn/source"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"gittalk":{"clientID":"3b2217a86bdbdc09d0d8","clientSecret":"aee2b15ea39c494eb80b775513d38791895adb63","repo":"docs-gitalk","owner":"emqx","admin":["wivwiv"],"distractionFreeMode":false}},"theme":"default","author":"EMQX Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"introduction.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"redirects":{},"variables":{},"title":"EMQ X 使用文档","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":"emqtt"}},"gitbook":"*","description":"EMQ X 百万级 MQTT 消息服务器使用文档"},"file":{"path":"advanced/acl-mnesia.md","mtime":"2020-07-16T09:58:03.215Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-05T10:08:26.568Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-simpletabs/tabs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gittalk/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scripts/8c14d056aa3b5f896e494b7aef8689eb-emqx-docs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
