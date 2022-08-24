@@ -157,7 +157,7 @@ assert-plus@^0.2.0:
 
 async-limiter@~1.0.0:
   version "1.0.1"
-  resolved "https://registry.npm.taobao.org/async-limiter/download/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
+  resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
 
 async-some@~1.0.2:
   version "1.0.2"
@@ -1181,6 +1181,13 @@ gitbook-plugin-edit-link@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npm.taobao.org/gitbook-plugin-edit-link/download/gitbook-plugin-edit-link-2.0.2.tgz#d8fcd927eced81e7a662a72d59db609eafd7e72f"
 
+gitbook-plugin-emqx@*:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/gitbook-plugin-emqx/-/gitbook-plugin-emqx-1.0.5.tgz#2543f350af7d9cc3befb8a2ac5ec1d3810d18948"
+  dependencies:
+    gitbook-markdown "^2.0.1"
+    yargs "^15.3.1"
+
 gitbook-plugin-github@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/gitbook-plugin-github/download/gitbook-plugin-github-3.0.0.tgz#67457df98a57ea8ef9b2518b88340db370a5317b"
@@ -1217,6 +1224,12 @@ gitbook-plugin-scripts@^1.0.2:
   dependencies:
     lodash "*"
     tmp "0.0.28"
+
+gitbook-plugin-search-pro@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/gitbook-plugin-search-pro/-/gitbook-plugin-search-pro-2.0.2.tgz#7ce76e8f65c2044489b9c692736b23f81fe6a1f2"
+  dependencies:
+    html-entities "1.2.0"
 
 gitbook-plugin-simpletabs@^0.1.1:
   version "0.1.1"
@@ -1362,6 +1375,10 @@ hosted-git-info@~2.1.5:
 hosted-git-info@~2.5.0:
   version "2.5.0"
   resolved "https://registry.npm.taobao.org/hosted-git-info/download/hosted-git-info-2.5.0.tgz#6d60e34b3abbc8313062c3b798ef8d901a07af3c"
+
+html-entities@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.0.tgz#41948caf85ce82fed36e4e6a0ed371a6664379e2"
 
 html-entities@^1.2.0:
   version "1.2.1"
@@ -3688,8 +3705,8 @@ write-file-atomic@~2.1.0:
     slide "^1.1.5"
 
 ws@^6.1.0:
-  version "6.2.1"
-  resolved "https://registry.npm.taobao.org/ws/download/ws-6.2.1.tgz#442fdf0a47ed64f59b6a5d8ff130f4748ed524fb"
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-6.2.2.tgz#dd5cdbd57a9979916097652d78f1cc5faea0c32e"
   dependencies:
     async-limiter "~1.0.0"
 
