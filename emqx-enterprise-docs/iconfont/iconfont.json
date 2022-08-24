@@ -1,0 +1,156 @@
+{
+  "id": "2772539",
+  "name": "官网文档图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "30700097",
+      "name": "terraform",
+      "font_class": "emqx-terraform",
+      "unicode": "e77b",
+      "unicode_decimal": 59259
+    },
+    {
+      "icon_id": "27928534",
+      "name": "xmeter",
+      "font_class": "xmeter-cloud",
+      "unicode": "e72f",
+      "unicode_decimal": 59183
+    },
+    {
+      "icon_id": "30183037",
+      "name": "emqx operator",
+      "font_class": "emqx-operator",
+      "unicode": "e778",
+      "unicode_decimal": 59256
+    },
+    {
+      "icon_id": "30183038",
+      "name": "broker",
+      "font_class": "broker",
+      "unicode": "e779",
+      "unicode_decimal": 59257
+    },
+    {
+      "icon_id": "30183039",
+      "name": "enterprise",
+      "font_class": "enterprise",
+      "unicode": "e77a",
+      "unicode_decimal": 59258
+    },
+    {
+      "icon_id": "5634748",
+      "name": "linkedin",
+      "font_class": "linkedin",
+      "unicode": "f1e7",
+      "unicode_decimal": 61927
+    },
+    {
+      "icon_id": "3876409",
+      "name": "twitter",
+      "font_class": "twitter",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "4937000",
+      "name": "github-fill",
+      "font_class": "github",
+      "unicode": "e885",
+      "unicode_decimal": 59525
+    },
+    {
+      "icon_id": "8554924",
+      "name": "stack-overflow-fill",
+      "font_class": "stack-overflow",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "10932439",
+      "name": "bilibili-fill",
+      "font_class": "bilibili",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "15188673",
+      "name": "wechat",
+      "font_class": "wechat",
+      "unicode": "e736",
+      "unicode_decimal": 59190
+    },
+    {
+      "icon_id": "10304445",
+      "name": "weibo",
+      "font_class": "weibo",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "15378983",
+      "name": "youtube",
+      "font_class": "youtube",
+      "unicode": "ed20",
+      "unicode_decimal": 60704
+    },
+    {
+      "icon_id": "24685924",
+      "name": "ekuiper",
+      "font_class": "kuiper",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "24685925",
+      "name": "emq x cloud",
+      "font_class": "cloud",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    },
+    {
+      "icon_id": "24685927",
+      "name": "fabric",
+      "font_class": "fabric",
+      "unicode": "e6fd",
+      "unicode_decimal": 59133
+    },
+    {
+      "icon_id": "24685928",
+      "name": "neuron",
+      "font_class": "neuron",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    },
+    {
+      "icon_id": "24450863",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "24450864",
+      "name": "question",
+      "font_class": "question",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "24450466",
+      "name": "useful",
+      "font_class": "useful",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "24450467",
+      "name": "not useful",
+      "font_class": "a-notuseful",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    }
+  ]
+}
